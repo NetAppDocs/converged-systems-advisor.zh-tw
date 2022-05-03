@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task_review_infrastructure_history.html 
+keywords: review, history, converged, infrastructure, configuration, resolve, issue, warnings, failures, collected, collections, data 
+summary: 當您收到有關失敗規則的警示時、可以檢視組態中變更內容的歷程記錄、以協助您解決問題。 
+---
+= 檢閱基礎架構的歷史記錄
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當您收到有關失敗規則的警示時、可以檢視組態中變更內容的歷程記錄、以協助您解決問題。
+
+.步驟
+. 選擇融合式基礎架構。
+. 按一下*「更多」>「歷程記錄」*。
++
+image:screenshot_history_navigation.gif["顯示包含歷程記錄選項的更多功能表。"]
+
+. 按一下行事曆上的某一天、即可檢視在每次資料收集期間所識別的警告與故障數量。
++
+
+TIP: 每天顯示的數字會對應代理收集資料的次數。例如、如果您保留預設的收集時間間隔為24小時、則每天應該會看到一個集合。
+
++
+下圖顯示本月27日的單一收藏。
+
++
+image:screenshot_history_status.gif["顯示本月27日的第一和第一黃色點。"]
+
+. 若要檢視所收集資料的詳細資料、請按一下*移至CI儀表板*以取得集合。
+. 如有需要、請檢視上次未發現任何警告或故障的記錄。
++
+比較兩個收集期間之間的資料、有助於識別變更內容。
+
+

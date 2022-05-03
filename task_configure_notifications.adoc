@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: task_configure_notifications.html 
+keywords: configure, Converged, Systems, Advisor, infrastructure, email, notifications, alert, portal, collection, failures, offline, agent, daily, alert, digest 
+summary: 如果您擁有Premium授權、Converged Systems Advisor可以FlexPod 透過電子郵件通知、提醒您有關變更您的功能。 
+---
+= 設定通知
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您擁有Premium授權、Converged Systems Advisor可以FlexPod 透過電子郵件通知、提醒您有關變更您的功能。
+
+.步驟
+. 在Converged Systems Advisor入口網站中、按一下*設定圖示*、然後按一下*警示設定*。
+. 請檢查您想收到的通知、以瞭解擁有Premium授權的每個融合式基礎架構。
++
+每個通知都包含下列資訊：
+
++
+收集失敗:: 當融合式系統顧問無法從融合式基礎架構收集資料時、會發出警示。
+離線代理程式:: 當整合式系統顧問代理程式不在線上時發出警示。
+每日警示摘要:: 提醒您前一天發生的規則失敗。
+
+
+. 按一下「 * 儲存 * 」。
+
+
+現在、融合式系統顧問會將電子郵件通知傳送給與融合式基礎架構相關的使用者。

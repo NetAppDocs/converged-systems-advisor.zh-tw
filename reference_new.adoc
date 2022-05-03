@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: reference_new.html 
+keywords: 'new, features, what"s new, enhancements, release notes' 
+summary: NetApp會定期更新Converged Systems Advisor、為您帶來新功能、增強功能和錯誤修復。 
+---
+= 融合式系統顧問的新功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp會定期更新Converged Systems Advisor、為您帶來新功能、增強功能和錯誤修復。
+
+若要確認FlexPod CSA代理程式支援哪些元件、請參閱 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] （僅限部分）IMT 。
+
+
+
+== 2020年7月31日
+
+此版本包含下列增強功能：
+
+* <<New functionality for storage change detection (diffs)>>
+* <<Expanded configuration assurance for cluster interconnect switches>>
+* <<Initial coverage of NVMe designs>>
+
+
+
+
+== 儲存變更偵測（差異）的新功能
+
+現在您可以偵測儲存系統上發生的變更。若要檢查變更、請從*儲存設備庫存*頁面按一下*檢視組態差異*。然後、選取先前的組態資料和時間、以與最近的儲存組態進行比較。任何已發生的變更都會反白顯示以供快速檢閱。
+
+
+
+== 擴大叢集互連交換器的組態保證
+
+在Converged Systems Advisor入口網站中、已擴充組態保證檢查、以監控ONTAP 下列機型的叢集互連交換支援能力：
+
+* Cisco Nexus 3132Q-V
+* Cisco Nexus 3232C
+* Cisco Nexus 2300YC
+
+
+
+
+== NVMe設計的初始涵蓋範圍
+
+我們新增了初始組態保證檢查、以監控ONTAP 在整個過程中支援NVMe儲存設計FlexPod 的能力。

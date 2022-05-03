@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: reference_issues.html 
+keywords: new, features, bugs, known issues, limitations, known limitations, supported, unsupported, release notes 
+summary: 已知問題可識別可能導致您無法成功使用服務的問題。如果有錯誤線上報告、錯誤ID會包含報告的超連結。 
+---
+= 已知問題
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+已知問題可識別可能導致您無法成功使用服務的問題。如果有錯誤線上報告、錯誤ID會包含報告的超連結。
+
+[cols="12,53"]
+|===
+| 錯誤ID | 說明 
+
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1234597["12397"^] | 「融合式系統顧問」不會修正超過四個SVM的DNS組態。 
+
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1234603["1234603"^] | 在建立多個已啟用集合的補救工作之後、只會針對第一個補救工作觸發集合。 
+
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1335590["1335990"^] | 「儲存容錯移轉狀態」CA規則已從Converged Systems Advisor移除。 
+
+
+| https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&Display=1335593["133593年"^] | Nexus和MDS交換器的版本編號在「Upgrade Advisor」下顯示不正確。 
+|===

@@ -1,0 +1,399 @@
+---
+sidebar: sidebar 
+permalink: task_getting_started.html 
+keywords: agent, deploy, install, set up, VMware, ESXi, read-only, accounts, NSS, account, log in, login, UCS, Nexus, ONTAP, download, add device, add infrastructure, share, sharing, notifications, alerts, emails, support, contract, sshd 
+summary: 若要開始使用融合式系統顧問、您必須準備好環境、安裝及設定代理程式、並將融合式基礎架構新增至入口網站。 
+---
+= 開始使用融合式系統顧問
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+若要開始使用融合式系統顧問、您必須準備好環境、安裝及設定代理程式、並將融合式基礎架構新增至入口網站。
+
+您可能會想要 link:concept_architecture.html["瞭解融合式系統顧問的運作方式"] 開始之前。
+
+
+
+== 為環境做好準備
+
+準備您的環境包括驗證組態支援、為代理程式建立帳戶、以及註冊NetApp支援網站帳戶。
+
+.步驟
+. 在中驗證支援 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]：
++
+.. 驗證融合式系統顧問是否支援FlexPod 您的融合式基礎架構。
+.. 確認您擁有支援的VMware ESXi伺服器、適用於Converged Systems Advisor代理程式。
++
+為將頻寬使用量降至最低、NetApp建議將代理程式安裝在FlexPod 與融合式基礎架構相同的資料中心。
+
+
+
+. 確保安裝代理程式的網路允許元件之間連線：
++
+** 代理程式必須連線至每FlexPod 個元件、才能收集組態資料。
+** 代理程式也需要傳出網際網路連線、才能與下列端點通訊：
++
+*** csa.netapp.com
+*** docker.com
+*** Docker IO
+
+
+
+
+. <<Creating accounts on FlexPod devices,在每FlexPod 個元件上建立帳戶>>。
++
+代理程式需要認證資料才能收集組態資料。設定代理程式時、您必須提供認證資料。
+
+. 前往 https://mysupport.netapp.com["NetApp 支援網站"^] 如果您沒有帳戶、請註冊帳戶。
++
+必須有NetApp支援網站帳戶才能設定代理程式及存取入口網站。
+
+
+
+
+
+=== 在FlexPod 不相連的裝置上建立帳戶
+
+您必須在Cisco UCS Manager和Cisco Nexus交換器上設定唯讀帳戶。要求提供管理員帳戶才能ONTAP 用於整個系統和VMware。您可以為APIC上的其他使用者設定唯讀存取帳戶。代理程式會使用這些帳戶從每個裝置收集組態資料。
+
+
+
+==== 為Cisco UCS Manager建立唯讀帳戶
+
+.步驟
+. 登入Cisco UCS Manager。
+. 建立名為_CSA-readonly的本機驗證使用者。
++
+
+TIP: 所有新使用者預設為唯讀。
+
+
+
+
+
+==== 為Nexus交換器建立唯讀帳戶
+
+.步驟
+. 使用SSH或Telnet登入每個Nexus交換器。
+. 進入全域組態模式：
++
+ configure terminal
++
+.. 建立新使用者：
++
+ username [name] password [password] role [role]
+.. 儲存組態：
++
+ copy running configuration startup configuration
+
+
+
+
+如果您使用的是TACACACSA+伺服器、而且需要授予CSA使用者權限、請前往 <<Granting CSA user privileges using a TACACS+ server>>。
+
+
+
+==== 建立ONTAP 管理員帳戶以供使用
+
+.步驟
+. 登入OnCommand 「32劃」系統管理程式、然後按一下「設定」圖示：
++
+image:screenshot_system_manager_settings.gif["System Manager中的設定圖示。"]。
+
+. 在「使用者」頁面上、按一下「*新增*」。
+. 輸入使用者名稱和密碼、並將* ssh *、* ontapi*和*主控台*新增為具有管理存取權限的使用者登入方法。
++
+image:screenshot_system_manager_add_user.gif["顯示System Manager中的「Add User」（新增使用者）畫面、其中新ONTAP 的使用者具有ssh和ontapi權限。"]
+
+
+
+
+
+==== 為VMware建立唯讀帳戶
+
+.步驟
+. 登入vCenter。
+. 在vCenter功能表中、選擇*管理*。
+. 在「角色」下、選擇*唯讀*。
+. 按一下「* Clone role action *（*複製角色動作*）」圖示、並將名稱變更為* CS*。
+. 選取新建立的* CS*角色。
+. 按一下*編輯角色*圖示。
+. 在「*編輯角色*」下、選擇「*全域*」、然後勾選「*授權*」。
+. 在側邊列上、選取*單一登入->使用者與群組->建立新的使用者*。
+. 將新使用者* CSARO*命名為網域vpshere.local。
+. 在側邊列的「*存取控制*」下、選取「*全域權限*」。
+. 選擇使用者* CSARO*並指派角色* CS*。
+. 登入Web Client。
++
+使用使用者ID：* CSARO@vple.1*及先前建立的密碼。
+
+
+
+
+
+==== 在APIC上建立唯讀帳戶
+
+.步驟
+. 按一下*管理*。
+. 按一下「*建立新的本機使用者*」。
+. 在*使用者識別*下、輸入使用者資訊。
+. 在「*安全性*」下、選取「所有安全性網域選項」。
+. 如有需要、請按一下「*+*」以新增使用者憑證和SSH金鑰。
+. 單擊 * 下一步 * 。
+. 按一下「*+*」以新增網域的角色。
+. 從下拉式功能表中選取*角色名稱*。
+. 選擇*讀取*作為*角色權限類型*。
+. 單擊*完成*。
+
+
+
+
+== 部署代理程式
+
+您必須在VMware ESXi伺服器上部署整合式系統顧問代理程式。代理程式會收集FlexPod 有關您的融合式基礎架構中每個裝置的組態資料、並將這些資料傳送至Converged Systems Advisor入口網站。
+
+.步驟
+. <<Downloading and installing the agent,下載並安裝代理程式>>
+. <<Setting up networking for the agent,為代理程式設定網路>>
+. <<Installing an SSL certificate on the agent,如有需要、請在代理程式上安裝SSL憑證>>
+. <<Configuring the agent to discover your FlexPod infrastructure,設定代理程式以探索FlexPod 您的資訊基礎架構>>
+
+
+
+
+=== 下載並安裝代理程式
+
+您必須在VMware ESXi伺服器上部署整合式系統顧問代理程式。
+
+若要將頻寬使用量降至最低、您應將代理程式安裝在與FlexPod 此VMware ESXi組態位於相同資料中心的VMware ESXi伺服器上。代理程式必須連線至FlexPod 每個支援元件和網際網路、才能使用HTTPS連接埠443將組態資料傳送至Converged Systems Advisor入口網站。
+
+代理程式是以開放式虛擬化格式（OVF）範本部署為VMware vSphere虛擬機器。此範本是以Debian為基礎、具有1個vCPU和2 GB的RAM（多FlexPod 個或更大的版本可能需要更多的RAM）。
+
+.步驟
+. 下載代理程式：
++
+.. 登入 https://csa.netapp.com/["融合式系統顧問入口網站"^]。
+.. 按一下*下載代理程式*。
+
+
+. 在VMware ESXi伺服器上部署OVF範本、以安裝代理程式。
++
+在某些版本的VMware上、您可能會在部署OVF範本時收到警告。虛擬機器是在最新版本的vCenter上開發、舊版的硬體相容性可能導致警告。您應該先檢閱組態選項、再確認警告、然後繼續安裝。
+
+
+
+
+
+=== 為代理程式設定網路
+
+您必須確保已在代理虛擬機器上正確設定網路、以便在代理程式與FlexPod 物件裝置之間、以及代理程式與數個網際網路端點之間進行通訊。請注意、虛擬機器上的網路堆疊會停用、直到系統初始化為止。
+
+.步驟
+. 確保傳出網際網路連線可存取下列端點：
++
+** csa.netapp.com
+** docker.com
+** Docker IO
+
+
+. 使用VMware vSphere用戶端登入代理程式的虛擬機器主控台。
++
+預設使用者名稱為「CSA」、預設密碼為「NetApp」。
+
++
+
+TIP: 為了安全起見、SSHD預設為停用。
+
+. 出現提示時、請變更預設密碼並記下密碼、因為密碼無法還原。
++
+變更密碼後、系統會重新開機並啟動代理程式軟體。
+
+. 如果子網路中沒有DHCP、請使用標準的Debian工具來設定靜態IP位址和DNS設定、然後重新啟動代理程式。
++
+link:task_setting_static_ip.html["請按一下此處以取得詳細指示"]。
+
++
+Debian虛擬機器的網路組態預設為DHCP。安裝了Network Manager、並提供一個文字使用者介面、您可以從命令nmtui啟動（請參閱 https://manpages.debian.org/stretch/network-manager/nmtui.1.en.html["手冊頁"^] 如需詳細資訊）。
+
++
+如需網路的其他協助、請參閱 https://wiki.debian.org/NetworkConfiguration["在Debian維客上的網路組態頁面"^]。
+
+. 如果您的安全原則規定、代理程式必須位於一個網路上、才能與FlexPod VMware裝置和另一個網路通訊、以便與網際網路通訊、請在vCenter中新增第二個網路介面、並設定正確的VLAN和IP位址。
+. 如果網際網路存取需要Proxy伺服器、請執行下列命令：
++
+「Udo CS_Set_Proxy」
+
++
+命令會產生兩個提示字元、並顯示Proxy項目所需的格式。第一個提示字元可讓您指定HTTP Proxy、第二個提示字元則可讓您指定HTTPS Proxy。
+
++
+以下是HTTP Proxy的提示：
+
++
+image:screenshot_http_proxy.gif["顯示HTTP Proxy提示字元的快照。"]
+
+. 網路啟動後、請等待約5分鐘、讓系統更新並啟動。
++
+代理程式運作時、主控台會顯示廣播訊息。
+
+. 從代理程式執行下列CLI命令來驗證連線能力：
++
+ curl -k https://www.netapp.com/us/index.aspx
++
+如果命令失敗、請驗證DNS設定。代理程式虛擬機器必須具備有效的DNS組態、而且能夠連絡csa.netapp.com。
+
+
+
+
+
+=== 在代理程式上安裝SSL憑證
+
+當虛擬機器初次開機時、代理程式會建立自我簽署的憑證。必要時、您可以刪除該憑證並使用自己的SSL憑證。
+
+融合式系統顧問支援下列項目：
+
+* 任何與OpenSSL 1.0.1版或更新版本相容的密碼
+* TLS 1.1與TLS 1.2
+
+
+.步驟
+. 登入代理程式的虛擬機器主控台。
+. 瀏覽至：/opt/ca/certs
+. 刪除代理程式所建立的自我簽署憑證。
+. 貼上您的SSL憑證。
+. 重新啟動虛擬機器。
+
+
+
+
+=== 設定代理程式以探索FlexPod 您的資訊基礎架構
+
+您必須將代理程式設定為從FlexPod 您的融合式基礎架構中的每個裝置收集組態資料。
+
+.步驟
+. 開啟網頁瀏覽器、然後輸入代理虛擬機器的IP位址。
+. 輸入NetApp Support Site帳戶的使用者名稱和密碼、即可登入代理程式。
+. 新增FlexPod 您希望代理程式探索的元件。
++
+您有兩種選擇：
+
++
+.. 按一下*「Add a devices*（新增裝置*）」、逐FlexPod 一輸入有關您的各種不完整功能的詳細資料。
+.. 按一下*匯入裝置*以填寫並上傳內含所有裝置詳細資料的CSV範本。
++
+請注意下列事項：
+
++
+*** 使用者名稱和密碼應適用於您先前為裝置建立的帳戶。
+*** 如果UCS環境已設定LDAP使用者管理、則必須在使用者名稱之前新增使用者的網域。例如：local\CSA唯讀
+
+
+
+
+
+
+表格中的FlexPod 每個裝置都應顯示勾選標記。
+
+image:screenshot_agent_configuration.gif["在「Status（狀態）」欄中以綠色勾號顯示每個所需的裝置。"]
+
+
+
+== 將基礎架構新增至入口網站
+
+設定代理程式之後、它會將每FlexPod 個功能相關的資訊傳送到Converged Systems Advisor入口網站。您現在必須選取入口網站中的每個元件、以建立整個可監控的基礎架構。
+
+.步驟
+. 在中 https://csa.netapp.com/["融合式系統顧問入口網站"^]，單擊* Add Infrastructure*（添加基礎架構）。
+. 完成新增基礎架構的步驟：
++
+.. 輸入基礎架構的基本詳細資料。
++
+如果您要新增Cisco ACI基礎架構、請在詢問FlexPod 您是否使用Cisco UCS Manager時輸入* yes *、並在詢問FlexPod 您所用的網路組態類型時、以ACI模式*輸入* Nexus交換器。
+
+.. 選取FlexPod 屬於「樣」組態的每個裝置。
++
+
+TIP: 當您選取裝置時、「資格」欄會顯示*「合格*」或*「不合格*」。如果裝置被其他代理程式發現、則該裝置不符合資格。
+
++
+選取所有必要元件之後、您應該會在每個裝置類型旁看到綠色勾號。
+
++
+image:screenshot_add_infrastructure_pikesupdate.gif["顯示表格中選取的四個裝置、以及每個裝置的綠色勾號、表示您已選取所有必要元件。"]
+
+.. 新增您的 link:concept_licensing.html["融合式系統顧問序號"] 解除鎖定金鑰功能。
+.. 檢閱摘要、接受授權合約條款、然後按一下*「Add Infrastructure*（新增基礎架構*）」。
+
+
+
+
+融合式系統顧問將基礎架構新增至入口網站、開始收集每個裝置的組態資料。等待數分鐘、讓代理程式從裝置收集資訊。
+
+
+
+== 與其他使用者共用基礎架構
+
+共享融合式基礎架構可讓其他人登入融合式系統顧問入口網站、以便檢視及監控組態。與您共用基礎架構的人員必須擁有 https://mysupport.netapp.com["NetApp 支援網站"^] 帳戶。
+
+.步驟
+. 在Converged Systems Advisor入口網站中、按一下*設定圖示*、然後按一下*使用者*。
++
+image:screenshot_settings.gif["顯示設定功能表、其中包含「使用者」頁面的連結。"]
+
+. 從「使用者」表中選取組態。
+. 按一下 image:screenshot_share_icon.gif["共用基礎架構的圖示。"] 圖示。
+. 在您要提供的使用者角色旁輸入一或多個電子郵件地址。
++
+link:reference_user_roles.html["檢視每個角色之間的差異"]。
+
++
+
+TIP: 您可以在單一欄位中輸入多個電子郵件地址、方法是在第一個電子郵件地址之後按* Enter *。
+
+. 按一下*傳送*。
+
+
+使用者應收到一封電子郵件、其中包含存取Converged Systems Advisor的指示說明。
+
+
+
+== 使用TACACS +伺服器授予CSA使用者權限
+
+如果您使用的是TACACAC2+伺服器、而且需要為交換器授予CSA使用者權限、則必須建立使用者權限群組、並授予群組存取CSA所需的特定設定命令的權限。
+
+下列命令應寫入TACACacs+伺服器的組態檔中。
+
+.步驟
+. 輸入下列命令以建立具有唯讀存取權的使用者權限群組：Group=Group_name｛Default service=deny service=exec{priv-lvl=0｝
+. 輸入下列命令、以授予CSA所需命令的存取權限： cmd = show｛permit "enie" permit "version " permit "feature " permit "feature-set " permit hardware。*允許「介面」允許「介面」允許「介面收發器」允許「詳細目錄」允許「模組」允許「連接埠通道資料庫」允許「mgmtpeers」允許「license usage」允許「port-channel摘要」允許執行「執行「執行「mgmt-config」允許」允許」允許「mgmt-int」允許「允許」允許」允許執行「mgmt-config允許「允許」允許」允許「允許」允許「允許」允許」允許 「CDP鄰近詳細資料」允許「VLAN」允許「VPC」允許「VPC對等保留」允許「Mac位址表」允許「LACP連接埠通道」允許「原則對應」允許「原則對應系統類型QoS」允許「原則對應系統類型佇列」允許「原則對應系統類型network-QoS」允許「區域集作用中」允許「san連接埠fgc」允許「fgc」資料庫「fgc」允許「 允許「區域集作用中」允許「vSAN」允許「vSAN使用量」允許「vSAN成員資格」｝
+. 輸入下列命令、將您的CSA使用者帳戶新增至新建立的群組：user=user_account｛member=group名稱login=file/etc/passwd｝
+
+
+
+
+== 設定通知
+
+如果您擁有Premium授權、Converged Systems Advisor可以FlexPod 透過電子郵件通知、提醒您有關變更您的功能。
+
+.步驟
+. 在Converged Systems Advisor入口網站中、按一下*設定圖示*、然後按一下*警示設定*。
+. 請檢查您想收到的通知、以瞭解擁有Premium授權的每個融合式基礎架構。
++
+每個通知都包含下列資訊：
+
++
+收集失敗:: 當融合式系統顧問無法從融合式基礎架構收集資料時、會發出警示。
+離線代理程式:: 當整合式系統顧問代理程式不在線上時發出警示。
+每日警示摘要:: 提醒您前一天發生的規則失敗。
+
+
+. 按一下「 * 儲存 * 」。
+
+
+現在、融合式系統顧問會將電子郵件通知傳送給與融合式基礎架構相關的使用者。

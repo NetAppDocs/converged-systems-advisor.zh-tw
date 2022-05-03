@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: task_track_contracts.html 
+keywords: track, support, contracts, renew, converged, infrastructure, device, devices, 
+summary: 您可以在組態中新增每個裝置的支援合約詳細資料、包括開始日期、結束日期和合約ID。 
+---
+= 追蹤支援合約
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以在組態中新增每個裝置的支援合約詳細資料：開始日期、結束日期和合約ID。如此一來、您就能輕鬆追蹤中央位置的詳細資料、知道何時該續約每個裝置的支援合約。
+
+.步驟
+. 單擊*選擇CI*並選擇融合式基礎架構。
+. 在「支援合約」小工具中、按一下*編輯合約*圖示。
+. 選擇*開始日期*和*結束日期*、然後輸入*合約ID*。
+. 按一下*提交*。
+. 針對組態中的每個裝置重複上述步驟。
+
+
+現在、融合式系統顧問會顯示每個裝置的支援合約詳細資料。您可以輕鬆查看哪些裝置擁有有效和過期的支援合約。
+
+image:screenshot_support_contracts.gif["顯示四份支援合約：一份已過期、另三份已啟用。"]

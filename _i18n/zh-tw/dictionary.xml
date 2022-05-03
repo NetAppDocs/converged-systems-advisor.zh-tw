@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="51dfc4332789916d0d45402bb63b0740" category="summary">身為合作夥伴或經銷商、您可以驗證用戶端基礎架構的部署。</block>
+  <block id="33dd6d0a84d49364e0252ed85d6c8008" category="doc">驗證合作夥伴與經銷商的部署</block>
+  <block id="3e63df2d8130d6beb5aedd0b3a623455" category="paragraph">身為合作夥伴或經銷商、您可以檢閱儀表板上顯示的資料或產生健全狀況報告、來驗證客戶基礎架構的部署。</block>
+  <block id="bf49a2af93184828c602f30985ab7b3e" category="list-title">開始之前</block>
+  <block id="7cb24243c2f9dc81564e7c17ee96502a" category="list-text">您已在FlexPod 客戶網站安裝新的功能、或是正在使用現有FlexPod 的功能。</block>
+  <block id="b828c89f48e5931a2f3e94a1a8a438bb" category="list-text">您在FlexPod 這些功能上建立了帳戶。</block>
+  <block id="891db3e486cd7319b253443e598258a9" category="list-text">如果您使用的是TACACAC2+伺服器、則表示您已授予CSA使用者權限。</block>
+  <block id="ea4bf3bfa43cc087b048001387e44202" category="list-text">您已下載並安裝代理程式。</block>
+  <block id="c2a536bd136ebbff93df02f66cdfa216" category="inline-link-macro">設定及部署代理程式</block>
+  <block id="6b604d4a2761364bcc54cdca23050f1f" category="paragraph">請參閱 <block ref="c493233aaa3279340a41c1d7e26d3e4f" category="inline-link-macro-rx"></block>。</block>
+  <block id="ab8671fbf18903d8d9040f241c26f3c4" category="list-text">您可以為代理程式設定網路、也可以選擇在代理程式上安裝SSL憑證。</block>
+  <block id="284f34a0af39b4a6009a8dd20ad8a40a" category="list-text">透過NetApp認證資料、您為客戶建立CI、以便將基礎架構新增至入口網站。</block>
+  <block id="74b63237fcb1f920a090dda1571975fa" category="inline-link-macro">將基礎架構新增至入口網站</block>
+  <block id="c65ffe1d7cf10fedb9d945fa4f2747c0" category="paragraph">請參閱 <block ref="7fb29a0e0fb1c8ef914768025b76cc3b" category="inline-link-macro-rx"></block> 在CSA入口網站中建立CI。</block>
+  <block id="c694cfbda1d422c56933f41ed2f42d12" category="list-text">您也可以選擇與其他使用者共用基礎架構。</block>
+  <block id="95928bd14e09a05a7b9ffbd1c4bcd1bd" category="paragraph">合作夥伴和經銷商使用自己的NetApp認證資料登入CSA入口網站、開始驗證程序。</block>
+  <block id="a58c9e4d78fea3ec21310844f2a1a057" category="inline-link">融合式系統顧問入口網站</block>
+  <block id="383cbb4f450bb9faa09fc9988b680b22" category="list-text">登入<block ref="eb9f0f7fac75ca880e49216162865e36" category="inline-link-rx"></block> 使用您的NetApp認證資料。</block>
+  <block id="f0e9f34f0828883f7e388c1c501c43be" category="list-text">按一下*選取CI*、然後按一下客戶適用的CI、或在搜尋方塊中輸入CI名稱。隨即顯示CI的儀表板。</block>
+  <block id="2619c13f9c80221c7c784b18d2577797" category="paragraph">身為合作夥伴或經銷商、您可以使用下列方法驗證客戶的基礎架構：</block>
+  <block id="aa33dea2c5b586714ddaff5b57479455" category="list-text">在儀表板上、您可以驗證基礎架構的各個層面：</block>
+  <block id="045a4a98e67e0ccc2e5fa0bc9433dc20" category="list-text">*韌體互通性*會顯示安裝的軟體版本。按一下每個標題以檢視其他詳細資料。</block>
+  <block id="ea2d295b0de68cb7f17155b911364d3f" category="list-text">*支援合約*會顯示合約何時到期。如需詳細資訊、請按一下*檢視詳細資料*。</block>
+  <block id="a2fecfd4fc9e1ff1687f192020980447" category="list-text">*代理程式狀態*會顯示代理程式的詳細資料、包括所監控的裝置。</block>
+  <block id="d33175282e5e9dd3f4c93082e969592b" category="list-text">* Capacity *顯示磁碟空間、網路連接埠及UCS刀鋒機箱的使用率。按一下連結以檢視每個使用率的詳細資料。</block>
+  <block id="fa20339c0bb6d12c4a44d9897faea4bc" category="list-text">*健全狀況*以圖形方式顯示基礎架構的儲存、運算、網路和虛擬化功能規則狀態。按一下圖形的色彩區域以檢視其他詳細資料。</block>
+  <block id="58f7fb86ef80cd20f35da08ef88659a7" category="list-text">*規則摘要*會顯示失敗規則和警告的警示。按一下每列左側的箭頭、或按一下裝置名稱以檢視其他詳細資料。</block>
+  <block id="6c43bac8f5c611f216fc4d5a14ab648e" category="list-text">在行動列中、選取*報告-&gt;健全狀況報告*、以產生詳細的融合式系統健全狀況報告。您可以在瀏覽器中檢視、下載為PDF檔案、或透過電子郵件分享。</block>
+  <block id="255d8d695266132eb9b6a52c6ee00b71" category="summary">當您收到有關失敗規則的警示時、可以檢視組態中變更內容的歷程記錄、以協助您解決問題。</block>
+  <block id="571a926cd2e7deab39daf05b2533b8d8" category="doc">檢閱基礎架構的歷史記錄</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
+  <block id="ddb6cc4a6a81ec19ebb07387b482e42f" category="list-text">選擇融合式基礎架構。</block>
+  <block id="7a1c2c362657dac6fb6d5de1697d59eb" category="list-text">按一下*「更多」&gt;「歷程記錄」*。</block>
+  <block id="f5a1e9ab2662a2f1e774fa5b1b22354c" category="inline-image-macro">顯示包含歷程記錄選項的更多功能表。</block>
+  <block id="d86f023c281e4c7e1cc6422740a2ce3d" category="paragraph"><block ref="d86f023c281e4c7e1cc6422740a2ce3d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="819726a36e174ef47ab655e2c54e1f30" category="list-text">按一下行事曆上的某一天、即可檢視在每次資料收集期間所識別的警告與故障數量。</block>
+  <block id="ddff6108b62f0e074e78accb27419744" category="admonition">每天顯示的數字會對應代理收集資料的次數。例如、如果您保留預設的收集時間間隔為24小時、則每天應該會看到一個集合。</block>
+  <block id="b69e4b5d485bc08cef823be6ac4ba22d" category="paragraph">下圖顯示本月27日的單一收藏。</block>
+  <block id="ff23ac22b6549ebac2e097387d9e1a7e" category="inline-image-macro">顯示本月27日的第一和第一黃色點。</block>
+  <block id="d5c441097ffe44c888eb3afd6f7afb21" category="paragraph"><block ref="d5c441097ffe44c888eb3afd6f7afb21" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="017ef171d8620c381816c046d14e0a28" category="list-text">若要檢視所收集資料的詳細資料、請按一下*移至CI儀表板*以取得集合。</block>
+  <block id="420fee2342b69a09df56c9f4c8948315" category="list-text">如有需要、請檢視上次未發現任何警告或故障的記錄。</block>
+  <block id="7297f536b887e2351b3f1d8d075f4043" category="paragraph">比較兩個收集期間之間的資料、有助於識別變更內容。</block>
+  <block id="7a49965d9cfff28dae6c97f9b420a932" category="summary">NetApp融合式系統顧問可驗證、監控FlexPod 及最佳化您的融合式基礎架構部署、確保為您的商業應用程式提供最佳效能與可用度。</block>
+  <block id="04fbad68af42342b74d64c44c053aeb6" category="doc">融合式系統顧問</block>
+  <block id="1fde0727b387439572ade83eecff4f68" category="section-title">瞭解新功能</block>
+  <block id="9019b4a8afd649f588dde381d9d2c1cb" category="inline-link-macro">融合式系統顧問的新功能</block>
+  <block id="cfaf20a40a53abf04e998d745a541106" category="paragraph"><block ref="cfaf20a40a53abf04e998d745a541106" category="inline-link-macro-rx"></block></block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="section-title">開始使用</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="inline-link-macro">快速入門</block>
+  <block id="30974525ad850301dc82692fbf1875de" category="paragraph"><block ref="30974525ad850301dc82692fbf1875de" category="inline-link-macro-rx"></block></block>
+  <block id="11a009d53ca4078eeb1d7f09553e18d5" category="section-title">深入瞭解融合式系統顧問</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="inline-link-macro">總覽</block>
+  <block id="433e74eb36d7b9b81d0daefd838e9fc3" category="list-text"><block ref="433e74eb36d7b9b81d0daefd838e9fc3" category="inline-link-macro-rx"></block></block>
+  <block id="2d242bb36ec91b32005f9296ff03a912" category="inline-link-macro">架構</block>
+  <block id="299cf6f7124b7dd4cdecf41a2dde5691" category="list-text"><block ref="299cf6f7124b7dd4cdecf41a2dde5691" category="inline-link-macro-rx"></block></block>
+  <block id="0b9c6eef4e3d3a222eb04e910d252339" category="inline-link-macro">授權</block>
+  <block id="a136464e5f9b093e6667a604b15e3605" category="list-text"><block ref="a136464e5f9b093e6667a604b15e3605" category="inline-link-macro-rx"></block></block>
+  <block id="2c73d1eaa92fa653dab6b18c453721b0" category="section-title">取得協助並與同儕交流</block>
+  <block id="d0bd79212ef041ed73ac193cda56b985" category="inline-link">NetApp社群：融合式基礎架構</block>
+  <block id="9c57c6e5c44386158ad4e62b7404eb56" category="paragraph"><block ref="9c57c6e5c44386158ad4e62b7404eb56" category="inline-link-rx"></block></block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律聲明提供版權聲明、商標、專利等存取權限。</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 標誌及 NetApp 商標頁面上列出的標章均為 NetApp 、 Inc. 的商標。其他公司與產品名稱可能為其各自所有者的商標。</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">專利</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">如需最新的 NetApp 擁有專利清單、請參閱：</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
+  <block id="e0315085076faa5f8bd08e82d140ee63" category="inline-link-macro">融合式系統顧問注意事項</block>
+  <block id="4abf4a1cccc2bcfbc79190153a49a2fb" category="paragraph"><block ref="4abf4a1cccc2bcfbc79190153a49a2fb" category="inline-link-macro-rx"></block></block>
+  <block id="093e4ca191076aaeab8a87c32f3e59b9" category="summary">已知問題可識別可能導致您無法成功使用服務的問題。如果有錯誤線上報告、錯誤ID會包含報告的超連結。</block>
+  <block id="95dc0391ce7b396d7dd5622284e8fc3e" category="doc">已知問題</block>
+  <block id="b066ca6122c9857ad1ee3a44f18cc5e7" category="cell">錯誤ID</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">說明</block>
+  <block id="07646d96b0a5453c5d151d754d2dbb4b" category="inline-link">12397</block>
+  <block id="5dc015869ee1fffcfe18ffb7b0380578" category="cell"><block ref="e9377e240fb8deadfedc2e31ee75b093" category="inline-link-rx"></block></block>
+  <block id="ad53fa7bb171e082d2d1cb699a67c551" category="cell">「融合式系統顧問」不會修正超過四個SVM的DNS組態。</block>
+  <block id="798bb4078a98dfc398ee27ded37fccb9" category="inline-link">1234603</block>
+  <block id="63b2552c29ae354107fcfb9604981826" category="cell"><block ref="9ea63614a471f724be04717758df478d" category="inline-link-rx"></block></block>
+  <block id="7d459d150271ac4124abd6ef7eb50437" category="cell">在建立多個已啟用集合的補救工作之後、只會針對第一個補救工作觸發集合。</block>
+  <block id="954aaefe49d225da7ff2a5c6265a3f74" category="inline-link">1335990</block>
+  <block id="56cbc985c9341566bd1bcdccacae3c33" category="cell"><block ref="cb1155f7f28efdd1e05510903264c499" category="inline-link-rx"></block></block>
+  <block id="361198e1f4f8acd67465a74b3b90cabe" category="cell">「儲存容錯移轉狀態」CA規則已從Converged Systems Advisor移除。</block>
+  <block id="59dd5af94dc714215999ade6dcfc5e6d" category="inline-link">133593年</block>
+  <block id="0737ee285ab66d2b8009bb58d622261c" category="cell"><block ref="8a3f01dd75676a73cfafd2b1daf552ce" category="inline-link-rx"></block></block>
+  <block id="839eaaea535ab65cf6fcf7a1845e1d71" category="cell">Nexus和MDS交換器的版本編號在「Upgrade Advisor」下顯示不正確。</block>
+  <block id="bdb0dc2742052e838432bdb344b2269d" category="summary">融合式系統顧問代理程式與入口網站入門指南包括幾個步驟。</block>
+  <block id="d765707c3b28b87a0166a122e0893c44" category="doc">融合式系統顧問快速入門</block>
+  <block id="bb4e793023539d2e73eea517a0009f8f" category="paragraph">融合式系統顧問代理程式與FlexPod 適用於功能的入口網站入門指南包括幾個步驟。</block>
+  <block id="ebd4d70d369b168865892524fb385472" category="section-title">為環境做好準備</block>
+  <block id="861d7392cf2a3c7ca2ed1442f6237101" category="paragraph">確認您的組態支援。 <block ref="5db18581d3c751db9049195c8f5e0955" category="inline-link-macro-rx"></block>。</block>
+  <block id="005c54fa8a7e7bd788a9d809d1387a85" category="section-title">在FlexPod 不相連的裝置上建立帳戶</block>
+  <block id="2f166ccfcdb92d24539f300510b6c06a" category="inline-link-macro">在FlexPod 不相連的裝置上建立帳戶</block>
+  <block id="ef53b42f68445a3ad4051becb0f15d0a" category="paragraph">在Cisco UCS Manager、Cisco Nexus交換器、ONTAP 您的支援系統、VMware及APIC上設定帳戶。代理程式會使用這些帳戶來收集組態資料。<block ref="3431097fc9e072fa942c7d7d18ec5a22" category="inline-link-macro-rx"></block>。</block>
+  <block id="92a02a450197db41e0b230ea53ef8ff3" category="section-title">使用TACACS +伺服器授予CSA使用者權限</block>
+  <block id="2c1c5cb63f66b3d5b5f4eeb79a858979" category="paragraph">對於使用TACACS +伺服器的使用者、您必須為交換器授予CSA使用者權限、建立使用者權限群組、並授予群組存取CSA所需的特定設定命令的權限。<block ref="4c9d56d5e4670c50abdba1f72cb4866c" category="inline-link-macro-rx"></block></block>
+  <block id="c0fb3c98adaf760968c2a76d78a5b482" category="inline-link-macro">部署代理程式</block>
+  <block id="0550cf7fd37a5b054ce87062df5f3254" category="paragraph">在VMware ESXi伺服器上部署融合式系統顧問代理程式。代理程式會收集FlexPod 有關您的融合式基礎架構中每個裝置的組態資料、並將這些資料傳送至Converged Systems Advisor入口網站。<block ref="96f9770b130e3bbf775f182c9ade7098" category="inline-link-macro-rx"></block>。</block>
+  <block id="0d68d2879e160e76749e7cf93c2fa146" category="section-title">在入口網站中新增/共用基礎架構</block>
+  <block id="19262993c294a1c73c8ae843e52a78f8" category="inline-link-macro">在入口網站中新增及共用基礎架構</block>
+  <block id="98e6f4726c519b5915a8c7eda3e7406d" category="paragraph">將每FlexPod 個功能區新增至整合式系統顧問入口網站、以建立可監控的整個基礎架構。您也可以共用融合式基礎架構、讓其他人登入入口網站、以便檢視及監控組態。<block ref="8650b55bc84e39256db0ba998f0a5b40" category="inline-link-macro-rx"></block>。</block>
+  <block id="19a5158f1235c29843008925adb7baf8" category="section-title">設定通知</block>
+  <block id="68b25f35698ade6b2d3fe83dec7cf861" category="paragraph">有了Premium授權、您可以設定通知、透過FlexPod 電子郵件通知提醒您有關變更的資訊。<block ref="ebe1a4d3225f5bb69764eba03129edce" category="inline-link-macro-rx"></block></block>
+  <block id="b44a488d2f5dc6040330205f250e7850" category="section-title">設定靜態IP位址</block>
+  <block id="bb970f20a14446757048e71ed32f976f" category="inline-link-macro">在代理程式上設定靜態IP位址</block>
+  <block id="db15846e3abf8485dbf81a496e64d90a" category="paragraph">如果您的環境沒有DHCP伺服器、您可以在Converged Systems Advisor代理程式上設定靜態IP位址。<block ref="708dd38422a6a2d257990b66f3dbd251" category="inline-link-macro-rx"></block></block>
+  <block id="a2344a362f5275955ff01f4c0302c7e7" category="summary">您可以修正失敗的規則、抑制規則、檢視已被抑制的規則清單、並視需要選取以結束抑制。</block>
+  <block id="e0f02631aa2e940e03b75a523e459eb3" category="doc">監控基礎架構中的規則</block>
+  <block id="24744aeb927fc4dede0eec8cf1e1c8d7" category="paragraph">若要監控基礎架構、您可以修正失敗的規則、抑制規則、檢視已禁止的規則清單、並視需要選取以結束抑制。</block>
+  <block id="b4459af605041a7930492df886bb4471" category="section-title">檢閱警示以瞭解失敗的規則和警告</block>
+  <block id="da4489f0980a33fa90b138ab1711c18c" category="paragraph">整合式系統顧問會持續監控您的基礎架構、並產生警告與故障、確保系統已設定完成、並能達到最佳實務做法。</block>
+  <block id="fdc06c9d5f91b90f8456a6b05f258299" category="list-text">登入<block ref="eb9f0f7fac75ca880e49216162865e36" category="inline-link-rx"></block> 然後按一下*規則*。</block>
+  <block id="763d1db2c64a3c2393a29e26e3822f16" category="paragraph">「規則」頁面會顯示所有規則的摘要。每個規則的狀態可以是*通過*、*警告*或*失敗*。</block>
+  <block id="06c6354f899f95a2e0c6a3fe5d570fb3" category="list-text">按一下「Status（狀態）」欄中的篩選圖示、然後選取「* Fail *（失敗*）」、「* Warning*（警告*）」、或兩者。</block>
+  <block id="202fb926cf9309ce674dce57d623e78a" category="inline-image-macro">顯示篩選圖示、可讓您篩選表格、使其僅顯示通過、失敗或包含警告的規則。</block>
+  <block id="2ad463ee636371e42c7ca5636e28fed7" category="paragraph"><block ref="2ad463ee636371e42c7ca5636e28fed7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c5d5d1929d7a4a13da82909982901f4e" category="list-text">按一下「狀態」欄旁的箭頭、即可檢閱個別規則的詳細資料。</block>
+  <block id="b09ee340cf3bb35ade0990ee9bbcabc8" category="inline-image-macro">顯示規則的詳細資料、包括說明、影響和解決方案。</block>
+  <block id="a89ca4858b9e96829f0eaf450d2c6df6" category="paragraph"><block ref="a89ca4858b9e96829f0eaf450d2c6df6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="763b4a62989ab53c3781e84d97960bbc" category="list-text">請依照解決方法中的指示來修正問題。</block>
+  <block id="6ad500dce2c2a7d8f7b13693cf492abe" category="inline-xref">檢閱組態歷程記錄</block>
+  <block id="2625ad3fd82097f140d0bc8d371ccda9" category="paragraph">如有需要、 <block ref="8fbdc8d58e24479b2bffb697841f542c" category="inline-xref-macro-rx"></block> 協助您解決問題的基礎架構。</block>
+  <block id="02d591fa96f231677fb827a48cbe57b1" category="paragraph">您處理的規則狀態應在代理程式的下一個收集期間之後顯示為「Pass」。</block>
+  <block id="802d3156d7f68322e8ca95584629cb30" category="section-title">修正失敗的規則</block>
+  <block id="351c1a6b45f8840d4c1a4e9ee589573d" category="paragraph">整合式系統顧問可修正融合式基礎架構的基礎問題、為您解決某些失敗的規則。</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">關於這項工作</block>
+  <block id="4e3abf9ee681918e75136c8643d1b6fb" category="list-text">您必須擁有Premium授權。</block>
+  <block id="97b32378ece8468ddfbdabc0ff920cc3" category="list-text">您必須被指派為融合式基礎架構的擁有者。</block>
+  <block id="d8615765e8e292dd939bf87224df7e05" category="list-text">選擇*可以修正的篩選規則*。</block>
+  <block id="3d7ac1b543a43164220663463e8d2ae7" category="list-text">展開您要解析的規則。</block>
+  <block id="796f6174c88667af46eeef46c9ebefba" category="inline-image-macro">顯示可讓您自動修正失敗規則的扳手圖示。</block>
+  <block id="3b521101805d8fdb2ea6abac2d2fddcb" category="list-text">按一下 <block ref="42948ea8407431ac3aebb834069c3081" category="inline-image-macro-rx" type="image"></block> 在展開規則的右上角。</block>
+  <block id="9d090cca2b0bb235d833fc152f4a1e95" category="paragraph">如果圖示已停用、可能是因為代理程式離線、您沒有擁有者權限、或是您沒有Premium授權。</block>
+  <block id="5034d5c0e6e5f309421842bba0171e21" category="list-text">如有必要、請填寫輸入值。</block>
+  <block id="4ed2f0fd2887d376f8661c62f2726132" category="paragraph">視失敗規則而定、有些輸入值是解決問題的必要值。</block>
+  <block id="aac3b6603b045fbde7518cd9ed13f031" category="list-text">如果希望在修復成功完成後收集資料、請選取*修正工作完成時收集*選項。</block>
+  <block id="42a29a38eaebc4cd2f01a5fbdd7560aa" category="list-text">按一下*執行修正*。</block>
+  <block id="8183c9dbb2354fb933c18a1e36501526" category="list-text">按一下「 * 確認 * 」。</block>
+  <block id="bfc045b4e61163bafe6a55ea0791d7b8" category="list-text">若要檢視解決失敗規則所採取的行動、請按一下「*作業*」圖示、然後選取「*修正動作*」。</block>
+  <block id="aa2e3bc4a59e8dd66e574a74b917b05b" category="inline-image-macro">顯示開啟功能表以查看修正動作的作業圖示。</block>
+  <block id="7ec3bd6219f41f64a90c3960344b842e" category="paragraph"><block ref="7ec3bd6219f41f64a90c3960344b842e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f715709e86a0e4352fd5030dd232c8cd" category="section-title">抑制失敗的規則</block>
+  <block id="293df73a9b50a370a73fb719ee2421b1" category="paragraph">「融合式系統顧問」可讓您隱藏規則、使其不會顯示在儀表板中、也不會再傳送規則失敗的電子郵件通知。</block>
+  <block id="a0063f9781e30cf5197307c2991a6ad2" category="paragraph">例如、不建議啟用telnet、但如果您想要啟用它、可以抑制該規則。</block>
+  <block id="4a7307c336893b2d270760d3b3cb38eb" category="paragraph">您必須擁有Premium授權才能設定通知。</block>
+  <block id="25c1c98d63843493c60d7f6fabd12311" category="list-text">在儀表板中、按一下*規則*。</block>
+  <block id="308a821e385567451839a9424c3a0859" category="list-text">篩選表格內容、找出您要尋找的規則。</block>
+  <block id="12f6b83ab6c268342595376953a17e80" category="list-text">針對狀態為「警告」或「失敗」的規則選取一或多列、然後按一下*「警示*」圖示。</block>
+  <block id="008427ab5412d6ddcdad9d6bfaa3a149" category="inline-image-macro">顯示表格上方的警示圖示、可讓您隱藏規則。</block>
+  <block id="fcaf1234e9852d27e0b9d5ab8c5cf389" category="paragraph"><block ref="fcaf1234e9852d27e0b9d5ab8c5cf389" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e69c9ca1da916fbe7c75dadd97962038" category="list-text">選擇持續時間、然後按一下*提交*。</block>
+  <block id="dcdfbaafd1cee028472b916b24ae285f" category="admonition">如果您要啟用警示、請依照相同步驟執行、然後選取*結束抑制*。</block>
+  <block id="4639e34f277e9cc25cab4e3d77223113" category="paragraph">整合式系統顧問將不再通知您指定期間的規則、而且儀表板將不再顯示該規則。</block>
+  <block id="c0baf402396dab2430411379fb31fb66" category="section-title">顯示抑制的規則</block>
+  <block id="1ffeb833453e69841ffa25ed250f8850" category="list-text">按一下*設定*圖示、然後選取*抑制規則*。</block>
+  <block id="b6b001d1dff9d0dbe8295732f02275ea" category="inline-image-macro">顯示設定圖示、可開啟功能表以選取抑制的規則。</block>
+  <block id="2206ba8c8f83e664f85e355245f63e87" category="paragraph"><block ref="2206ba8c8f83e664f85e355245f63e87" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b165f6e721b097b70c6ad4b29a4d279d" category="list-text">選取您要開始顯示的抑制規則。</block>
+  <block id="ec322b3a2d92a535cd71909b666547c0" category="list-text">按一下*警示*圖示。</block>
+  <block id="07c26e41b63d0ff3970894104e144d9d" category="list-text">選擇*結束抑制*、然後按一下*提交*。</block>
+  <block id="77f317049f7895469c3d010a42706564" category="paragraph">系統會針對選取的規則啟用警示、並在「規則」表格和儀表板中顯示規則。</block>
+  <block id="19e149b86fe87374d6b13ab3c1aa59c1" category="summary">在VMware ESXi伺服器上部署融合式系統顧問代理程式。</block>
+  <block id="299c9bc2f2558e7ca5b14d172d438580" category="doc">設定及部署代理程式</block>
+  <block id="5cd2b1880169837e25d4f1460662faad" category="paragraph">您必須在VMware ESXi伺服器上部署整合式系統顧問代理程式。代理程式會收集FlexPod 有關您的融合式基礎架構中每個裝置的組態資料、並將這些資料傳送至Converged Systems Advisor入口網站。</block>
+  <block id="57750ce19329b425174cbc93e6a43e62" category="list-text"><block ref="0bf5e97b243054f72da9a63ad8890d33" category="inline-xref-macro-rx"></block></block>
+  <block id="2214fd2fdaa4608476ac6f7c414cfc1c" category="list-text"><block ref="970f7963be3b539669866471b49eb842" category="inline-xref-macro-rx"></block></block>
+  <block id="b2dad7356075346268f85e3b33bd7d98" category="list-text"><block ref="9707b20d628746abe74ac98ac3cf317d" category="inline-xref-macro-rx"></block></block>
+  <block id="78bdb79e38127e38c9f36e8fa078ac0f" category="list-text"><block ref="73d26a40aa0069c926cf11f2b34f94d9" category="inline-xref-macro-rx"></block></block>
+  <block id="e9df7b526871e1af66c58d80e0a5111a" category="section-title">下載並安裝代理程式</block>
+  <block id="3e29de7ce6b52ed5b2efb0ccd6d814af" category="paragraph">您必須在VMware ESXi伺服器上部署整合式系統顧問代理程式。</block>
+  <block id="a1808424c169f18629e29f0d62f1fcdb" category="paragraph">若要將頻寬使用量降至最低、您應將代理程式安裝在與FlexPod 此VMware ESXi組態位於相同資料中心的VMware ESXi伺服器上。代理程式必須連線至FlexPod 每個支援元件和網際網路、才能使用HTTPS連接埠443將組態資料傳送至Converged Systems Advisor入口網站。</block>
+  <block id="5731b3791a0c926c2e0d4fd691c8b8ae" category="paragraph">代理程式是以開放式虛擬化格式（OVF）範本部署為VMware vSphere虛擬機器。此範本是以Debian為基礎、具有1個vCPU和2 GB的RAM（多FlexPod 個或更大的版本可能需要更多的RAM）。</block>
+  <block id="2f5f4104d2369384772742794186a5ee" category="list-text">下載代理程式：</block>
+  <block id="c45ae599d04d2b26de9c536e2bd168db" category="list-text">登入<block ref="eb9f0f7fac75ca880e49216162865e36" category="inline-link-rx"></block>。</block>
+  <block id="283dd3a1146b22159cc711daf4b83a86" category="list-text">按一下*下載代理程式*。</block>
+  <block id="763956d175b6f4a7857600adc356352a" category="list-text">在VMware ESXi伺服器上部署OVF範本、以安裝代理程式。</block>
+  <block id="c46511864b55b0df238295aa98452ec4" category="paragraph">在某些版本的VMware上、您可能會在部署OVF範本時收到警告。虛擬機器是在最新版本的vCenter上開發、舊版的硬體相容性可能導致警告。您應該先檢閱組態選項、再確認警告、然後繼續安裝。</block>
+  <block id="a0a3282ed6dd2a46a69cacb4c53cd598" category="section-title">為代理程式設定網路</block>
+  <block id="329cd1f5e59ba758295de91326be0e01" category="paragraph">您必須確保已在代理虛擬機器上正確設定網路、以便在代理程式與FlexPod 物件裝置之間、以及代理程式與數個網際網路端點之間進行通訊。請注意、虛擬機器上的網路堆疊會停用、直到系統初始化為止。</block>
+  <block id="724bb0e043ebedd4c528a2ad4d7b0adb" category="list-text">確保傳出網際網路連線可存取下列端點：</block>
+  <block id="6464743ee6a2ff8ae3e8cab2528f5a6e" category="list-text">csa.netapp.com</block>
+  <block id="8df6590d0d74f73adbfe5f8379f58893" category="list-text">docker.com</block>
+  <block id="0b505db73d92bac18356fa3feb3cf7e3" category="list-text">Docker IO</block>
+  <block id="42f326fc7913ed803404dc30e968aa06" category="list-text">使用VMware vSphere用戶端登入代理程式的虛擬機器主控台。</block>
+  <block id="bdad4c067bbbc6dec75356d1c530686d" category="paragraph">預設使用者名稱為「CSA」、預設密碼為「NetApp」。</block>
+  <block id="d59729c9e3b22da01a8010c4c446e0c7" category="admonition">為了安全起見、SSHD預設為停用。</block>
+  <block id="95f7e4a76daadedf42ba81d66ec78941" category="list-text">出現提示時、請變更預設密碼並記下密碼、因為密碼無法還原。</block>
+  <block id="17b9e6bd62d19982683ebb767f9317b1" category="paragraph">變更密碼後、系統會重新開機並啟動代理程式軟體。</block>
+  <block id="11dfdf5f669d5123bb4032af68545aba" category="list-text">如果子網路中沒有DHCP、請使用標準的Debian工具來設定靜態IP位址和DNS設定、然後重新啟動代理程式。</block>
+  <block id="a0e6a5fd5358310f791eeb5382cc260d" category="inline-link-macro">請按一下此處以取得詳細指示</block>
+  <block id="86259f9852f91497e3e1d2fd3d115bfc" category="paragraph"><block ref="675b653dc4a3b6331b86bde725aa69f3" category="inline-link-macro-rx"></block>。</block>
+  <block id="df4283c930edcdb46c45530338d7eaf6" category="inline-link">手冊頁</block>
+  <block id="6a8cb1a182d8afbf0f4cc04515d5716a" category="paragraph">Debian虛擬機器的網路組態預設為DHCP。安裝了Network Manager、並提供一個文字使用者介面、您可以從命令nmtui啟動（請參閱<block ref="95715ffe5b6c7600e8f0d16b6b6064ce" category="inline-link-rx"></block> 如需詳細資訊）。</block>
+  <block id="f93e60fa5e03356de106feb392f31b27" category="inline-link">在Debian維客上的網路組態頁面</block>
+  <block id="fc239c96114ecfe7779c0eda49dec747" category="paragraph">如需網路的其他協助、請參閱<block ref="9f18f481b02a08531df854d052dfd37c" category="inline-link-rx"></block>。</block>
+  <block id="48aa8739f4f4121f8aa3ae2d609c08c2" category="list-text">如果您的安全原則規定、代理程式必須位於一個網路上、才能與FlexPod VMware裝置和另一個網路通訊、以便與網際網路通訊、請在vCenter中新增第二個網路介面、並設定正確的VLAN和IP位址。</block>
+  <block id="09c910e2b610ff827c810320a5bb1bf1" category="list-text">如果網際網路存取需要Proxy伺服器、請執行下列命令：</block>
+  <block id="9c161583590077a38147451093c8e3b7" category="paragraph">「Udo CS_Set_Proxy」</block>
+  <block id="a42c5a3e72e626b0102050296595b5f6" category="paragraph">命令會產生兩個提示字元、並顯示Proxy項目所需的格式。第一個提示字元可讓您指定HTTP Proxy、第二個提示字元則可讓您指定HTTPS Proxy。</block>
+  <block id="6078750bfcc811063bfb2a2ceaba55e2" category="paragraph">請使用以下格式輸入HTTP Proxy：「http://user:password@proxy-server:proxy-port`」</block>
+  <block id="565c0cc9c79be5003d947c57c93b6855" category="paragraph">如果網際網路存取不需要HTTP Proxy、請保留空白。</block>
+  <block id="264420168f7168ebab16ddf30346c7b2" category="list-text">網路啟動後、請等待約5分鐘、讓系統更新並啟動。</block>
+  <block id="421c75e0d71b645e17e0c5021c658416" category="paragraph">代理程式運作時、主控台會顯示廣播訊息。</block>
+  <block id="babc70026f560cfa0d6c61295c5225d6" category="list-text">從代理程式執行下列CLI命令來驗證連線能力：</block>
+  <block id="a2daedf39c86073e7c4cd232bfbd100e" category="paragraph">如果命令失敗、請驗證DNS設定。代理程式虛擬機器必須具備有效的DNS組態、而且能夠連絡csa.netapp.com。</block>
+  <block id="427cb0ec1b7b1f159c664b2e33c2ab42" category="section-title">在代理程式上安裝SSL憑證</block>
+  <block id="ffaa787fcbf7a79905f4077f8a8c365a" category="paragraph">選用：如有需要、請在代理程式上安裝SSL憑證。</block>
+  <block id="ec184748fa512f7e90e12fac5d2da94f" category="paragraph">當虛擬機器初次開機時、代理程式會建立自我簽署的憑證。必要時、您可以刪除該憑證並使用自己的SSL憑證。</block>
+  <block id="befa1cf57e6e8a9ac1352c5e81a8ed05" category="paragraph">整合式系統顧問支援下列功能：*任何與OpenSSL 1.0.1版或更新版本* TLS 1.1及TLS 1.2相容的加密器</block>
+  <block id="f28c30feee14e0e3a4891672e11903c9" category="list-text">登入代理程式的虛擬機器主控台。</block>
+  <block id="146553325b51e54bcf0792d1cf4e39a1" category="list-text">瀏覽至：/opt/ca/certs</block>
+  <block id="760317b4e4066ad5978fae4a5b173735" category="list-text">刪除代理程式所建立的自我簽署憑證。</block>
+  <block id="3f40ebc6677d56438abc875acca060ee" category="list-text">貼上您的SSL憑證。</block>
+  <block id="9ead19f5a06efd01e02fd83050e576f0" category="list-text">重新啟動虛擬機器。</block>
+  <block id="92a159a5819ea2a230346fe9a8561216" category="section-title">設定代理程式以探索FlexPod 您的資訊基礎架構</block>
+  <block id="a93da1113a93232875b14fb26869da02" category="paragraph">您必須將代理程式設定為從FlexPod 您的融合式基礎架構中的每個裝置收集組態資料。代理程式需要認證資料才能收集組態資料。設定代理程式時、您必須提供認證資料。</block>
+  <block id="d6649c6eb0292890a97eb268a7e94af9" category="list-text">開啟網頁瀏覽器、然後輸入代理虛擬機器的IP位址。</block>
+  <block id="bf8b4438caf3a61a994abe5231b39201" category="list-text">使用客戶的NetApp Support Site帳戶使用者名稱和密碼登入代理程式。</block>
+  <block id="e6b0b23d462e5d837da86ce23da0f93d" category="admonition">對於代表客戶部署CSA授權版本的任何合作夥伴而言、在此步驟中使用客戶帳戶（適用於NetApp支援與記錄管理）是非常重要的。</block>
+  <block id="7608393b2da1bb3b5d734c44470e02be" category="list-text">新增FlexPod 您希望代理程式探索的元件。</block>
+  <block id="fd6f3efc498de1b121d4286a7865dda4" category="paragraph">您有兩種選擇：</block>
+  <block id="1364b2acff150024c37f0452146b6d84" category="list-text">按一下*「Add a devices*（新增裝置*）」、逐FlexPod 一輸入有關您的各種不完整功能的詳細資料。</block>
+  <block id="c750134cf0be6481ba8ff6528300b71a" category="list-text">按一下*匯入裝置*以填寫並上傳內含所有裝置詳細資料的CSV範本。</block>
+  <block id="458a6d581be6d26cc492ea80b79c1cd9" category="paragraph">請注意：*使用者名稱和密碼應適用於您先前為裝置建立的帳戶。*如果您的UCS環境已設定LDAP使用者管理、則必須在使用者名稱之前新增使用者的網域。例如：local\CSA唯讀</block>
+  <block id="ee74ecd3efa95b8078ceb5dc392b12fd" category="inline-image-macro">在「Status（狀態）」欄中以綠色勾號顯示每個所需的裝置。</block>
+  <block id="ed3bafb82e73ad72d2174d40ff5e566e" category="paragraph">表格中的FlexPod 每個裝置都應顯示勾選標記。<block ref="7e0f6190afd11994fbf2acbbb620f788" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3b2546b817f28d703c31d7aed00be35b" category="summary">如果您在使用Converged Systems Advisor時遇到問題、下列資訊可能有助於您解決問題。</block>
+  <block id="463cc44c201d5ae719550157ac2a413b" category="doc">疑難排解融合式系統顧問</block>
+  <block id="428d0d725fffa01833d1c1657a9cc053" category="section-title">您無法透過網頁瀏覽器連線至代理程式</block>
+  <block id="1bcbf11c77c23773c9cd5195b4d8ac35" category="paragraph">您需要透過網頁瀏覽器連線至代理程式、才能設定FlexPod 探索您的各項功能。如果您無法透過網頁瀏覽器連線、請確定代理程式已連至csa.netapp.com的傳出網際網路連線。代理應用程式無法在沒有網際網路連線的情況下啟動、這會使您無法存取其網路介面。</block>
+  <block id="8304febf8351132b2b9a821976ba71e7" category="inline-link-macro">設定代理程式虛擬機器以使用它</block>
+  <block id="188d24abd8a88712d74796685ffaa46e" category="paragraph">如果需要Proxy伺服器才能存取網際網路、 <block ref="d49ad811ca1415593c51e7dfbe6a5e10" category="inline-link-macro-rx"></block>。</block>
+  <block id="7b88f77ca44f1eb0b8273fa36ebbb216" category="section-title">代理程式無法探索裝置</block>
+  <block id="d80389ce860d30c8106b32799e3e3061" category="paragraph">如果代理程式無法找到FlexPod 某個功能不實的裝置、請確認下列事項：</block>
+  <block id="52a6ce76970c0a52517ae2b898732a02" category="list-text">確認代理程式已開放連線至每FlexPod 個不知道的裝置。</block>
+  <block id="60bf94fc90364efe96c1ada472fecdd1" category="paragraph">若要驗證、請從代理程式ping每個裝置。</block>
+  <block id="286407c3fa4f709f217f24946aae87f3" category="list-text">驗證本地網路是否使用172.17.x.x子網路。</block>
+  <block id="eb093e4c122374d8c203c9c40f0afc9a" category="paragraph">代理程式會在內部使用172.17.x.x子網路。如果本機網路使用相同的子網路、則您必須變更代理程式的子網路：</block>
+  <block id="44c57355f2137f5740ef1cdb5f9c7035" category="paragraph">預設使用者名稱為「CSA」、預設密碼為「NetApp」。您應該在登入後變更預設密碼。</block>
+  <block id="8ab2a3d62ebd7af039152e14f12d58ac" category="list-text">使用下列內容新增檔案「/etc/Docker / daemon.json」：</block>
+  <block id="ea680b088905eba82105c090c1d63e93" category="paragraph">bip位址可以是任何不衝突的IP位址。它不需要在172範圍內。</block>
+  <block id="c93bb56c92330fc7f15bdb5f83e6cebc" category="list-text">重新啟動虛擬機器。</block>
+  <block id="b36869091223af043b61346977f2e3d7" category="section-title">無法使用SSH連線至代理VM</block>
+  <block id="ce5f0b7deafe1859b1b53204e08d13e5" category="paragraph">代理VM的SSH預設為停用。</block>
+  <block id="a3902f858969f391d50709c249064a7c" category="list-text">若要啟動SSH、請透過vCenter的主控台登入代理VM、然後執行下列命令：</block>
+  <block id="44a23a7131a2e87264023226122897b4" category="paragraph">「Udo su」「stystemcl start ssh」</block>
+  <block id="1f697227c3ddcc4288f43237b393d856" category="list-text">若要檢查SSH是否已啟用、請執行下列命令：</block>
+  <block id="5285394e5834a03059adcf3a5c96ba35" category="paragraph">「ystemctl is -enabled_ssh」</block>
+  <block id="efbf3282c28d88b8f4ac719755b8f812" category="list-text">若要檢查代理VM上的SSH狀態、請執行下列命令：</block>
+  <block id="e8088ad97b5eacf66e0007a17928a4b0" category="paragraph">「ystemctl狀態ssh」</block>
+  <block id="7153dae840d94fd333315e2381595ab1" category="list-text">若要讓SSH在重新開機後持續運作、請執行下列命令：</block>
+  <block id="d334971ac8733188439f1850f5f8bfc3" category="paragraph">「Udo su」「stystemcl enable ssh」</block>
+  <block id="b689686306a7a611fc6499acdfee3772" category="summary">融合式系統顧問會驗證FlexPod 您的支援基礎架構部署、並提供持續監控和通知、確保營運不中斷。</block>
+  <block id="4daf49986af67aba8f5e944968d88167" category="doc">融合式系統顧問總覽</block>
+  <block id="b3072b853bb7e155aaf1f74dc7548418" category="paragraph">觀看下列影片、瞭解整合式系統顧問的總覽：</block>
+  <block id="fccce43bca628d5f348a9d60196dd5ac" category="inline-link">閱讀資料表</block>
+  <block id="c4a6f4e43c995f810acb8c7b73e0d5d1" category="paragraph">如需更多有關融合式系統顧問所提供價值的詳細資訊、<block ref="f25cd14a6ee6a3fdd35c3bb14df6ae32" category="inline-link-rx"></block>。</block>
+  <block id="84337504add563b4ec594010634eff77" category="summary">需要授權才能在Converged Systems Advisor中解鎖功能。您可以針對FlexPod 每個融合式基礎架構、從幾個授權選項中進行選擇。</block>
+  <block id="794df3791a8c800841516007427a2aa3" category="cell">授權</block>
+  <block id="98f770b0af18ca763421bac22b4b6805" category="cell">功能</block>
+  <block id="6f1bf85c9ebb3c7fa26251e1e335e032" category="cell">條款</block>
+  <block id="9654f0c8da8f367f3742a2c03f71cdd5" category="cell">無授權</block>
+  <block id="6c05ba238f74e7e5841e247c02782965" category="paragraph">展示產品功能的限制版本：</block>
+  <block id="13fb576ab15b58ff9f2c42c2ca9fba59" category="list-text">監控FlexPod 24小時試用期的支援功能</block>
+  <block id="8b88eb36420b3734f1a32cc92729f737" category="list-text">健全狀況儀表板、可檢視FlexPod 符合最佳實務規範的情況</block>
+  <block id="5c94f844e0c2aa342c0fc3c39b222f44" category="list-text">有限的庫存與補救（以授權版本提供）</block>
+  <block id="b24ce0cd392a5b0b8dedc66c25213594" category="list-text">免費</block>
+  <block id="41108d73c7c8c7e5306ab8252c1fee46" category="list-text">單次使用（24小時）</block>
+  <block id="eb6d8ae6f20283755b339c0dc273988b" category="cell">標準</block>
+  <block id="d812b7d7941c1b7e96f8c371e1b23668" category="list-text">持續監控FlexPod 不間斷的功能</block>
+  <block id="7d841c4ea708b59b4c75cfe062d368ff" category="list-text">運算、網路、儲存設備和Hypervisor的韌體互通性</block>
+  <block id="04d40b337323b71473e55502652986f0" category="list-text">生命週期管理工具、可識別變更並防止組態移轉</block>
+  <block id="7aedb869ed87ea13dba5ebd6c35b375a" category="list-text">詳細的詳細目錄與系統圖表、以供進階疑難排解之用</block>
+  <block id="3f0ea683d61b7d4cab7f17b7ca918290" category="list-text">由NetApp直接提供支援</block>
+  <block id="8a8d17b8bc23dd596aa82fa82f407a6e" category="paragraph">訂購型授權：</block>
+  <block id="ecd2535bf841c57eafcac599e5fb523e" category="list-text">最少12個月</block>
+  <block id="b9b5754ccad548be3f9f4b58d1234564" category="list-text">最多60個月</block>
+  <block id="8d5e7e72f12067991186cdf3cb7d5d9d" category="cell">優質</block>
+  <block id="9c014c91b2b7fffa5bffd53c69726d82" category="paragraph">Standard授權內含的所有功能、加上：</block>
+  <block id="c5562ce2e22a86c247849904ecef3dc8" category="list-text">報告</block>
+  <block id="ba4e88caeeb0ee1bb85ccef6dc858be5" category="paragraph">全面、即時報告FlexPod 功能、包括健全狀況、互通性和庫存</block>
+  <block id="3ee2dd0d0cd3925e0e213578441f88ac" category="list-text">通知與警示</block>
+  <block id="b861373e1977a76436240aebcf8a34e0" category="paragraph">定期通知組態健全狀況和狀態變更</block>
+  <block id="6ee6d9fef76364b6211226d197ecc12d" category="summary">若要開始使用、請設定FlexPod 適用於各種不適用設備的帳戶。</block>
+  <block id="763bff2d0a7510e1f497deffa1445dc8" category="doc">建立FlexPod 客戶帳戶以供使用</block>
+  <block id="b73ab54ffa874225e874120d5e960d8d" category="paragraph">若要開始使用、請設定FlexPod 適用於各種不適用設備的帳戶：</block>
+  <block id="3b96bcbc483e9dd6bc3de826b5ffebb4" category="list-text"><block ref="198faeb348646b73e8da0473fcbe5455" category="inline-xref-macro-rx"></block></block>
+  <block id="dcc7b585896b920ed248bedc33fd4226" category="list-text"><block ref="81f1ba78fc4860b0c6197cc3de611053" category="inline-xref-macro-rx"></block></block>
+  <block id="0aa7c76a9a217ac66f5c793b6cb1779f" category="list-text"><block ref="2b75336c52fd5d571ce4755e5e6519ea" category="inline-xref-macro-rx"></block></block>
+  <block id="9d3cabb8bde54e4363132768c56ce892" category="list-text"><block ref="846474009d05c567cc71d50a068b3621" category="inline-xref-macro-rx"></block></block>
+  <block id="2bc3d9e6e8aac0760ec9c02e91515774" category="list-text"><block ref="eff313783d36eafeb3b0aebc4c097d24" category="inline-xref-macro-rx"></block></block>
+  <block id="c5a6e959bd6cf63be1fd9acf96a06c5c" category="list-text"><block ref="bc9cf9da7b1de83caf24ede548f23300" category="inline-xref-macro-rx"></block></block>
+  <block id="3f797dc0f189f9b373d1432af32b220f" category="paragraph">代理程式會使用這些帳戶從每個裝置收集組態資訊。</block>
+  <block id="2099da3d792d28b71a89dc894beb5412" category="section-title">為Cisco UCS Manager建立唯讀帳戶</block>
+  <block id="d0a91502d061d00cbb9e6dc6cffd77d8" category="list-text">登入Cisco UCS Manager。</block>
+  <block id="6096415620060705d9595c8fcdea6a16" category="list-text">建立名為_CSA-readonly的本機驗證使用者。</block>
+  <block id="8b21b866bd2a7de4e562a060cc292063" category="admonition">所有新使用者預設為唯讀。</block>
+  <block id="3d69dc5441492f15abb95321c2cc1ada" category="section-title">為Nexus交換器建立唯讀帳戶</block>
+  <block id="c2b8d6852be42f06f88b0c3fbbc5422e" category="list-text">使用SSH或Telnet登入每個Nexus交換器。</block>
+  <block id="3b38f09e87b817db54392ca6b1472e1e" category="list-text">進入全域組態模式：</block>
+  <block id="4f043b26c1328f0930d8b487af491e8a" category="inline-link-macro">使用TACACS +伺服器授予CSA使用者權限</block>
+  <block id="ec376469ee262b680d7560c874cb55d3" category="paragraph">如果您使用的是TACACACSA+伺服器、而且需要授予CSA使用者權限、請前往 <block ref="5dddc1466e8f7274f5d10e745bddaa1c" category="inline-link-macro-rx"></block>。</block>
+  <block id="441b67283784cf29a2752c9221d9104d" category="section-title">建立ONTAP 管理員帳戶以供使用</block>
+  <block id="2eb574bbc5428e7dea15be69deaa1c65" category="list-text">登入OnCommand 「32劃」系統管理程式、然後按一下「設定」圖示：</block>
+  <block id="ff04c64278a2550f801d1574ac8721bb" category="inline-image-macro">System Manager中的設定圖示。</block>
+  <block id="f75f73a91fb7e1b449135d8a270ae45d" category="paragraph"><block ref="8402a9390d1a047bb229c69f6d499dcc" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="a3bb348ea680d62531cc238832ec85a9" category="list-text">在「使用者」頁面上、按一下「*新增*」。</block>
+  <block id="420a2546a3b1365ceef517f1c2fbedff" category="list-text">輸入使用者名稱和密碼、並將* ssh *、* ontapi*和*主控台*新增為具有管理存取權限的使用者登入方法。</block>
+  <block id="8bdd45b91a31a8690735acc4dc31dd7c" category="inline-image-macro">顯示System Manager中的「Add User」（新增使用者）畫面、其中新ONTAP 的使用者具有ssh和ontapi權限。</block>
+  <block id="635784ac2bb89e09681e74e579ca8fcb" category="paragraph"><block ref="635784ac2bb89e09681e74e579ca8fcb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d50762e2e2ae9423f1ddc5c966abf6f8" category="section-title">為VMware建立唯讀帳戶</block>
+  <block id="8ab62d7f9f3a4115127d107eb3bb968e" category="list-text">登入vCenter。</block>
+  <block id="b49e1321d03903b7162f038b7d1172a4" category="list-text">在vCenter功能表中、選擇*管理*。</block>
+  <block id="0fe0ca267ec8a3414939edcddc2655f8" category="list-text">在「角色」下、選擇*唯讀*。</block>
+  <block id="0f1e92f24deba3a45e3d35cf0d9904e7" category="list-text">按一下「* Clone role action *（*複製角色動作*）」圖示、並將名稱變更為* CS*。</block>
+  <block id="1bb04863ceac05afe9ad4fdad53ae507" category="list-text">選取新建立的* CS*角色。</block>
+  <block id="1fa75ccc3b524ebb284b414f693d9ea3" category="list-text">按一下*編輯角色*圖示。</block>
+  <block id="530c373900375f89da032a2be406339b" category="list-text">在「*編輯角色*」下、選擇「*全域*」、然後勾選「*授權*」。</block>
+  <block id="c1c72f117598ab72cba25e02bccc6ce1" category="list-text">在側邊列上、選取*單一登入-&gt;使用者與群組-&gt;建立新的使用者*。</block>
+  <block id="6bc62772cb888790f62ed044695c938b" category="list-text">將新使用者* CSARO*命名為網域vpshere.local。</block>
+  <block id="f0492f189d9f3e559364e7a80d965b66" category="list-text">在側邊列的「*存取控制*」下、選取「*全域權限*」。</block>
+  <block id="c4d670cd7c54761045ecf7ea7b25881d" category="list-text">選擇使用者* CSARO*並指派角色* CS*。</block>
+  <block id="be4288b6ed1d0ecfaaf07da5641ac434" category="list-text">登入Web Client。</block>
+  <block id="e28a0e6a0ac7170c91b6d87fdc748f98" category="paragraph">使用使用者ID：* CSARO@vple.1*及先前建立的密碼。</block>
+  <block id="7be11821733a031669f85a1a5370ba38" category="section-title">在APIC上建立唯讀帳戶</block>
+  <block id="633f9fb33a1388464d4bf0b5da121e14" category="list-text">按一下*管理*。</block>
+  <block id="3a8f71da9eee0ee42f05f2f8d1d0f8f2" category="list-text">按一下「*建立新的本機使用者*」。</block>
+  <block id="e291dc9a4f7b47bba8f92fc5d0e3dde4" category="list-text">在*使用者識別*下、輸入使用者資訊。</block>
+  <block id="4f92120b362aa5d46fe2dd945e59a62b" category="list-text">在「*安全性*」下、選取「所有安全性網域選項」。</block>
+  <block id="67af9425d7e9ad7680fec5bf53372882" category="list-text">如有需要、請按一下「*+*」以新增使用者憑證和SSH金鑰。</block>
+  <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">單擊 * 下一步 * 。</block>
+  <block id="0dc0ee3389edaea118e1a45a6903949a" category="list-text">按一下「*+*」以新增網域的角色。</block>
+  <block id="0cc4bd8e3fd7dbb38ce965c9c9e4ecfc" category="list-text">從下拉式功能表中選取*角色名稱*。</block>
+  <block id="250e8d621353745811bcc80cd5d064bb" category="list-text">選擇*讀取*作為*角色權限類型*。</block>
+  <block id="1859e92122e266181cafb9c13d7400a0" category="list-text">單擊*完成*。</block>
+  <block id="9594abb61036587b970df022c2515a6e" category="paragraph">如果您使用的是TACACAC2+伺服器、而且需要為交換器授予CSA使用者權限、則應建立使用者權限群組、並授予群組存取CSA所需的特定設定命令的權限。</block>
+  <block id="85ad73480f819de59e2df469c4b46dc4" category="paragraph">下列命令應寫入TACACacs+伺服器的組態檔中。</block>
+  <block id="8e8c3bcc7746453643cf1bcd798bfab0" category="list-text">輸入下列命令、以建立具有唯讀存取權的使用者權限群組：</block>
+  <block id="a00ed1ca8e2bff8f5a9a44d1f182e66d" category="list-text">輸入下列命令、以授予CSA所需命令的存取權限：</block>
+  <block id="164354e7a574442b2d5ff39fd82a9775" category="list-text">輸入下列項目、將CSA使用者帳戶新增至新建立的群組：</block>
+  <block id="ade2db7ff69f464a3b4134ab103d943b" category="summary">融合式系統顧問是軟體即服務（SaaS）平台、由內部部署代理程式和雲端型入口網站組成。</block>
+  <block id="77a689c1bae0e53995786b80a8e17081" category="doc">融合式系統顧問的運作方式</block>
+  <block id="0a00ece35e033d1841a339c210e04460" category="paragraph">下圖顯示融合式系統顧問元件之間的關係：</block>
+  <block id="21662a34f2c5913ae9ffdfc6a87df49d" category="inline-image-macro">概念性圖表顯示FlexPod 資料中心內安裝的一套功能完善的整合式系統顧問代理程式、以及雲端型入口網站。</block>
+  <block id="15141ad14b4848210c9524f5d11800b6" category="paragraph"><block ref="15141ad14b4848210c9524f5d11800b6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ee3f80be147065bd8cb81d11a0fb5bb8" category="list-text">位於內部部署的Converged Systems Advisor代理程式會使用FlexPod 您提供的認證資料、從融合式基礎架構收集組態資料。</block>
+  <block id="5d64a5d6c8d20705c06e727402864f7a" category="list-text">代理程式會將資料傳送至Converged Systems Advisor入口網站。</block>
+  <block id="adcb1449e4f973f9450c864800b1b9c7" category="list-text">使用者使用網頁瀏覽器登入融合式系統顧問入口網站、以驗證、監控及最佳化FlexPod 其融合式基礎架構。</block>
+  <block id="e6fd1f675823f4d8c0538e7f54e2e725" category="inline-link-macro">瞭解融合式系統顧問如何確保資料安全無虞</block>
+  <block id="4c4f62ffb153bddcdb3f3b3c38e73c3b" category="paragraph"><block ref="c922e371de9560d3839bd4c1500caf95" category="inline-link-macro-rx"></block>。</block>
+  <block id="76349c2170a5e8f7ab2e2e2ce564165d" category="summary">若要開始使用融合式系統顧問、您必須準備好環境、安裝及設定代理程式、並將融合式基礎架構新增至入口網站。</block>
+  <block id="7e156a5779175bc209a90f37db31f6e0" category="doc">開始使用融合式系統顧問</block>
+  <block id="0c6612b13f695372bd37700714ed1430" category="paragraph">若要開始使用融合式系統顧問、您必須準備好環境、安裝及設定代理程式、並將融合式基礎架構新增至入口網站。</block>
+  <block id="9c76809ba74f487564d81d73527b3fe2" category="inline-link-macro">瞭解融合式系統顧問的運作方式</block>
+  <block id="ebd37a66dc59778d2804027afa1f58a5" category="paragraph">您可能會想要 <block ref="771043ac6a9633eb387c627af684f340" category="inline-link-macro-rx"></block> 開始之前。</block>
+  <block id="713856a9e25b955fc362c74ba01c8c73" category="paragraph">準備您的環境包括驗證組態支援、為代理程式建立帳戶、以及註冊NetApp支援網站帳戶。</block>
+  <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp 互通性對照表工具</block>
+  <block id="acae4ba9c958f18bf1b49e96b4af9738" category="list-text">在中驗證支援<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>：</block>
+  <block id="41a3fbf39e4637ff6ae392a274957047" category="list-text">驗證融合式系統顧問是否支援FlexPod 您的融合式基礎架構。</block>
+  <block id="68bbe7c77d8372a4b1f52aca16c1d943" category="list-text">確認您擁有支援的VMware ESXi伺服器、適用於Converged Systems Advisor代理程式。</block>
+  <block id="bc7fdfa6747d9e82b4939e6908125106" category="paragraph">為將頻寬使用量降至最低、NetApp建議將代理程式安裝在FlexPod 與融合式基礎架構相同的資料中心。</block>
+  <block id="5ac5af6f1a6d7ab3113bf48bce81f5b0" category="list-text">確保安裝代理程式的網路允許元件之間連線：</block>
+  <block id="0c44c7a8e009741e355249ae724ea5bf" category="list-text">代理程式必須連線至每FlexPod 個元件、才能收集組態資料。</block>
+  <block id="dbaf3f863e61397546349245ecfbdfa0" category="list-text">代理程式也需要傳出網際網路連線、才能與下列端點通訊：</block>
+  <block id="52bf1942dcfb1c141867def7c2796418" category="inline-xref">在每FlexPod 個元件上建立帳戶</block>
+  <block id="f50dcc97b97d9278ef4fdb3ef6e1da3f" category="list-text"><block ref="42cd4f375d7c524be1664eb35460cb25" category="inline-xref-macro-rx"></block>。</block>
+  <block id="a478c363f47702e06b92b7c1d5f4089c" category="paragraph">代理程式需要認證資料才能收集組態資料。設定代理程式時、您必須提供認證資料。</block>
+  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支援網站</block>
+  <block id="f15b13a8a13824d20ee27e7fa1a637a9" category="list-text">前往<block ref="fcc52edac3ce57829c48ee35d97a295d" category="inline-link-rx"></block> 如果您沒有帳戶、請註冊帳戶。</block>
+  <block id="b3b0d32e083781e38eb5aa3923fbd5b8" category="paragraph">必須有NetApp支援網站帳戶才能設定代理程式及存取入口網站。</block>
+  <block id="d87b78a031b9948c6c89981ce3d89f1b" category="section-title">在FlexPod 不相連的裝置上建立帳戶</block>
+  <block id="0cd05894cf4c7bb8f868ffe1d1290fea" category="paragraph">您必須在Cisco UCS Manager和Cisco Nexus交換器上設定唯讀帳戶。要求提供管理員帳戶才能ONTAP 用於整個系統和VMware。您可以為APIC上的其他使用者設定唯讀存取帳戶。代理程式會使用這些帳戶從每個裝置收集組態資料。</block>
+  <block id="2d8f09b5e52b0c5b7187bbebd4f2579f" category="section-title">為Nexus交換器建立唯讀帳戶</block>
+  <block id="8f3824888496549aad15cdf6df65ad33" category="list-text">使用SSH或Telnet登入每個Nexus交換器。</block>
+  <block id="bedbd0468de13d5fb35dc8cafead626c" category="list-text">建立新使用者：</block>
+  <block id="33779c44170cc34cb1bbefd6d30a5208" category="list-text">儲存組態：</block>
+  <block id="18ee0f6fb35c83513ae3e270c131adf7" category="paragraph">如果您使用的是TACACACSA+伺服器、而且需要授予CSA使用者權限、請前往 <block ref="1f496b11ca6becda819d4556c4ea6608" category="inline-xref-macro-rx"></block>。</block>
+  <block id="275fe1c07e5b801ba6ba209e8429002d" category="section-title">部署代理程式</block>
+  <block id="78101ef6c0779de08b1416b9c3192d77" category="list-text"><block ref="35db1a96bdc74882892c9a3ad7bed133" category="inline-xref-macro-rx"></block></block>
+  <block id="560f339ffbc95c1d9e2bbea8745d7de3" category="list-text"><block ref="fb6f86724092168a486d00273ca30c97" category="inline-xref-macro-rx"></block></block>
+  <block id="afaf395cc9e80eeef6c225888e99a98a" category="inline-xref">如有需要、請在代理程式上安裝SSL憑證</block>
+  <block id="1b38ed85a443a952ad76b68bf23769fa" category="list-text"><block ref="103fd69b0420c45c6e760ec436c53011" category="inline-xref-macro-rx"></block></block>
+  <block id="ce173e4ce871869d4655c419893b22c0" category="list-text"><block ref="206a2ab2cff5047902495fb5dc2a8730" category="inline-xref-macro-rx"></block></block>
+  <block id="ff7b3a545ce0d3e37f3491c0365fd883" category="section-title">下載並安裝代理程式</block>
+  <block id="7c18ca1754eac6117d06a06207ce5382" category="section-title">為代理程式設定網路</block>
+  <block id="6493001546d3670c20983d0c9086630f" category="paragraph">以下是HTTP Proxy的提示：</block>
+  <block id="0c93fbbaac62b215373a9e38e9977f90" category="inline-image-macro">顯示HTTP Proxy提示字元的快照。</block>
+  <block id="602bfc44630c83752cb212e8e3fa3034" category="paragraph"><block ref="602bfc44630c83752cb212e8e3fa3034" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="19f77703ec1a53feaa16f7a9751f0a54" category="section-title">在代理程式上安裝SSL憑證</block>
+  <block id="9533f62043c0f6a64722739ba689fbd0" category="paragraph">融合式系統顧問支援下列項目：</block>
+  <block id="aca50f4ea5e538572c25e7ef1c877f50" category="list-text">任何與OpenSSL 1.0.1版或更新版本相容的密碼</block>
+  <block id="014f10162fac6ab78ea8f52a63b4b609" category="list-text">TLS 1.1與TLS 1.2</block>
+  <block id="c9b14be3bee9b401f753a94ca3ded907" category="section-title">設定代理程式以探索FlexPod 您的資訊基礎架構</block>
+  <block id="cce04dd5930e941a442176af284fb516" category="paragraph">您必須將代理程式設定為從FlexPod 您的融合式基礎架構中的每個裝置收集組態資料。</block>
+  <block id="6fe5959541c89cbce478c554777ac5d8" category="list-text">輸入NetApp Support Site帳戶的使用者名稱和密碼、即可登入代理程式。</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意下列事項：</block>
+  <block id="6624e3ce2082bff6a9538a57b6e135ac" category="list-text">使用者名稱和密碼應適用於您先前為裝置建立的帳戶。</block>
+  <block id="6e4517322a6a78e6e22096c260aea198" category="list-text">如果UCS環境已設定LDAP使用者管理、則必須在使用者名稱之前新增使用者的網域。例如：local\CSA唯讀</block>
+  <block id="64c2f93dc8ddeec207e25d7b17093c26" category="paragraph">表格中的FlexPod 每個裝置都應顯示勾選標記。</block>
+  <block id="7e0f6190afd11994fbf2acbbb620f788" category="paragraph"><block ref="7e0f6190afd11994fbf2acbbb620f788" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="91dd7b0081abea60a0763bc35637f5ba" category="section-title">將基礎架構新增至入口網站</block>
+  <block id="09482af74c0fb235cb990c21fd64ac8a" category="paragraph">設定代理程式之後、它會將每FlexPod 個功能相關的資訊傳送到Converged Systems Advisor入口網站。您現在必須選取入口網站中的每個元件、以建立整個可監控的基礎架構。</block>
+  <block id="6143810a5758d40ca944c87e723c2336" category="list-text">在中<block ref="eb9f0f7fac75ca880e49216162865e36" category="inline-link-rx"></block>，單擊* Add Infrastructure*（添加基礎架構）。</block>
+  <block id="b6fc266df6b5347cf745a3bb726ee8fb" category="list-text">完成新增基礎架構的步驟：</block>
+  <block id="e5995527f37c1280c19b1f208371dc88" category="list-text">輸入基礎架構的基本詳細資料。</block>
+  <block id="3f1895854fcfd3f43e655e98f5e23785" category="paragraph">如果您要新增Cisco ACI基礎架構、請在詢問FlexPod 您是否使用Cisco UCS Manager時輸入* yes *、並在詢問FlexPod 您所用的網路組態類型時、以ACI模式*輸入* Nexus交換器。</block>
+  <block id="b0b7f31250da7bf765e10779d0365272" category="list-text">選取FlexPod 屬於「樣」組態的每個裝置。</block>
+  <block id="c7151a24306478a168450ab965978056" category="admonition">當您選取裝置時、「資格」欄會顯示*「合格*」或*「不合格*」。如果裝置被其他代理程式發現、則該裝置不符合資格。</block>
+  <block id="775d2ba16d79b874e995444c31ce184d" category="paragraph">選取所有必要元件之後、您應該會在每個裝置類型旁看到綠色勾號。</block>
+  <block id="a00e5d02f688427a8d0d4d44e6ca5323" category="inline-image-macro">顯示表格中選取的四個裝置、以及每個裝置的綠色勾號、表示您已選取所有必要元件。</block>
+  <block id="619835ed3a90c1cb330d44e60f8274be" category="paragraph"><block ref="619835ed3a90c1cb330d44e60f8274be" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab6978789cc8f83bdbe9c52865c923d2" category="inline-link-macro">融合式系統顧問序號</block>
+  <block id="8cbaf181bdfa1c67af784fdd2194eaa5" category="list-text">新增您的 <block ref="f595728f50d76ab728ff7bd8910a61b2" category="inline-link-macro-rx"></block> 解除鎖定金鑰功能。</block>
+  <block id="797a00180da92226080260f480aefccc" category="list-text">檢閱摘要、接受授權合約條款、然後按一下*「Add Infrastructure*（新增基礎架構*）」。</block>
+  <block id="4bf1a4af8a8cb8351b634079b83482c9" category="paragraph">融合式系統顧問將基礎架構新增至入口網站、開始收集每個裝置的組態資料。等待數分鐘、讓代理程式從裝置收集資訊。</block>
+  <block id="8b130f5642a0375b57405ab988e2f3c8" category="section-title">與其他使用者共用基礎架構</block>
+  <block id="b68d29191b4bf17413d0de2fb367a174" category="paragraph">共享融合式基礎架構可讓其他人登入融合式系統顧問入口網站、以便檢視及監控組態。與您共用基礎架構的人員必須擁有<block ref="fcc52edac3ce57829c48ee35d97a295d" category="inline-link-rx"></block> 帳戶。</block>
+  <block id="b757778aa184cb17827f163a931435c8" category="list-text">在Converged Systems Advisor入口網站中、按一下*設定圖示*、然後按一下*使用者*。</block>
+  <block id="1334f18240a22161ba3220b536dafca8" category="inline-image-macro">顯示設定功能表、其中包含「使用者」頁面的連結。</block>
+  <block id="3309334356038ffefd55e44fd5bdf676" category="paragraph"><block ref="3309334356038ffefd55e44fd5bdf676" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3b855a8cec281d1ddcd757db875bf3d" category="list-text">從「使用者」表中選取組態。</block>
+  <block id="b7a1706b38d181dd429f28a8d8b01a9a" category="inline-image-macro">共用基礎架構的圖示。</block>
+  <block id="b6dc779a70da38c6a44e7e3ac6b8c105" category="list-text">按一下 <block ref="1298afe1dc7b9f75c44b6fc7c17da58f" category="inline-image-macro-rx" type="image"></block> 圖示。</block>
+  <block id="08db01e9434b8967d82716afd99a12da" category="list-text">在您要提供的使用者角色旁輸入一或多個電子郵件地址。</block>
+  <block id="38d0e6accfd7998dd4374f37ab584784" category="inline-link-macro">檢視每個角色之間的差異</block>
+  <block id="c8b1c03512472d09b840b43806763819" category="paragraph"><block ref="9a80d53ca716b5bdc550d031e48e1f7b" category="inline-link-macro-rx"></block>。</block>
+  <block id="877183fb9a9e175360206e3b5c15f472" category="admonition">您可以在單一欄位中輸入多個電子郵件地址、方法是在第一個電子郵件地址之後按* Enter *。</block>
+  <block id="2939fe6c5b77679da5984bbe596d4b9a" category="list-text">按一下*傳送*。</block>
+  <block id="27d99b7c3e654fa561ca825398cd698b" category="paragraph">使用者應收到一封電子郵件、其中包含存取Converged Systems Advisor的指示說明。</block>
+  <block id="62a7d89267f8f25ef4b1bd80b1bb9b82" category="paragraph">如果您使用的是TACACAC2+伺服器、而且需要為交換器授予CSA使用者權限、則必須建立使用者權限群組、並授予群組存取CSA所需的特定設定命令的權限。</block>
+  <block id="fc0cbb5a7205b6cf0664d8b69726908a" category="list-text">輸入下列命令以建立具有唯讀存取權的使用者權限群組：Group=Group_name｛Default service=deny service=exec{priv-lvl=0｝</block>
+  <block id="bdc54b3290834bff5f9c73e4644958ce" category="list-text">輸入下列命令、以授予CSA所需命令的存取權限： cmd = show｛permit "enie" permit "version " permit "feature " permit "feature-set " permit hardware。*允許「介面」允許「介面」允許「介面收發器」允許「詳細目錄」允許「模組」允許「連接埠通道資料庫」允許「mgmtpeers」允許「license usage」允許「port-channel摘要」允許執行「執行「執行「mgmt-config」允許」允許」允許「mgmt-int」允許「允許」允許」允許執行「mgmt-config允許「允許」允許」允許「允許」允許「允許」允許」允許 「CDP鄰近詳細資料」允許「VLAN」允許「VPC」允許「VPC對等保留」允許「Mac位址表」允許「LACP連接埠通道」允許「原則對應」允許「原則對應系統類型QoS」允許「原則對應系統類型佇列」允許「原則對應系統類型network-QoS」允許「區域集作用中」允許「san連接埠fgc」允許「fgc」資料庫「fgc」允許「 允許「區域集作用中」允許「vSAN」允許「vSAN使用量」允許「vSAN成員資格」｝</block>
+  <block id="73a4aebaeec211620a602108d2b9404c" category="list-text">輸入下列命令、將您的CSA使用者帳戶新增至新建立的群組：user=user_account｛member=group名稱login=file/etc/passwd｝</block>
+  <block id="e7d336fd675578d55b211bb25a960940" category="section-title">設定通知</block>
+  <block id="af30d3755f96862e145057d908a2e786" category="paragraph">如果您擁有Premium授權、Converged Systems Advisor可以FlexPod 透過電子郵件通知、提醒您有關變更您的功能。</block>
+  <block id="cd34eac38f2c4b9f2103eda33482b061" category="list-text">在Converged Systems Advisor入口網站中、按一下*設定圖示*、然後按一下*警示設定*。</block>
+  <block id="4e6aad27476e9fe331f476974ff873e5" category="list-text">請檢查您想收到的通知、以瞭解擁有Premium授權的每個融合式基礎架構。</block>
+  <block id="d498146c1e8ccfa027b0be4e0ec6c938" category="paragraph">每個通知都包含下列資訊：</block>
+  <block id="51931057b0a67bf82ab417b2870f3a3c" category="list-text">收集失敗</block>
+  <block id="4596170a0369f156d6a5f2091e13b52a" category="list-text">當融合式系統顧問無法從融合式基礎架構收集資料時、會發出警示。</block>
+  <block id="7abf3c6257605cebf46fa1d1dfb7f567" category="list-text">離線代理程式</block>
+  <block id="f0a59a4f9d275170a08a14a81258c126" category="list-text">當整合式系統顧問代理程式不在線上時發出警示。</block>
+  <block id="3b0e647e86cb4c7b03e82d277f5f75b6" category="list-text">每日警示摘要</block>
+  <block id="e50c05288bdcd3e7f9ac99e37a5935f4" category="list-text">提醒您前一天發生的規則失敗。</block>
+  <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">按一下「 * 儲存 * 」。</block>
+  <block id="e34a46d20515530b01e1c96a225829e4" category="paragraph">現在、融合式系統顧問會將電子郵件通知傳送給與融合式基礎架構相關的使用者。</block>
+  <block id="e518836d5edd45b09ec72b8a2caf2b83" category="paragraph">如果您使用的是TACACAC2+伺服器、而且需要為交換器授予CSA使用者權限、則必須建立使用者權限群組、並授予群組存取CSA所需的特定設定命令的權限。下列命令應寫入TACACacs+伺服器的組態檔中。</block>
+  <block id="2eb056f6c6b223bb3c50b4fcf727d4eb" category="summary">融合式系統顧問會收集FlexPod 有關您的融合式基礎架構的組態資料、以協助您驗證及監控系統。您可能想要瞭解如何收集資料、如何將資料傳輸至NetApp、以及如何確保資料安全且隱私。</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="doc">安全性</block>
+  <block id="0dde8a78d38311a247bbf2fa6af88b26" category="section-title">如何收集資料</block>
+  <block id="74a2c114e006124264aa6d139846b389" category="paragraph">Converged Systems Advisor代理程式需要認證資料才能存取FlexPod 您的融合式基礎架構中的裝置。Cisco UCS和Nexus交換器需要唯讀認證、ONTAP 而需具備管理員認證才能執行此功能。認證資料會加密並儲存在本機的代理程式上、不會傳送到雲端型入口網站。</block>
+  <block id="3d146764dc7da8ff645fe77b5678a05b" category="paragraph">提供認證之後、代理程式會從裝置收集_configuration _資料。_Customer-Data存放在裝置上、永遠不會被存取或傳輸。代理程式所收集的組態資料代表範例包括下列項目：</block>
+  <block id="3b8f7696879f77dfc8c74aa8df8db24b" category="list-text">容量</block>
+  <block id="c9d686789d1b6040c1e28229509dad68" category="list-text">CPU與記憶體</block>
+  <block id="39f32b6d9ba3ada83f10b3e2eec6d54b" category="list-text">裝置連線能力</block>
+  <block id="ba21ed5910360635a1c11252020f1ddc" category="list-text">裝置名稱和ID</block>
+  <block id="25231a54747f5f95826dacef2fa019da" category="list-text">裝置狀態</block>
+  <block id="798084429970e88fa1f49f12b5f60f32" category="list-text">韌體版本</block>
+  <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="list-text">IP位址</block>
+  <block id="df6170f24d35cedf1aade86eb5bf3677" category="list-text">iSCSI目標</block>
+  <block id="f6aca2dcfee051b254bbcb878dc70d09" category="list-text">授權</block>
+  <block id="3f3982b71a0b2c0fc888ae360cac17e0" category="list-text">MAC位址</block>
+  <block id="a2f9557c1ef079d139d75178f75297ad" category="list-text">機型編號</block>
+  <block id="e79c08243e599c00a89a413b1f4a2833" category="list-text">序號</block>
+  <block id="f57b3db31dc3631b0e4002674f7c5224" category="section-title">資料傳輸方式</block>
+  <block id="ce25f4ff29d29c32de78f11e0ead410b" category="paragraph">代理程式從FlexPod 您的融合式基礎架構探索組態資料之後、會使用HTTPS將資料傳送至融合式系統顧問入口網站。通訊會使用NetApp的TLS 1.2憑證進行加密。</block>
+  <block id="397c3a0728520f5f02fedcc4d52ce7d4" category="inline-image-macro">顯示代理程式與入口網站之間的加密HTTPS連線。</block>
+  <block id="925c5ef979c196c708b4af9aed3b0c61" category="paragraph"><block ref="925c5ef979c196c708b4af9aed3b0c61" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b1fdc903c6928dc480b8c082d1319427" category="section-title">資料的安全性和隱私性</block>
+  <block id="9ea2a5555b9f0b48272507704c0bff54" category="paragraph">組態資料位於NetApp網路內、由NetApp IT管理。資料受到資料存取層的保護、需要對每位要求存取的使用者進行正面識別。</block>
+  <block id="f78cd1b36118788b43de167b4accc127" category="paragraph">部署代理程式的使用者可以使用NetApp支援網站帳戶登入、從Converged Systems Advisor入口網站存取資料。此使用者擁有整合式基礎架構的_OOwner_權限。擁有者可授予唯讀、寫入或擁有者權限、與其他使用者共用融合式基礎架構。這些使用者也必須擁有註冊的NetApp支援網站帳戶、才能登入入口網站。</block>
+  <block id="b254250f174f69b5a6865ed48495f383" category="inline-link-macro">檢閱唯讀、寫入和擁有者權限之間的差異</block>
+  <block id="f68fd2bda477ef42116068a57cdb124f" category="paragraph"><block ref="771ba01147318949b5eb029f7646acb8" category="inline-link-macro-rx"></block>。</block>
+  <block id="1fac350b63f9cdd13f2a806c4b0df46c" category="summary">NetApp會定期更新Converged Systems Advisor、為您帶來新功能、增強功能和錯誤修復。</block>
+  <block id="5a78e583f1007c774adcf85474a63773" category="doc">融合式系統顧問的新功能</block>
+  <block id="65d73807e625a264821492e5d4d33a03" category="paragraph">若要確認FlexPod CSA代理程式支援哪些元件、請參閱<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block> （僅限部分）IMT 。</block>
+  <block id="49f34bfa1825e63e5d97c99ba28bc215" category="section-title">2020年7月31日</block>
+  <block id="7f6806da5c10db2d4b7238eff6a3048e" category="paragraph">此版本包含下列增強功能：</block>
+  <block id="1d1dc74e655dfdea0a8ddb51d61996a5" category="list-text"><block ref="1f29bdfefe55e3bb65f3709ed5f0ba05" category="inline-xref-macro-rx"></block></block>
+  <block id="247614e0a41492cd6d4a3eeb5bca6333" category="list-text"><block ref="6a66f062dad1a3503157e2346c820d3c" category="inline-xref-macro-rx"></block></block>
+  <block id="e472339f84111c01e68b8257137a2b22" category="list-text"><block ref="56e3284e19e0b171a2242f210e14f6df" category="inline-xref-macro-rx"></block></block>
+  <block id="47d666e6df1427f5d1fd84e8f73f7230" category="section-title">儲存變更偵測（差異）的新功能</block>
+  <block id="217ff35f7d6b3469892b68928ba39705" category="paragraph">現在您可以偵測儲存系統上發生的變更。若要檢查變更、請從*儲存設備庫存*頁面按一下*檢視組態差異*。然後、選取先前的組態資料和時間、以與最近的儲存組態進行比較。任何已發生的變更都會反白顯示以供快速檢閱。</block>
+  <block id="d12b8ca6afcdf0d8044a82908222bbaf" category="section-title">擴大叢集互連交換器的組態保證</block>
+  <block id="f8046d35bf2bc5985759f821ad3a42eb" category="paragraph">在Converged Systems Advisor入口網站中、已擴充組態保證檢查、以監控ONTAP 下列機型的叢集互連交換支援能力：</block>
+  <block id="1d8bdbbecd2a7992d9b2c5314cbc8da8" category="list-text">Cisco Nexus 3132Q-V</block>
+  <block id="21cefb007c9064d8adcf6c162e74b0bf" category="list-text">Cisco Nexus 3232C</block>
+  <block id="f8215ac1ab39569e2ede8f10c0a8405a" category="list-text">Cisco Nexus 2300YC</block>
+  <block id="85b827a1928acc59a94521cd88bfd8c3" category="section-title">NVMe設計的初始涵蓋範圍</block>
+  <block id="fa5c0cce16f3f3a76bf624862e41bcbd" category="paragraph">我們新增了初始組態保證檢查、以監控ONTAP 在整個過程中支援NVMe儲存設計FlexPod 的能力。</block>
+  <block id="1f060636fe5b0a8ed84fb873b522ba92" category="summary">如果您是NetApp合作夥伴、您可以在執行部署驗證之前、與客戶合作部署代理程式並設定入口網站、開始使用Converged Systems Advisor。</block>
+  <block id="8d10e09bd713073b88005ddecbf5705a" category="doc">合作夥伴的部署驗證報告</block>
+  <block id="62cc019b98cca9e1b65c304991c3dca4" category="paragraph">NetApp合作夥伴可執行部署驗證、以驗FlexPod 證是否正確設定了融合式基礎架構。合作夥伴可將報告交給客戶。</block>
+  <block id="91ab85eefd69d7cffdeaeafa97f57ef0" category="list-text">從「客戶清單」展開客戶的組態。</block>
+  <block id="66b8bcf3d36b277ad8598bfaebbb4a0d" category="inline-image-macro">顯示客戶的三種融合式基礎架構。</block>
+  <block id="436ecfb9b85682461b5bef001b3da4f1" category="paragraph"><block ref="436ecfb9b85682461b5bef001b3da4f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5ebb04ca9d563bbc59f02045e89b0296" category="list-text">在「部署驗證報告」下、按一下「*產生*」。</block>
+  <block id="b2d71063ea8fde5885ee791895d5b980" category="list-text">選擇您要在瀏覽器、PDF或電子郵件中檢視報告。</block>
+  <block id="78bf58d229f9d24f426ff1c4f3828e65" category="list-text">檢閱報告並修正任何互通性問題和部署驗證錯誤。</block>
+  <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 範例 *</block>
+  <block id="a9a2b2fd01902eb7f49cb1c9804e3a26" category="paragraph">在此範例組態中、不支援Nexus交換器的韌體版本：</block>
+  <block id="bb64e3d66337e032632e2ed6ec12ae72" category="inline-image-macro">顯示部署驗證報告的互通性區段。其中包含兩個交換器、但不支援韌體版本。</block>
+  <block id="dd9c33553627d1d3b83629490b10df63" category="paragraph"><block ref="dd9c33553627d1d3b83629490b10df63" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b095a50bfe33e9fe8853f327e3bd8096" category="paragraph">由於交換器連線問題、也有四項驗證規則失敗：</block>
+  <block id="60e4bd0929967950652424f215972c08" category="inline-image-macro">顯示部署驗證報告的「錯誤」區段。Fabric互連不會上行鏈路至對應的Nexus Fibre Channel網路。</block>
+  <block id="31703635dd32ada82bfb46847cbf2dc6" category="paragraph"><block ref="31703635dd32ada82bfb46847cbf2dc6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1f8f0171baa7230cba1d85a6c7319cb" category="paragraph">升級韌體可修正組態的互通性、並新增連結可修正失敗的驗證規則。</block>
+  <block id="3c96b2dab570e1aa3d25891c5dd4535a" category="list-text">修正問題之後、請收集資料以確保Converged Systems Advisor擁有最新的組態資料：</block>
+  <block id="c4502a9584d9a8ef2a0725e38125721e" category="list-text">選取融合式基礎架構。</block>
+  <block id="f3ebaa3a8eccc55285a7255f35ac0959" category="list-text">在右上角、按一下* Collect*。</block>
+  <block id="45fafa74ca5c8a674fae2461dafb1b36" category="inline-image-macro">顯示右上角選取融合式基礎架構後可用的「收集」按鈕。</block>
+  <block id="a8f5313e16a911a45da81a60a5bf3e0f" category="paragraph"><block ref="a8f5313e16a911a45da81a60a5bf3e0f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ee82c853dbac102b9219eea66b5b703c" category="list-text">再次產生報告、確認您已修正問題。</block>
+  <block id="3b44cf4d04f47c573ce4cab54a472577" category="list-text">將最終部署驗證報告傳送給您的客戶。</block>
+  <block id="94e52eed71380953e3f8c1a6475f9c91" category="paragraph">融合式基礎架構現已根據最佳實務做法設定完成。</block>
+  <block id="666dfdc92a9ae18acf492302e071d09e" category="summary">與其他使用者共用融合式基礎架構時、您可以提供唯讀、寫入或擁有者權限。</block>
+  <block id="f4040f71a7d553f2519487070892b115" category="doc">使用者角色</block>
+  <block id="f9736c983077f8f7ecce4803263c835c" category="paragraph">與其他使用者共用融合式基礎架構時、您必須提供唯讀、寫入或擁有者權限。</block>
+  <block id="08a7773f23ba1fab2a1f9f0cc4fd2242" category="paragraph">下表列出每個使用者角色可以執行的工作。</block>
+  <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">工作</block>
+  <block id="d8bd6e60adcc01ce20f509ea6800de8f" category="cell">唯讀</block>
+  <block id="1129c0e4d43f2d121652a7302712cff6" category="cell">寫入</block>
+  <block id="b6f4a2ec6356bbd56d49f2096bf9d3d3" category="cell">擁有者</block>
+  <block id="5c2cfa1c6483a2055e455e9fe917150c" category="cell">檢視系統</block>
+  <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">是的</block>
+  <block id="7a873aab992e5e0739ab89574668b232" category="cell">更新系統名稱</block>
+  <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="cell">否</block>
+  <block id="39bb7ebe2d2851afbd84381cb85b6bab" category="cell">更新支援合約詳細資料</block>
+  <block id="3fa7e1f59dbad21ae04cb45eb44902ab" category="cell">編輯資料收集時間間隔</block>
+  <block id="12e7c44e5b7cb54e6ce9a17051959801" category="cell">申請新的資料收集</block>
+  <block id="e8c371197783251f857e86da91b8fe35" category="cell">共用系統</block>
+  <block id="bd8040acd9ca680be2aa7f93ebb36e14" category="cell">是、具有唯讀或寫入存取權</block>
+  <block id="e89e5b89aea3717ddc42c434fe92255b" category="cell">是、具有唯讀、寫入或擁有者存取權</block>
+  <block id="3c13d4713cd753567d8d7ae5dbf2a445" category="cell">修改系統元件</block>
+  <block id="be62ee4908c8d3dca05c47093c17858d" category="cell">刪除系統</block>
+  <block id="8d2c4ebf93aef876f912d1dbc5d5f446" category="summary">如果您的環境沒有DHCP伺服器、您可以在Converged Systems Advisor代理程式上設定靜態IP位址。</block>
+  <block id="d9a5f12699bae674c63f2c267573224b" category="paragraph">預設使用者名稱為* CS*、預設密碼為* NetApp*。如果出現提示、請變更密碼。</block>
+  <block id="b6de644e9b5b1e58594eba0a09555428" category="list-text">在CSA提示字元中輸入「show–」、即可成為root。</block>
+  <block id="53b9d6386077deb220e39848631a1432" category="list-text">輸入「# systemctl stop csa.service`」以停止CSA服務。</block>
+  <block id="23d5cee3449e29c27ec154cf829a69c3" category="list-text">輸入下列項目以判斷正確的介面檔案名稱。</block>
+  <block id="2bf1d3038022317a128963915a08f202" category="paragraph">在此範例中、介面檔案名稱為「eth0」。</block>
+  <block id="bcf28884b8c036a478d2f25650c43a5f" category="paragraph">按# ls /etc/network/interfaces．d/</block>
+  <block id="f77dbe6328f12a32ab9eb2576246ec8f" category="list-text">輸入「#/sbin/ifdown eth0」以停止作用中介面。</block>
+  <block id="9660dc3d2d47bb1edf0d90bc60359a4f" category="list-text">使用您所選的編輯器編輯/etc/network/medias.d/eth0檔案。</block>
+  <block id="cdb12d95400318fd9ca6cc49132ab819" category="paragraph">按# nAN/etc/network/mediaies.d/eth0'或按# vi /etc/network/edies.d/eth0'</block>
+  <block id="1756345afbc4de489ffcc0f962d00c59" category="paragraph">檔案包含下列項目：</block>
+  <block id="96127d77fba94b76446bd73e9a3088e5" category="paragraph">「允許熱插拔eth0」、「iface eth0 inet DHCP」</block>
+  <block id="25e011b9fcda92e242aa20ba3c216c64" category="list-text">移除「iface eth0 inet DHCP」、然後新增下列項目。附註：您必須針對下列範例中欄位名稱後面的所有項目、以正確的值取代。例如、範例中的閘道值為「192．168．11．1」。不過、您應該輸入正確的閘道位址、而不是「192．168．11．1」。</block>
+  <block id="69e9edbe64528504bd6ba53958fd606a" category="paragraph">"iface eth0 inet static"、"address192.168.1.100"、"netmask255．255．255．255．255．255．255．255．255．255．0、"dns－domain example.com、"dns－nameservers 192．168．11．1．"</block>
+  <block id="01d3a32280cc94c7c057cd3d14488785" category="list-text">儲存檔案。</block>
+  <block id="38c39deaa2f53315e7b202e17baffc26" category="paragraph">在NANO中、輸入* Ctrl + o*、然後輸入* Ctrl + x*以儲存。</block>
+  <block id="4cd2bda6af7660c1598f39b9c7d6f529" category="list-text">輸入「vi/etc/resolv.conf」以開啟組態檔。</block>
+  <block id="2c0c5618501d3f3f63b49af53d2fbd47" category="list-text">將「nameserver&lt;ip_address&gt;」新增至檔案頂端。</block>
+  <block id="b3030219c1ea1568cd293ed2279fad1e" category="list-text">輸入「# ifup eth0」以啟動網路介面。</block>
+  <block id="67579867e6a21ae6d929c597a6c6b46f" category="list-text">輸入「stystemctl start csa.service`」以重新啟動Converged Systems Advisor。</block>
+  <block id="f22b831ba6d141bbc230c57682a06371" category="doc">歸檔「融合式系統顧問的新功能」</block>
+  <block id="c1df1da7a1ce305a3b60af9d5733ac1d" category="section-title">內容</block>
+  <block id="10e44b58c927b3793e7f2955f75f28e1" category="paragraph">此歸檔包含下列版本的資訊：</block>
+  <block id="08c7a44165e799a355ebdc0f1ea70824" category="list-text"><block ref="145ef373c65808f9e952c78fb0e16c8e" category="inline-xref-macro-rx"></block></block>
+  <block id="2840e6a3600b55dceaa37ee80ec335fe" category="list-text"><block ref="42c4d619be309721d53c234cf3e5ff62" category="inline-xref-macro-rx"></block></block>
+  <block id="0bcb4151c66555aa13c51fb3b2a0a165" category="list-text"><block ref="ff3199e7c1970c02e0fd6c613ab0cce7" category="inline-xref-macro-rx"></block></block>
+  <block id="7b3a2fc382a596f810e0b8e710c8f711" category="list-text"><block ref="d2238c839e2fd698d2dbfb6f4c4e7d87" category="inline-xref-macro-rx"></block></block>
+  <block id="15176397357e4255e6362e5d05e4c485" category="list-text"><block ref="92d4523432902f3accb2306b045d583f" category="inline-xref-macro-rx"></block></block>
+  <block id="5e00a79faef421b2fe94f16e0a17775d" category="list-text"><block ref="b7b5b50c4a5efe1b9e45ea1d0e26a6ae" category="inline-xref-macro-rx"></block></block>
+  <block id="63e51da11fa43c2342d55984be82f013" category="list-text"><block ref="48d43c26a55ab7429e9668ebb7b374a4" category="inline-xref-macro-rx"></block></block>
+  <block id="a6490175aa5211c7fdb6af58bbf5ad58" category="list-text"><block ref="6687bc1c3d75b9a19804b86bf196a6d2" category="inline-xref-macro-rx"></block></block>
+  <block id="ed27e56e8d1aaac52ff5846f18293cad" category="section-title">2020年4月30日</block>
+  <block id="d3cafecaed44ca675980389b10250736" category="paragraph">此版本包含下列增強功能：</block>
+  <block id="76474e02e81d415c3af99611aa7fd9db" category="list-text"><block ref="e91c3dcf41ee65cf857a4e2744c7116f" category="inline-xref-macro-rx"></block></block>
+  <block id="f9cbb438ee7ec2413c4e51c6dd1cc0a1" category="list-text"><block ref="0440a41fa8d53d80c2925fd5b2f412d2" category="inline-xref-macro-rx"></block></block>
+  <block id="5cd898867cfea299e6bb00bf416b9543" category="list-text"><block ref="8800f9920c62cf189ef2790b6cf576c0" category="inline-xref-macro-rx"></block></block>
+  <block id="92189b298e4d66f3b20c9ee7eb4420d1" category="list-text"><block ref="090331b4b8642fa566a355a973455d3b" category="inline-xref-macro-rx"></block></block>
+  <block id="1e3c19e3742fbfc0e6dd22bb91d109a3" category="section-title">升級顧問</block>
+  <block id="3f23a5d9cd3790369771e0a3bf58d7b4" category="inline-image-macro">螢幕擷取畫面、寬=65%、對齊=左</block>
+  <block id="7e8467d4e506341be39612804bb6fd31" category="paragraph">現在您可以使用ONTAP Nexus和UCS元件檢查VMware vCenter和VMware版本的相容性。若要檢查相容性、請使用儀表板中「韌體互通性」下的「升級顧問」。支援您看到的所有版本。<block ref="70a9fa1e61ddb2086ced7efe6d468e67" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a44c62f2e89581c2cf4b405ac4bc48d1" category="section-title">叢集互連交換器</block>
+  <block id="17a266803afb405673de128775490aa3" category="paragraph">*叢集互連交換器*已新增至儀表板檢視的*韌體互通性*下。現在您可以監控ONTAP 下列機型的支援功能：</block>
+  <block id="19f18e62543870b928eb9b2e96e164e5" category="paragraph"><block ref="19f18e62543870b928eb9b2e96e164e5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="14203af76d3ed0d9f147b636afc6df00" category="paragraph">在代理程式中、您現在可以在*新增裝置資訊*下拉式功能表中、將叢集互連交換器新增為裝置。</block>
+  <block id="22584daa6922a9f57595fff0e66aaeac" category="inline-image-macro">螢幕擷取畫面、寬=35%、對齊=左</block>
+  <block id="514f8c728a2790b1558d08079076380c" category="paragraph"><block ref="514f8c728a2790b1558d08079076380c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="77c929b6a6cda6208e81c181eef47740" category="section-title">容量卡增強功能</block>
+  <block id="721acbf5f459d09509fd8f70d1f967c8" category="paragraph">我們也新增網路連接埠使用率和UCS刀鋒伺服器使用率的連結、協助您監控FlexPod 及擴充您的支援基礎架構。在儀表板檢視中、當您移至容量時、會看到兩個新連結。<block ref="060bfad4c8cdb501dd093dad2bc44ef5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c678373d74bb6da469f6748ecd369a85" category="paragraph">連接埠使用率連結至網路層介面的詳細資訊。<block ref="aca1a8b86c59dfb174ed946d595bbf84" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="648afe57a27e117a191a79a8d6d0abb2" category="paragraph">UCS刀鋒伺服器使用率連結可連結至運算層中刀鋒的詳細資訊。<block ref="a13bb6f0073a0a088151d532da9b6312" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="93bbd48ded0a0454703eb895c255d06d" category="section-title">系統圖表警示</block>
+  <block id="a6282442e8c29dd3f2b8dc110cfc9ae4" category="paragraph">您現在可以在系統的圖表檢視中看到警示、以便更有效地監控基礎架構。<block ref="f9157057998e51b9fb12515c6a346233" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="69464e68a5cdd0b54694ac92276fa1a3" category="section-title">修正問題</block>
+  <block id="6aa177b471b9d5a16c4090627dbb93a9" category="paragraph">本版本已修正下列已知問題：</block>
+  <block id="34e17db35518e448663a73c33632b94b" category="inline-link">1253405</block>
+  <block id="0ee79ab5ee2af58e1c534d21e395fe77" category="cell"><block ref="68039b95c5a75e0be8228eccc6908ff8" category="inline-link-rx"></block></block>
+  <block id="64131c95b7858ed72eedb62e9a32ff2f" category="cell">在Converged Systems Advisor中、Nexus交換器連接埠狀態可能顯示不正確。</block>
+  <block id="d12d95a3af8745784a9064d204004d3c" category="list-text">返回 <block ref="1a241aed8804786761beb208ad9f11d4" category="inline-xref-macro-rx"></block></block>
+  <block id="48328ffa37012f3f870faa37b9fa666a" category="section-title">2020年2月3日</block>
+  <block id="86d9e6345baacd928ad8dada377cab74" category="list-text"><block ref="c553ce28d20d5f7e40a45ea2ba52989a" category="inline-xref-macro-rx"></block></block>
+  <block id="e046a22b8cbc00a605fbea199b8e1ab1" category="list-text"><block ref="115938d820b660b16bc33f86e52bebc4" category="inline-xref-macro-rx"></block></block>
+  <block id="654d496d9bbb3eb7aed8b9d7e7bede02" category="section-title">導覽增強功能</block>
+  <block id="c7da2deb892e540c5a400fbfff29bafc" category="list-text">此版本可讓您在*檢視所有系統*中查看所有系統。</block>
+  <block id="8ee281360fa3bd26cbb98359f0a790c5" category="list-text">您可以更輕鬆地查看及瀏覽元件層的結構。您可以使用下拉式功能表和箭頭來檢視您的裝置。</block>
+  <block id="5df6c4a2075cc06374be4ce2aa57b3d2" category="list-text">使用階層連結追蹤功能、也能更輕鬆地從儀表板（首頁）檢視中導覽。</block>
+  <block id="3533fddef5dd5fcf0e1d388ddf48e22c" category="paragraph"><block ref="3533fddef5dd5fcf0e1d388ddf48e22c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="294ca68e36dc38cbc11f8aeb5a06fb7b" category="section-title">Aggregate詳細資料</block>
+  <block id="bcaccaf4d97300681fbb5cfee359717e" category="paragraph">在儀表板檢視中、當您移至容量時、您現在可以看到* Aggregate Details *的連結。您可以使用提供的連結、查看儲存層中有關集合體的詳細資訊。</block>
+  <block id="2a5652cfbaed3bd793169739d862fe44" category="paragraph"><block ref="2a5652cfbaed3bd793169739d862fe44" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e3d764022cf533eaeab2378fa40c2eda" category="paragraph"><block ref="e3d764022cf533eaeab2378fa40c2eda" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6dd20b51a073e00e72a5886489d9ac23" category="inline-link">1249956</block>
+  <block id="46907cddd9ff63e0466a78c60f4c60b9" category="cell"><block ref="2f1de675eb087c523328ea1df509e554" category="inline-link-rx"></block></block>
+  <block id="31d9ba8fb9df9a35fd5988e6a338be5c" category="cell">單一節點MetroCluster 的不支援在叢集詳細資料頁面的「總覽與規則」摘要中顯示IOXM擴充模組。</block>
+  <block id="cb03043febda9c865a13af70e1efe360" category="section-title">2019年11月7日</block>
+  <block id="bf647454e36069fd16f1a7a35cf6a865" category="inline-link-macro">快速入門</block>
+  <block id="5137e1743b8c3f4b2f072f0907d5941c" category="admonition">在您將FlexPod 自己的功能加入Converged Systems Advisor之後、此版本中的所有新功能和增強功能都會自動納入其中。依照中的指示操作 <block ref="73c402b67f510704de8228c6214ccf6d" category="inline-link-macro-rx"></block> 將FlexPod 您的不只是融合式基礎架構的功能加入融合式系統顧問。</block>
+  <block id="1bcec21d67da91d55b9e2b14c867c995" category="paragraph">此版本包含下列新功能與增強功能：</block>
+  <block id="555719e2c4114db93af1d8b3d3ac0fc0" category="list-text"><block ref="d5b57589f05f189cbc860a5c385e1cb5" category="inline-xref-macro-rx"></block></block>
+  <block id="60ac199a07c4f68f6d2d7bdbef65ec1c" category="list-text"><block ref="31d477d44391b3c0b58e41ee9a37948f" category="inline-xref-macro-rx"></block></block>
+  <block id="9cd9a2aa347af7513b4c663660832244" category="list-text"><block ref="27f68d9d616c3d419db9436ca7436cbc" category="inline-xref-macro-rx"></block></block>
+  <block id="62a8f36b0f440492e49f8e922d741d17" category="section-title">感知MetroCluster</block>
+  <block id="a5f7ef2db62928a50ba7f96892ad00c8" category="paragraph">融合式系統顧問現在支援將MetroCluster FlexPod 單一站台的一個站台當成融合式基礎架構。分析現在可以判斷MetroCluster 出雙方的健全狀況。</block>
+  <block id="0f63d57e26b097fe542bb83633e6398d" category="section-title">NVMe認知</block>
+  <block id="22f7ebd445d477df205c0982fa2468e2" category="paragraph">現在、融合式系統顧問將執行分析、檢查ONTAP 支援於《支援的NVMe 9.4及更新版本》的NVMe傳輸協定組態。</block>
+  <block id="1a6b93828ae59ab63dc0d438e21af378" category="section-title">改善互通性功能</block>
+  <block id="0547c0a84d599658af4f58d553e0dcd2" category="paragraph">「融合式系統顧問」提供更新的互通性卡、可連結至快顯視窗、顯示每個元件所支援的目前、最近及最新版本。快顯視窗中新增了一份報告、顯示每個元件層的個別互通性報告。</block>
+  <block id="7be03ea15608a3afd4b7f1553a8b93b1" category="section-title">2019年7月24日</block>
+  <block id="3de14a766018f3a0e190f6963cf79b65" category="list-text"><block ref="285069d07f51b91a90e9daf7e4a22c2c" category="inline-xref-macro-rx"></block></block>
+  <block id="a51081ace27562019c87ffdb141acdcc" category="list-text"><block ref="b6d9e8cd9b98324fab9ceb53ed799778" category="inline-xref-macro-rx"></block></block>
+  <block id="c88b794def2afa5b760b26678860c517" category="section-title">支援Cisco ACI FlexPod</block>
+  <block id="e0729bd1bd4fb7a2ed7e509b4001a117" category="paragraph">融合式系統顧問現在支援FlexPod Cisco ACI Networking的各種功能。我們將評估您的所有設備的支援與組態、FlexPod 即使是連接至其他FlexPod 支援功能的兩個動態決定的葉片開關也會進行評估。</block>
+  <block id="b7e76920c826212726bcd2c4c278cece" category="section-title">單FlexPod 一支援多個叢集</block>
+  <block id="53c03d655b92c79a60b56c91dcfc3d33" category="paragraph">融合式系統顧問現在可在單FlexPod 一的基礎架構中支援多個叢集。所有ONTAP 叢集都會處理儲存區需求規則、所有叢集都會反映在系統圖表上。</block>
+  <block id="6852c0ff45224de595d5295eac339442" category="section-title">2019年4月25日</block>
+  <block id="ec290a4ea4f9c1d799baf6e50cdfa64e" category="list-text"><block ref="7dbc36f3c2a4e546cd038b61fa66adad" category="inline-xref-macro-rx"></block></block>
+  <block id="bf5e8a112746ae204916387b6224d8b3" category="list-text"><block ref="bacba7b8b1af2d91560cbd6ddd21cbcf" category="inline-xref-macro-rx"></block></block>
+  <block id="346e5b8d27b5bc4b8b1705dd89b91797" category="section-title">自動解析失敗的規則</block>
+  <block id="0f4328bb9454528512249e468db30c3e" category="paragraph">融合式系統顧問現在可以自動解決導致某些規則失敗的問題。重新啟動代理程式即可自動啟用此功能。</block>
+  <block id="c783bfb0f4281a0a2dc92570b6e2b20b" category="section-title">顯示抑制的規則</block>
+  <block id="05814bc364b125b53f0cf12dbf6c8438" category="paragraph">您現在可以在Converged Systems Advisor中顯示受抑制規則的全域清單、並從清單中重新啟用受抑制規則的警示。</block>
+  <block id="f16c3ebec6a5ded39b75c6f38f570780" category="inline-link">1211321</block>
+  <block id="2d3f80599531b8b63fd835200e3d6727" category="cell"><block ref="a44c06a4b2a6170ea5a33c220414d285" category="inline-link-rx"></block></block>
+  <block id="bc30687d397ed706898ea444df0dde4c" category="cell">融合式基礎架構可能無法顯示系統圖表影像</block>
+  <block id="1c8ff7117059b27ffa62f6bd8a591101" category="inline-link">1211987年</block>
+  <block id="042c2d583f25282609b9503d09d51155" category="cell"><block ref="44d8592541f939183de2e0a885375edf" category="inline-link-rx"></block></block>
+  <block id="a50c7fa8095657476c27aec123b192e0" category="cell">儲存叢集效率值顯示不正確</block>
+  <block id="07cd1efd9b1bbc1c1cc4d38e19c07589" category="inline-link">1211995年</block>
+  <block id="04c016fc549ac6850c08110fd3409666" category="cell"><block ref="b9702e7ed530a19bec6f645dc7a6866d" category="inline-link-rx"></block></block>
+  <block id="185d625ed6330faeb271f3dce51808d6" category="cell">Nexus交換器連接埠狀態可能顯示不正確</block>
+  <block id="b060712ac43c210355429accd269de4e" category="inline-link">1211999年</block>
+  <block id="84ac921ab1a975fc2c21ad5f7919e0a3" category="cell"><block ref="b80cb91305a095366aa4a78015bfbc70" category="inline-link-rx"></block></block>
+  <block id="e7db1e98b025a528671c622f3b0fabde" category="cell">空間保留狀態顯示不正確</block>
+  <block id="5d5316487266b882f235edf2575eaeec" category="section-title">2019年3月28日</block>
+  <block id="7aba6d8ee839fe7a78123c0207d3edab" category="inline-link">1211993年</block>
+  <block id="9572132c0bc007159a9b08486308eeba" category="cell"><block ref="4b1ffacdbfc8af9ce08b31a0abb940fa" category="inline-link-rx"></block></block>
+  <block id="b637f3519598b2cc4e7b31b1afc6c01c" category="cell">CSA中的精簡配置狀態顯示不正確</block>
+  <block id="9251ffcb0c3da1ea28d59acc9376f6a9" category="inline-link">1211998年</block>
+  <block id="ee17bbc8d10290ea608a1e55abae6528" category="cell"><block ref="02d3e3a4942ec08f5d2adfe3e0a3a20c" category="inline-link-rx"></block></block>
+  <block id="c2a3227c220126274034a0478eb67de3" category="cell">CSA中的磁碟空間使用率百分比顯示不正確</block>
+  <block id="07b3432777ce890e768e06a9216f9e17" category="inline-link">1211990年</block>
+  <block id="73b904199eb87ae4c41fb7baa1ef9c3e" category="cell"><block ref="a5f604ba6ece1c21d65563c22d9dfa09" category="inline-link-rx"></block></block>
+  <block id="229885f383807af450d10b03b8f4fe80" category="cell">在Nexus交換器中對應至VLAN的介面可能與CSA中的實際裝置輸出不符</block>
+  <block id="1bc43dc9c0ccf501bb125bee86c0762d" category="inline-link">1212001年</block>
+  <block id="c929bc8afa52722c4ea36633f2342986" category="cell"><block ref="0afdd8fc92549c954cf056c0fd2f43e9" category="inline-link-rx"></block></block>
+  <block id="6371eb3c6ede0799d86928f822ecd62a" category="cell">CSA可能會錯誤顯示機架安裝伺服器的電源供應器資訊</block>
+  <block id="885796f1558f69819a19653c55fc70df" category="section-title">2019年1月17日</block>
+  <block id="1ce083f756b15c285486292953c6322f" category="list-text"><block ref="411f434e0a9ed872a9f1bb58c9537de4" category="inline-xref-macro-rx"></block></block>
+  <block id="784e8f995a17e4b20cc48d2e3b85733d" category="list-text"><block ref="082d18ba9d4541f4622119fe7163d353" category="inline-xref-macro-rx"></block></block>
+  <block id="ae1f56d899a738074bc45d19117bb7b3" category="list-text"><block ref="eb95827ed3a78b450622544c911aaef6" category="inline-xref-macro-rx"></block></block>
+  <block id="09578b9e2fba7ffc0f760074de6dbd42" category="list-text"><block ref="d7d8cc5a2328c43a800dee79efc9edd7" category="inline-xref-macro-rx"></block></block>
+  <block id="a0927389ed150a6d3dd3f199e2f02203" category="list-text"><block ref="bef3e86ecb3e9b0bd334e2d7808e2f6f" category="inline-xref-macro-rx"></block></block>
+  <block id="549fee24f6eab5da3408e162e7c36792" category="section-title">支援全新FlexPod 的支援功能</block>
+  <block id="3dda465897f38c44199dff7e943f026c" category="paragraph">融合式系統顧問現在支援下列FlexPod 各項功能：</block>
+  <block id="74ef034873be6e75908e22616e82181f" category="list-text">Cisco UCS C系列機架伺服器</block>
+  <block id="65bc074f6f89fc7a2c4ddd76c483b40a" category="list-text">Nexus 3000系列交換器</block>
+  <block id="d8ff0147940c2dea2c2e10bee47a16a6" category="list-text">直接連接至NetApp控制器的Cisco UCS交換器</block>
+  <block id="eba015cdb18494bab904be12811fbac4" category="paragraph">如需支援裝置的完整清單、請參閱<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>。</block>
+  <block id="b55147098ea79a37c44c3f969962658c" category="section-title">主機與虛擬機器的詳細資訊</block>
+  <block id="1f05349a9a559af8f60a2124d6b92acb" category="paragraph">融合式系統顧問現在提供更多有關虛擬化環境的資訊。您可以向下切入以檢視個別主機和虛擬機器的相關資訊、包括圖表、詳細目錄清單和規則摘要。</block>
+  <block id="cf577b1db36c3d9fa2729b836cc9ee7d" category="paragraph"><block ref="cf577b1db36c3d9fa2729b836cc9ee7d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6430949860b854b1fbddcf3d7e22cbda" category="section-title">簡化新增基礎架構的使用體驗</block>
+  <block id="438a9fb42090e4c9a930857d04f88e11" category="paragraph">現在更容易將基礎架構新增至融合式系統顧問。入口網站可讓您逐步輸入資訊：</block>
+  <block id="cfa524a6fd491de0c00bd6dd5c436577" category="paragraph"><block ref="cfa524a6fd491de0c00bd6dd5c436577" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="da3321aced7c009c6a3c95bb47c8a5db" category="inline-link-macro">瞭解如何將基礎架構新增至融合式系統顧問</block>
+  <block id="9ea1990012ed7bcb428aa3a678b3cef1" category="paragraph"><block ref="f26c49940495a2374917e5099fe60e0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="b021522d2331d2749a808707884b5d64" category="section-title">使用檔案匯入裝置</block>
+  <block id="222bdb07e138433c7340c22a4b2be824" category="paragraph">您現在FlexPod 可以匯入包含每個裝置相關資訊的檔案、將Converged Systems Advisor代理程式設定為探索您的靜態基礎架構。匯入裝置是手動新增每個裝置的替代方法、逐一新增。</block>
+  <block id="3e4f861d1f41e3909e3cb2edcfd8c2c4" category="paragraph"><block ref="3e4f861d1f41e3909e3cb2edcfd8c2c4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2b58ea2ceb1d32edb5672b4763042add" category="inline-link-macro">瞭解如何設定代理程式以探索FlexPod 您的不知所知的基礎架構</block>
+  <block id="19dde02c5aa9d7eff0a98c1479042e8c" category="paragraph"><block ref="411c46172c11c949d9c5775fe02e578b" category="inline-link-macro-rx"></block>。</block>
+  <block id="af65db9beaf7491f0e97cd298af6d2ec" category="section-title">與NetApp Active IQ 產品整合</block>
+  <block id="de3967986e98713f03423ebafc1ed7a3" category="paragraph">您現在可以Active IQ 從Converged Systems Advisor啟動《產品資訊》。下列範例顯示Active IQ 儲存頁面上的「資訊」連結：</block>
+  <block id="dc4eaa1dd902716b8c6730ea5857bf06" category="paragraph"><block ref="dc4eaa1dd902716b8c6730ea5857bf06" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="722caafb4825ef5d8670710fa29087cf" category="cell">4671.</block>
+  <block id="4af1d2e9326336996680f2800e8f9255" category="cell">瀏覽Converged Systems Advisor入口網站時、Firefox可能會停止回應。</block>
+  <block id="7d6548bdc0082aacc950ed35e91fcccb" category="cell">4500</block>
+  <block id="fa94538c06427a7eee07a7d149129ed6" category="cell">整合式系統顧問入口網站不會在逾時時間間隔過後登出。您仍保持登入狀態、但看不到FlexPod 您的不景系統。</block>
+  <block id="e465ae46b07058f4ab5e96b98f101756" category="cell">2794年</block>
+  <block id="da31ea1df7858bacfe34c952e3742b07" category="cell">即使虛擬機器上未安裝VMware工具、「融合式系統顧問」仍會顯示「通過」的「VMware工具檢查」規則。</block>
+  <block id="d49a667ac74125df1b94fe71d09ffe0e" category="section-title">2018年9月13日</block>
+  <block id="283458aba148e98cebd1c3b4f751c858" category="paragraph">本次發表的融合式系統顧問包括下列新功能：</block>
+  <block id="e49eace41b9f30aba321e27c558d7fc6" category="list-text">全新的使用者介面和使用者體驗、可簡化客戶FlexPod 的不正常運作</block>
+  <block id="d129f055ca827c53ec3d0376a207f245" category="list-text">VMware虛擬化的健全狀況和最佳實務做法驗證</block>
+  <block id="aeceeff9b721328a53ecf24ddcdb02f7" category="list-text">支援Cisco MDS交換器、並支援更多光纖通道</block>
+  <block id="fea69bb2f9adb3acd9912f4b8845328f" category="summary">若要開始使用融合式系統顧問、您必須準備好環境。</block>
+  <block id="0f7a50e7e27ae4b8a6ada4185d771634" category="paragraph">若要開始使用融合式系統顧問、您必須準備好環境。準備您的環境包括驗證您的組態支援、以及註冊NetApp支援網站帳戶。</block>
+  <block id="d7eb081e4b63d797a86524b23182f6e0" category="summary">您可以在組態中新增每個裝置的支援合約詳細資料、包括開始日期、結束日期和合約ID。</block>
+  <block id="707403f6f79d0a1227617b22557b065b" category="doc">追蹤支援合約</block>
+  <block id="08dd468a8c74db6c2663baba0ec0d793" category="paragraph">您可以在組態中新增每個裝置的支援合約詳細資料：開始日期、結束日期和合約ID。如此一來、您就能輕鬆追蹤中央位置的詳細資料、知道何時該續約每個裝置的支援合約。</block>
+  <block id="a6a6a713a212d5be421f5c986e13a878" category="list-text">單擊*選擇CI*並選擇融合式基礎架構。</block>
+  <block id="9f529ff9d992ed0eefdeba5bcf4ccce3" category="list-text">在「支援合約」小工具中、按一下*編輯合約*圖示。</block>
+  <block id="4acbaa402382b53ae1547f7303cf04da" category="list-text">選擇*開始日期*和*結束日期*、然後輸入*合約ID*。</block>
+  <block id="4b5d2dd70af718ebe67bfea5b43d8667" category="list-text">按一下*提交*。</block>
+  <block id="3cd95388ab719dadee5bcf6a664ddea7" category="list-text">針對組態中的每個裝置重複上述步驟。</block>
+  <block id="9e1d8362ca0406d31099d22cf48d0b99" category="paragraph">現在、融合式系統顧問會顯示每個裝置的支援合約詳細資料。您可以輕鬆查看哪些裝置擁有有效和過期的支援合約。</block>
+  <block id="4b95f23f0f314a2b4da695b700811595" category="inline-image-macro">顯示四份支援合約：一份已過期、另三份已啟用。</block>
+  <block id="ee5940588622152ee61a29d80da69ddc" category="paragraph"><block ref="ee5940588622152ee61a29d80da69ddc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f5a33842927eb03d2f6ec5e320ebfcec" category="summary">您可以產生多種類型的報告、例如合作夥伴的健全狀況報告或部署驗證報告。</block>
+  <block id="7ecd0726b721e17d74d280fdd93e49f8" category="doc">產生報告</block>
+  <block id="6610ef9bd5e35768446c72320c3ad413" category="paragraph">如果您擁有Premium授權、可以產生多種報告類型、提供有關融合式基礎架構目前狀態的詳細資料：庫存報告、健全狀況報告、評估報告、合作夥伴的部署驗證報告等。</block>
+  <block id="a911f6618c123405cc3fc8cfe65c731f" category="list-text">按一下*報告*。</block>
+  <block id="51ed89d13fed8fbbd34332091a1f4cf3" category="list-text">選取報告、然後按一下*產生*。</block>
+  <block id="3b1f0b66bd433b7e1259d5ca6f0f6e84" category="list-text">選擇報告選項：</block>
+  <block id="46496ed8b9ac1d5f6eeba7ff09cf405c" category="list-text">也可以將最近的資料收集變更為先前的資料收集。</block>
+  <block id="d6d980dc9979eb210416d40a6eed3028" category="list-text">選擇您要檢視報告的方式：在瀏覽器中、下載PDF或透過電子郵件。</block>
+  <block id="4e821fd1fc9d0d94e03013829b560a2f" category="inline-image-macro">顯示產生報告的選項、包括選擇融合式基礎架構和快照、然後選擇您要檢視的方式。</block>
+  <block id="a4ca0ac64711a4aec786760c86c6dc75" category="paragraph"><block ref="a4ca0ac64711a4aec786760c86c6dc75" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cdfd3e7337dd38ee1623080a3c618e83" category="paragraph">「融合式系統顧問」會產生報告。</block>
+  <block id="70a81ab3570971044c051a122f25ee0b" category="summary">您可以透過各種資源取得有關融合式系統顧問的說明及更多資訊。</block>
+  <block id="3cd12697cda279c9c99b093a265c1ba8" category="doc">何處可取得協助及尋找更多資訊</block>
+  <block id="ba69e3ff884a3e60e26bcffcb121315d" category="inline-link">融合式系統顧問產品型錄</block>
+  <block id="5bcf85e8807e9d7961fa86529a7ee3ac" category="list-text"><block ref="5bcf85e8807e9d7961fa86529a7ee3ac" category="inline-link-rx"></block></block>
+  <block id="b1b49e994988385600e529f9e03aeded" category="paragraph">如需更多有關融合式系統顧問所提供價值的詳細資訊、</block>
+  <block id="5768a4e6671c0fb61f9cc9bccc217998" category="inline-link">NetApp技術報告4036：FlexPod 《資料中心技術規格》</block>
+  <block id="9569519d894aa3e75942763a12a60c12" category="list-text"><block ref="9569519d894aa3e75942763a12a60c12" category="inline-link-rx"></block></block>
+  <block id="d5ae438f326f42644223635842ca89cc" category="paragraph">檢閱整合式系統顧問針對您的組態進行比較的最佳實務做法和韌體需求。</block>
+  <block id="b1540a3ec25c7d8277b499a1cc1d920b" category="list-text"><block ref="b1540a3ec25c7d8277b499a1cc1d920b" category="inline-link-rx"></block></block>
+  <block id="b9c8769caa39394587c227d447b7343b" category="paragraph">確認您的組態支援。</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="inline-link">NetApp社群</block>
+  <block id="692fac6072c610332c2f66f183595f71" category="list-text"><block ref="692fac6072c610332c2f66f183595f71" category="inline-link-rx"></block></block>
+  <block id="4c7cda3e1dc1461a889607095bfa6769" category="paragraph">與同儕交流、提出問題、交換想法、尋找資源、並分享最佳實務做法。</block>
+  <block id="bc4fe2352063642d68529f2aa0ca7ca3" category="inline-link">NetApp 產品文件</block>
+  <block id="178e09d5859093549cf62631c31b4e03" category="list-text"><block ref="178e09d5859093549cf62631c31b4e03" category="inline-link-rx"></block></block>
+  <block id="66c5be124e373109c15d21cfd76b84a5" category="paragraph">請在 NetApp 產品文件中搜尋說明、資源和答案。</block>
+  <block id="7732b9007870fcad946e2c77ac91e87d" category="inline-link">開啟支援案例</block>
+  <block id="0dcb6d5b41f9b4b5ae94ff5f19c1d12e" category="list-text"><block ref="0dcb6d5b41f9b4b5ae94ff5f19c1d12e" category="inline-link-rx"></block></block>
+  <block id="b4ec9fb497489f10c512e2032e49fb08" category="paragraph">開啟支援案例以取得其他協助。支援案例應在* Cat1 -&gt;遠端診斷工具*和* Cat2 -&gt;整合式系統顧問*下開啟。</block>
+  <block id="fead888004a92d6dfa05d65937791d7a" category="summary">將基礎架構新增至入口網站。</block>
+  <block id="5ccd3ae8019aaa20043decdb88b02c77" category="list-text">選取所有必要元件之後、您應該會在每個裝置類型旁看到綠色勾號。</block>
+  <block id="1d6a8b8a7a248d55ebc08413d1f0351f" category="admonition">如果您是合作夥伴或經銷商、您可以跳過新增授權或序號的步驟、只要按一下「*新增基礎架構*」即可。</block>
+  <block id="b4d4c91661a500ca9f836dd268c8d92a" category="summary">您可以回應警示、檢閱變更歷程記錄、並產生報告、提供基礎架構的整體檢視、藉此監控整合式基礎架構。</block>
+  <block id="382088a5073a61e9b13725ada78c8e59" category="doc">監控融合式基礎架構</block>
+  <block id="97eb92a13cf2b5bd7063ad249b6f2569" category="section-title">檢閱警示以查看失敗的規則和警告</block>
+  <block id="6f60fe9da42eedfd7df6bbc30d7b77da" category="section-title">修正失敗的規則</block>
+  <block id="f052a30a2aeb64391002dc3341563048" category="section-title">抑制失敗的規則</block>
+  <block id="e5fb1eac98e8be5c995e7929e8b70da0" category="paragraph">您可以檢視已被抑制的規則清單、並視需要選取以結束抑制。</block>
+  <block id="78d8b6135ca87d41ab89914e626de9a5" category="section-title">檢閱基礎架構的歷史記錄</block>
+  <block id="567235aef678e48ef18482e34043f721" category="section-title">產生報告</block>
+  <block id="64b90563965409f7bfe8d73a0d85c567" category="paragraph">如果您擁有Premium授權、可以產生多種報告類型、提供有關融合式基礎架構目前狀態的詳細資料：庫存報告、健全狀況報告、評估報告等。</block>
+  <block id="f24126e7aabc8fc06c1874eb6abef5eb" category="section-title">追蹤支援合約</block>
+  <block id="115b9f0ff63d039cd385c57b40bf95a9" category="sidebar">整合式系統顧問文件</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
+  <block id="96573196b0bc5ca16f36a7ab51440d98" category="sidebar">新增功能歸檔</block>
+  <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">概念</block>
+  <block id="cb59b87e00d11222bfd9159d0d23836f" category="sidebar">快速入門</block>
+  <block id="fcfe3322250efe8a9b82e67dc1a52629" category="sidebar">設定及部署代理程式</block>
+  <block id="2db72662c8c544bb8061d0dd7316e260" category="sidebar">在入口網站中新增基礎架構</block>
+  <block id="ed921ee7e2f886f27ab4462f27404241" category="sidebar">在代理程式上設定靜態IP</block>
+  <block id="6cf8e922cda64d990e6cd69cd9ddde4f" category="sidebar">監控基礎架構</block>
+  <block id="6c9d9b02e3e64a4c7870f630c5d9dbc2" category="sidebar">檢閱您的基礎架構歷史記錄</block>
+  <block id="b7b722eea69a1d2e85256ecaa18b4620" category="sidebar">監控規則</block>
+  <block id="231cf4c70d866b616c21baddaeed0696" category="sidebar">疑難排解</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="sidebar">相關連結</block>
+</blocks>

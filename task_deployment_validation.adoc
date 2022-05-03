@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: task_deployment_validation.html 
+keywords: partner, validate, deployment validation 
+summary: 如果您是NetApp合作夥伴、您可以在執行部署驗證之前、與客戶合作部署代理程式並設定入口網站、開始使用Converged Systems Advisor。 
+---
+= 合作夥伴的部署驗證報告
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp合作夥伴可執行部署驗證、以驗FlexPod 證是否正確設定了融合式基礎架構。合作夥伴可將報告交給客戶。
+
+.步驟
+. 登入 https://csa.netapp.com/["融合式系統顧問入口網站"^]。
+. 從「客戶清單」展開客戶的組態。
++
+image:screenshot_partner_customer_list.gif["顯示客戶的三種融合式基礎架構。"]
+
+. 在「部署驗證報告」下、按一下「*產生*」。
+. 選擇您要在瀏覽器、PDF或電子郵件中檢視報告。
+. 檢閱報告並修正任何互通性問題和部署驗證錯誤。
++
+* 範例 *
+
++
+在此範例組態中、不支援Nexus交換器的韌體版本：
+
++
+image:screenshot_validation_interop.gif["顯示部署驗證報告的互通性區段。其中包含兩個交換器、但不支援韌體版本。"]
+
++
+由於交換器連線問題、也有四項驗證規則失敗：
+
++
+image:screenshot_validation_errors.gif["顯示部署驗證報告的「錯誤」區段。Fabric互連不會上行鏈路至對應的Nexus Fibre Channel網路。"]
+
++
+升級韌體可修正組態的互通性、並新增連結可修正失敗的驗證規則。
+
+. 修正問題之後、請收集資料以確保Converged Systems Advisor擁有最新的組態資料：
++
+.. 選取融合式基礎架構。
+.. 在右上角、按一下* Collect*。
++
+image:screenshot_collect_button.gif["顯示右上角選取融合式基礎架構後可用的「收集」按鈕。"]
+
+
+
+. 再次產生報告、確認您已修正問題。
+. 將最終部署驗證報告傳送給您的客戶。
+
+
+融合式基礎架構現已根據最佳實務做法設定完成。

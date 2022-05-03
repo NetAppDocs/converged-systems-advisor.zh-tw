@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: task_prepare_environment.html 
+keywords: prepare, environment, verifying, support, accounts, account, configuration, registering, FlexPod, VMware, ESXi server, connection, connectivity, agent, portal 
+summary: 若要開始使用融合式系統顧問、您必須準備好環境。 
+---
+= 為環境做好準備
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+若要開始使用融合式系統顧問、您必須準備好環境。準備您的環境包括驗證您的組態支援、以及註冊NetApp支援網站帳戶。
+
+您可能會想要 link:concept_architecture.html["瞭解融合式系統顧問的運作方式"] 開始之前。
+
+.步驟
+. 在中驗證支援 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]：
++
+.. 驗證融合式系統顧問是否支援FlexPod 您的融合式基礎架構。
+.. 確認您擁有支援的VMware ESXi伺服器、適用於Converged Systems Advisor代理程式。
++
+為將頻寬使用量降至最低、NetApp建議將代理程式安裝在FlexPod 與融合式基礎架構相同的資料中心。
+
+
+
+. 確保安裝代理程式的網路允許元件之間連線：
++
+** 代理程式必須連線至每FlexPod 個元件、才能收集組態資料。
+** 代理程式也需要傳出網際網路連線、才能與下列端點通訊：
++
+*** csa.netapp.com
+*** docker.com
+*** Docker IO
+
+
+
+
+. 前往 https://mysupport.netapp.com["NetApp 支援網站"^] 如果您沒有帳戶、請註冊帳戶。
++
+必須有NetApp支援網站帳戶才能設定代理程式及存取入口網站。
+
+

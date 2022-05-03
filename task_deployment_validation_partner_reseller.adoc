@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task_deployment_validation_partners_resellers.html 
+keywords: review, alerts, warnings, failed, rules, alerts, history, remediate, remediation, suppress, display, fail, warning, pass, notifications, email 
+summary: 身為合作夥伴或經銷商、您可以驗證用戶端基礎架構的部署。 
+---
+= 驗證合作夥伴與經銷商的部署
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+身為合作夥伴或經銷商、您可以檢閱儀表板上顯示的資料或產生健全狀況報告、來驗證客戶基礎架構的部署。
+
+.開始之前
+* 您已在FlexPod 客戶網站安裝新的功能、或是正在使用現有FlexPod 的功能。
+* 您在FlexPod 這些功能上建立了帳戶。
+* 如果您使用的是TACACAC2+伺服器、則表示您已授予CSA使用者權限。
+* 您已下載並安裝代理程式。
++
+請參閱 link:task_setup_deploy_agent.html["設定及部署代理程式"]。
+
+* 您可以為代理程式設定網路、也可以選擇在代理程式上安裝SSL憑證。
+* 透過NetApp認證資料、您為客戶建立CI、以便將基礎架構新增至入口網站。
++
+請參閱 link:task_add_infrastructure["將基礎架構新增至入口網站"] 在CSA入口網站中建立CI。
+
+* 您也可以選擇與其他使用者共用基礎架構。
+
+
+合作夥伴和經銷商使用自己的NetApp認證資料登入CSA入口網站、開始驗證程序。
+
+. 登入 https://csa.netapp.com/["融合式系統顧問入口網站"^] 使用您的NetApp認證資料。
+. 按一下*選取CI*、然後按一下客戶適用的CI、或在搜尋方塊中輸入CI名稱。隨即顯示CI的儀表板。
+
+
+身為合作夥伴或經銷商、您可以使用下列方法驗證客戶的基礎架構：
+
+* 在儀表板上、您可以驗證基礎架構的各個層面：
++
+** *韌體互通性*會顯示安裝的軟體版本。按一下每個標題以檢視其他詳細資料。
+** *支援合約*會顯示合約何時到期。如需詳細資訊、請按一下*檢視詳細資料*。
+** *代理程式狀態*會顯示代理程式的詳細資料、包括所監控的裝置。
+** * Capacity *顯示磁碟空間、網路連接埠及UCS刀鋒機箱的使用率。按一下連結以檢視每個使用率的詳細資料。
+** *健全狀況*以圖形方式顯示基礎架構的儲存、運算、網路和虛擬化功能規則狀態。按一下圖形的色彩區域以檢視其他詳細資料。
+** *規則摘要*會顯示失敗規則和警告的警示。按一下每列左側的箭頭、或按一下裝置名稱以檢視其他詳細資料。
+
+
+* 在行動列中、選取*報告->健全狀況報告*、以產生詳細的融合式系統健全狀況報告。您可以在瀏覽器中檢視、下載為PDF檔案、或透過電子郵件分享。
+

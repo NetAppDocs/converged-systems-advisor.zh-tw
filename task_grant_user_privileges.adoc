@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: task_grant_user_privileges.html 
+keywords: grant, user, privileges, TACACS+, server, group, command, commands, access, CSA, user, account 
+summary: 如果您使用的是TACACAC2+伺服器、而且需要為交換器授予CSA使用者權限、則必須建立使用者權限群組、並授予群組存取CSA所需的特定設定命令的權限。 
+---
+= 使用TACACS +伺服器授予CSA使用者權限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您使用的是TACACAC2+伺服器、而且需要為交換器授予CSA使用者權限、則必須建立使用者權限群組、並授予群組存取CSA所需的特定設定命令的權限。下列命令應寫入TACACacs+伺服器的組態檔中。
+
+.步驟
+. 輸入下列命令以建立具有唯讀存取權的使用者權限群組：Group=Group_name｛Default service=deny service=exec{priv-lvl=0｝
+. 輸入下列命令、以授予CSA所需命令的存取權限： cmd = show｛permit "enie" permit "version " permit "feature " permit "feature-set " permit hardware。*允許「介面」允許「介面」允許「介面收發器」允許「詳細目錄」允許「模組」允許「連接埠通道資料庫」允許「mgmtpeers」允許「license usage」允許「port-channel摘要」允許執行「執行「執行「mgmt-config」允許」允許」允許「mgmt-int」允許「允許」允許」允許執行「mgmt-config允許「允許」允許」允許「允許」允許「允許」允許」允許 「CDP鄰近詳細資料」允許「VLAN」允許「VPC」允許「VPC對等保留」允許「Mac位址表」允許「LACP連接埠通道」允許「原則對應」允許「原則對應系統類型QoS」允許「原則對應系統類型佇列」允許「原則對應系統類型network-QoS」允許「區域集作用中」允許「san連接埠fgc」允許「fgc」資料庫「fgc」允許「 允許「區域集作用中」允許「vSAN」允許「vSAN使用量」允許「vSAN成員資格」｝
+. 輸入下列命令、將您的CSA使用者帳戶新增至新建立的群組：user=user_account｛member=group名稱login=file/etc/passwd｝
+

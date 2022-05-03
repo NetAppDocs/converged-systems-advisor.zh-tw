@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+keywords: converged systems advisor, netapp, documentation, flexpod, converged, infrastructure, validation, monitoring, getting started, new 
+summary: NetApp融合式系統顧問可驗證、監控FlexPod 及最佳化您的融合式基礎架構部署、確保為您的商業應用程式提供最佳效能與可用度。 
+---
+= 融合式系統顧問
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp融合式系統顧問可驗證、監控FlexPod 及最佳化您的融合式基礎架構部署、確保為您的商業應用程式提供最佳效能與可用度。
+
+
+
+== 瞭解新功能
+
+link:reference_new.html["融合式系統顧問的新功能"]
+
+
+
+== 開始使用
+
+link:task_quick_start.html["快速入門"]
+
+
+
+== 深入瞭解融合式系統顧問
+
+* link:concept_overview.html["總覽"]
+* link:concept_architecture.html["架構"]
+* link:concept_licensing.html["授權"]
+
+
+
+
+== 取得協助並與同儕交流
+
+https://community.netapp.com/t5/Converged-Infrastructure/ct-p/flexpod-and-converged-infrastructure["NetApp社群：融合式基礎架構"^]

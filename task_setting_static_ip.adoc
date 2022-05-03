@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: task_setting_static_ip.html 
+keywords: networking, ip address, static, static ip, agent 
+summary: 如果您的環境沒有DHCP伺服器、您可以在Converged Systems Advisor代理程式上設定靜態IP位址。 
+---
+= 在代理程式上設定靜態IP位址
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您的環境沒有DHCP伺服器、您可以在Converged Systems Advisor代理程式上設定靜態IP位址。
+
+.步驟
+. 使用VMware vSphere用戶端登入代理程式的虛擬機器主控台。
++
+預設使用者名稱為* CS*、預設密碼為* NetApp*。如果出現提示、請變更密碼。
+
+. 在CSA提示字元中輸入「show–」、即可成為root。
+. 輸入「# systemctl stop csa.service`」以停止CSA服務。
+. 輸入下列項目以判斷正確的介面檔案名稱。
++
+在此範例中、介面檔案名稱為「eth0」。
+
++
+按# ls /etc/network/interfaces．d/
+
+. 輸入「#/sbin/ifdown eth0」以停止作用中介面。
+. 使用您所選的編輯器編輯/etc/network/medias.d/eth0檔案。
++
+按# nAN/etc/network/mediaies.d/eth0'或按# vi /etc/network/edies.d/eth0'
+
++
+檔案包含下列項目：
+
++
+「允許熱插拔eth0」、「iface eth0 inet DHCP」
+
+. 移除「iface eth0 inet DHCP」、然後新增下列項目。附註：您必須針對下列範例中欄位名稱後面的所有項目、以正確的值取代。例如、範例中的閘道值為「192．168．11．1」。不過、您應該輸入正確的閘道位址、而不是「192．168．11．1」。
++
+"iface eth0 inet static"、"address192.168.1.100"、"netmask255．255．255．255．255．255．255．255．255．255．0、"dns－domain example.com、"dns－nameservers 192．168．11．1．"
+
+. 儲存檔案。
++
+在NANO中、輸入* Ctrl + o*、然後輸入* Ctrl + x*以儲存。
+
+. 輸入「vi/etc/resolv.conf」以開啟組態檔。
+. 將「nameserver<ip_address>」新增至檔案頂端。
+. 輸入「# ifup eth0」以啟動網路介面。
+. 輸入「stystemctl start csa.service`」以重新啟動Converged Systems Advisor。
+

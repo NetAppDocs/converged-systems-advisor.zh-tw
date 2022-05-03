@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: reference_additional_info.html 
+keywords: help, technical report, tr, 4036, best practices, imt, interoperability matrix, community, forum, docs, documentation, copyrights, notice 
+summary: 您可以透過各種資源取得有關融合式系統顧問的說明及更多資訊。 
+---
+= 何處可取得協助及尋找更多資訊
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以透過各種資源取得有關融合式系統顧問的說明及更多資訊。
+
+* https://www.netapp.com/us/media/ds-3896.pdf["融合式系統顧問產品型錄"^]
++
+如需更多有關融合式系統顧問所提供價值的詳細資訊、
+
+* https://www.netapp.com/us/media/tr-4036.pdf["NetApp技術報告4036：FlexPod 《資料中心技術規格》"^]
++
+檢閱整合式系統顧問針對您的組態進行比較的最佳實務做法和韌體需求。
+
+* http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]
++
+確認您的組態支援。
+
+* http://community.netapp.com["NetApp社群"^]
++
+與同儕交流、提出問題、交換想法、尋找資源、並分享最佳實務做法。
+
+* http://docs.netapp.com["NetApp 產品文件"^]
++
+請在 NetApp 產品文件中搜尋說明、資源和答案。
+
+* https://mysupport.netapp.com/portal["開啟支援案例"]
++
+開啟支援案例以取得其他協助。支援案例應在* Cat1 ->遠端診斷工具*和* Cat2 ->整合式系統顧問*下開啟。
+
+

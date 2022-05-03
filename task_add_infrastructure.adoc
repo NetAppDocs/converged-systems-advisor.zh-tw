@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: task_add_infrastructure.html 
+keywords: add, infrastructure, FlexPod, configuration, Cisco, ACI, UCS, server, FlexPod, converged, infrastructure, sharing, portal 
+summary: 將基礎架構新增至入口網站。 
+---
+= 將基礎架構新增至入口網站
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+設定代理程式之後、它會將每FlexPod 個功能相關的資訊傳送到Converged Systems Advisor入口網站。您現在必須選取入口網站中的每個元件、以建立整個可監控的基礎架構。
+
+.步驟
+. 在中 https://csa.netapp.com/["融合式系統顧問入口網站"^]，單擊* Add Infrastructure*（添加基礎架構）。
+. 完成新增基礎架構的步驟：
++
+.. 輸入基礎架構的基本詳細資料。
++
+如果您要新增Cisco ACI基礎架構、請在詢問FlexPod 您是否使用Cisco UCS Manager時輸入* yes *、並在詢問FlexPod 您所用的網路組態類型時、以ACI模式*輸入* Nexus交換器。
+
+.. 選取FlexPod 屬於「樣」組態的每個裝置。
++
+
+TIP: 當您選取裝置時、「資格」欄會顯示*「合格*」或*「不合格*」。如果裝置被其他代理程式發現、則該裝置不符合資格。
+
+
+
+. 選取所有必要元件之後、您應該會在每個裝置類型旁看到綠色勾號。
++
+image:screenshot_add_infrastructure_pikesupdate.gif["顯示表格中選取的四個裝置、以及每個裝置的綠色勾號、表示您已選取所有必要元件。"]
+
++
+.. 新增您的 link:concept_licensing.html["融合式系統顧問序號"] 解除鎖定金鑰功能。
+.. 檢閱摘要、接受授權合約條款、然後按一下*「Add Infrastructure*（新增基礎架構*）」。
+
+
++
+
+NOTE: 如果您是合作夥伴或經銷商、您可以跳過新增授權或序號的步驟、只要按一下「*新增基礎架構*」即可。
+
+
+
+融合式系統顧問將基礎架構新增至入口網站、開始收集每個裝置的組態資料。等待數分鐘、讓代理程式從裝置收集資訊。
+
+
+
+= 與其他使用者共用基礎架構
+
+共享融合式基礎架構可讓其他人登入融合式系統顧問入口網站、以便檢視及監控組態。與您共用基礎架構的人員必須擁有 https://mysupport.netapp.com["NetApp 支援網站"^] 帳戶。
+
+.步驟
+. 在Converged Systems Advisor入口網站中、按一下*設定圖示*、然後按一下*使用者*。
++
+image:screenshot_settings.gif["顯示設定功能表、其中包含「使用者」頁面的連結。"]
+
+. 從「使用者」表中選取組態。
+. 按一下 image:screenshot_share_icon.gif["共用基礎架構的圖示。"] 圖示。
+. 在您要提供的使用者角色旁輸入一或多個電子郵件地址。
++
+link:reference_user_roles.html["檢視每個角色之間的差異"]。
+
++
+
+TIP: 您可以在單一欄位中輸入多個電子郵件地址、方法是在第一個電子郵件地址之後按* Enter *。
+
+. 按一下*傳送*。
+
+
+使用者應收到一封電子郵件、其中包含存取Converged Systems Advisor的指示說明。

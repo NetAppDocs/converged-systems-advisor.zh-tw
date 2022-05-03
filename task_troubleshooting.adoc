@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: task_troubleshooting.html 
+keywords: troubleshoot, agent, connectivity, browser, discover, error, internet, connection 
+summary: 如果您在使用Converged Systems Advisor時遇到問題、下列資訊可能有助於您解決問題。 
+---
+= 疑難排解融合式系統顧問
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您在使用Converged Systems Advisor時遇到問題、下列資訊可能有助於您解決問題。
+
+
+
+== 您無法透過網頁瀏覽器連線至代理程式
+
+您需要透過網頁瀏覽器連線至代理程式、才能設定FlexPod 探索您的各項功能。如果您無法透過網頁瀏覽器連線、請確定代理程式已連至csa.netapp.com的傳出網際網路連線。代理應用程式無法在沒有網際網路連線的情況下啟動、這會使您無法存取其網路介面。
+
+如果需要Proxy伺服器才能存取網際網路、 link:task_getting_started.html#setting-up-networking-for-the-agent["設定代理程式虛擬機器以使用它"]。
+
+
+
+== 代理程式無法探索裝置
+
+如果代理程式無法找到FlexPod 某個功能不實的裝置、請確認下列事項：
+
+* 確認代理程式已開放連線至每FlexPod 個不知道的裝置。
++
+若要驗證、請從代理程式ping每個裝置。
+
+* 驗證本地網路是否使用172.17.x.x子網路。
++
+代理程式會在內部使用172.17.x.x子網路。如果本機網路使用相同的子網路、則您必須變更代理程式的子網路：
+
++
+.. 登入代理程式的虛擬機器主控台。
++
+預設使用者名稱為「CSA」、預設密碼為「NetApp」。您應該在登入後變更預設密碼。
+
+.. 使用下列內容新增檔案「/etc/Docker / daemon.json」：
++
+ { "bip": "172.44.x.x"}
++
+bip位址可以是任何不衝突的IP位址。它不需要在172範圍內。
+
+.. 重新啟動虛擬機器。
+
+
+
+
+
+
+== 無法使用SSH連線至代理VM
+
+代理VM的SSH預設為停用。
+
+* 若要啟動SSH、請透過vCenter的主控台登入代理VM、然後執行下列命令：
++
+「Udo su」「stystemcl start ssh」
+
+* 若要檢查SSH是否已啟用、請執行下列命令：
++
+「ystemctl is -enabled_ssh」
+
+* 若要檢查代理VM上的SSH狀態、請執行下列命令：
++
+「ystemctl狀態ssh」
+
+* 若要讓SSH在重新開機後持續運作、請執行下列命令：
++
+「Udo su」「stystemcl enable ssh」
+
+

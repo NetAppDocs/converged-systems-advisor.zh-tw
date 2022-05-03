@@ -1,0 +1,66 @@
+---
+sidebar: sidebar 
+permalink: task_quick_start.html 
+keywords: quick start, overview, deploying, getting started, get started, configuring 
+summary: 融合式系統顧問代理程式與入口網站入門指南包括幾個步驟。 
+---
+= 融合式系統顧問快速入門
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+融合式系統顧問代理程式與FlexPod 適用於功能的入口網站入門指南包括幾個步驟。
+
+
+
+==== 為環境做好準備
+
+[role="quick-margin-para"]
+確認您的組態支援。 link:task_prepare_environment.html["為環境做好準備"]。
+
+
+
+==== 在FlexPod 不相連的裝置上建立帳戶
+
+[role="quick-margin-para"]
+在Cisco UCS Manager、Cisco Nexus交換器、ONTAP 您的支援系統、VMware及APIC上設定帳戶。代理程式會使用這些帳戶來收集組態資料。link:task_create_accounts_flexpod_devices.html["在FlexPod 不相連的裝置上建立帳戶"]。
+
+
+
+==== 使用TACACS +伺服器授予CSA使用者權限
+
+[role="quick-margin-para"]
+對於使用TACACS +伺服器的使用者、您必須為交換器授予CSA使用者權限、建立使用者權限群組、並授予群組存取CSA所需的特定設定命令的權限。link:task_grant_user_privileges.html["使用TACACS +伺服器授予CSA使用者權限"]
+
+
+
+==== 設定及部署代理程式
+
+[role="quick-margin-para"]
+在VMware ESXi伺服器上部署融合式系統顧問代理程式。代理程式會收集FlexPod 有關您的融合式基礎架構中每個裝置的組態資料、並將這些資料傳送至Converged Systems Advisor入口網站。link:task_setup_deploy_agent.html["部署代理程式"]。
+
+
+
+==== 在入口網站中新增/共用基礎架構
+
+[role="quick-margin-para"]
+將每FlexPod 個功能區新增至整合式系統顧問入口網站、以建立可監控的整個基礎架構。您也可以共用融合式基礎架構、讓其他人登入入口網站、以便檢視及監控組態。link:task_add_infrastructure.html["在入口網站中新增及共用基礎架構"]。
+
+
+
+==== 設定通知
+
+[role="quick-margin-para"]
+有了Premium授權、您可以設定通知、透過FlexPod 電子郵件通知提醒您有關變更的資訊。link:task_configure_notifications.html["設定通知"]
+
+
+
+==== 設定靜態IP位址
+
+[role="quick-margin-para"]
+如果您的環境沒有DHCP伺服器、您可以在Converged Systems Advisor代理程式上設定靜態IP位址。link:task_setting_static_ip.html["在代理程式上設定靜態IP位址"]

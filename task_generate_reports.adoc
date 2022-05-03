@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: task_generate_reports.html 
+keywords: generate, report, reports, converged, infrastructure, health, inventory, assessment, deployment, validation, partners, issues, configured, configuration, interoperability, downloaded, PDF, email 
+summary: 您可以產生多種類型的報告、例如合作夥伴的健全狀況報告或部署驗證報告。 
+---
+= 產生報告
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您擁有Premium授權、可以產生多種報告類型、提供有關融合式基礎架構目前狀態的詳細資料：庫存報告、健全狀況報告、評估報告、合作夥伴的部署驗證報告等。
+
+.步驟
+. 按一下*報告*。
+. 選取報告、然後按一下*產生*。
+. 選擇報告選項：
++
+.. 選擇融合式基礎架構。
+.. 也可以將最近的資料收集變更為先前的資料收集。
+.. 選擇您要檢視報告的方式：在瀏覽器中、下載PDF或透過電子郵件。
++
+image:screenshot_reports_generate.gif["顯示產生報告的選項、包括選擇融合式基礎架構和快照、然後選擇您要檢視的方式。"]
+
+
+
+
+
+「融合式系統顧問」會產生報告。

@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: concept_security.html 
+keywords: security, data, transfer, privacy, encrypted, encryption, https, tls, customer, business 
+summary: 融合式系統顧問會收集FlexPod 有關您的融合式基礎架構的組態資料、以協助您驗證及監控系統。您可能想要瞭解如何收集資料、如何將資料傳輸至NetApp、以及如何確保資料安全且隱私。 
+---
+= 安全性
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+融合式系統顧問會收集FlexPod 有關您的融合式基礎架構的組態資料、以協助您驗證及監控系統。您可能想要瞭解如何收集資料、如何將資料傳輸至NetApp、以及如何確保資料安全且隱私。
+
+
+
+== 如何收集資料
+
+Converged Systems Advisor代理程式需要認證資料才能存取FlexPod 您的融合式基礎架構中的裝置。Cisco UCS和Nexus交換器需要唯讀認證、ONTAP 而需具備管理員認證才能執行此功能。認證資料會加密並儲存在本機的代理程式上、不會傳送到雲端型入口網站。
+
+提供認證之後、代理程式會從裝置收集_configuration _資料。_Customer-Data存放在裝置上、永遠不會被存取或傳輸。代理程式所收集的組態資料代表範例包括下列項目：
+
+* 容量
+* CPU與記憶體
+* 裝置連線能力
+* 裝置名稱和ID
+* 裝置狀態
+* 韌體版本
+* IP位址
+* iSCSI目標
+* 授權
+* MAC位址
+* 機型編號
+* 序號
+
+
+
+
+== 資料傳輸方式
+
+代理程式從FlexPod 您的融合式基礎架構探索組態資料之後、會使用HTTPS將資料傳送至融合式系統顧問入口網站。通訊會使用NetApp的TLS 1.2憑證進行加密。
+
+image:diagram_data_transfer.gif["顯示代理程式與入口網站之間的加密HTTPS連線。"]
+
+
+
+== 資料的安全性和隱私性
+
+組態資料位於NetApp網路內、由NetApp IT管理。資料受到資料存取層的保護、需要對每位要求存取的使用者進行正面識別。
+
+部署代理程式的使用者可以使用NetApp支援網站帳戶登入、從Converged Systems Advisor入口網站存取資料。此使用者擁有整合式基礎架構的_OOwner_權限。擁有者可授予唯讀、寫入或擁有者權限、與其他使用者共用融合式基礎架構。這些使用者也必須擁有註冊的NetApp支援網站帳戶、才能登入入口網站。
+
+link:reference_user_roles.html["檢閱唯讀、寫入和擁有者權限之間的差異"]。

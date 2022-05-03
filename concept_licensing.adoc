@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: concept_licensing.html 
+keywords: licenses, standard, premium, features, licensing, alerts, notifications, emails, reports, term, subscription, reporting 
+summary: 需要授權才能在Converged Systems Advisor中解鎖功能。您可以針對FlexPod 每個融合式基礎架構、從幾個授權選項中進行選擇。 
+---
+= 授權
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+需要授權才能在Converged Systems Advisor中解鎖功能。您可以針對FlexPod 每個融合式基礎架構、從幾個授權選項中進行選擇。
+
+[cols="12,64,24"]
+|===
+| 授權 | 功能 | 條款 
+
+
+| 無授權  a| 
+展示產品功能的限制版本：
+
+* 監控FlexPod 24小時試用期的支援功能
+* 健全狀況儀表板、可檢視FlexPod 符合最佳實務規範的情況
+* 有限的庫存與補救（以授權版本提供）
+
+ a| 
+* 免費
+* 單次使用（24小時）
+
+
+
+
+| 標準  a| 
+* 持續監控FlexPod 不間斷的功能
+* 健全狀況儀表板、可檢視FlexPod 符合最佳實務規範的情況
+* 運算、網路、儲存設備和Hypervisor的韌體互通性
+* 生命週期管理工具、可識別變更並防止組態移轉
+* 詳細的詳細目錄與系統圖表、以供進階疑難排解之用
+* 由NetApp直接提供支援
+
+ a| 
+訂購型授權：
+
+* 最少12個月
+* 最多60個月
+
+
+
+
+| 優質  a| 
+Standard授權內含的所有功能、加上：
+
+* 報告
++
+全面、即時報告FlexPod 功能、包括健全狀況、互通性和庫存
+
+* 通知與警示
++
+定期通知組態健全狀況和狀態變更
+
+
+ a| 
+訂購型授權：
+
+* 最少12個月
+* 最多60個月
+
+
+|===

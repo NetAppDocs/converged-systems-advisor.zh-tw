@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: reference_user_roles.html 
+keywords: read only, write, owner, privileges, access, security, roles 
+summary: 與其他使用者共用融合式基礎架構時、您可以提供唯讀、寫入或擁有者權限。 
+---
+= 使用者角色
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+與其他使用者共用融合式基礎架構時、您必須提供唯讀、寫入或擁有者權限。
+
+下表列出每個使用者角色可以執行的工作。
+
+[cols="25,25,25,25"]
+|===
+| 工作 | 唯讀 | 寫入 | 擁有者 
+
+
+| 檢視系統 | 是的 | 是的 | 是的 
+
+
+| 更新系統名稱 | 否 | 是的 | 是的 
+
+
+| 更新支援合約詳細資料 | 否 | 是的 | 是的 
+
+
+| 編輯資料收集時間間隔 | 否 | 是的 | 是的 
+
+
+| 申請新的資料收集 | 否 | 是的 | 是的 
+
+
+| 共用系統 | 否 | 是、具有唯讀或寫入存取權 | 是、具有唯讀、寫入或擁有者存取權 
+
+
+| 修改系統元件 | 否 | 否 | 是的 
+
+
+| 刪除系統 | 否 | 否 | 是的 
+|===
