@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>歸檔「融合式系統顧問的新功能」</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="歸檔「融合式系統顧問的新功能」" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/converged-systems-advisor/reference_archive.html" />
+	<meta property="og:description" content="NetApp會定期更新Converged Systems Advisor、為您帶來新功能、增強功能和錯誤修復。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/converged-systems-advisor/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="NetApp會定期更新Converged Systems Advisor、為您帶來新功能、增強功能和錯誤修復。">
+  <meta name="keywords" content=" archive, new, features, what&apos;s new, enhancements, release notes"><!-- Icons -->
+  <link rel="icon" href="/zh-tw/converged-systems-advisor/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/converged-systems-advisor/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-tw/converged-systems-advisor/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/converged-systems-advisor/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/converged-systems-advisor/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-tw/converged-systems-advisor/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-tw/converged-systems-advisor/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-tw/converged-systems-advisor/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-tw/converged-systems-advisor/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-tw/converged-systems-advisor/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-tw/converged-systems-advisor/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/converged-systems-advisor/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/converged-systems-advisor/css/custom-dropdown.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/converged-systems-advisor/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-tw/converged-systems-advisor/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/converged-systems-advisor/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/zh-tw/converged-systems-advisor/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/converged-systems-advisor/js/na-search.js'></script><script src='/zh-tw/converged-systems-advisor/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-tw/converged-systems-advisor/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/converged-systems-advisor/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-tw/converged-systems-advisor/js/na-utility.js'></script>
+  <script src='/zh-tw/converged-systems-advisor/js/clouddocs.js'></script>
+  <script src='/zh-tw/converged-systems-advisor/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-tw/converged-systems-advisor/js/toc.js'></script>
+  <script src='/zh-tw/converged-systems-advisor/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/zh-tw/converged-systems-advisor/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/converged-systems-advisor/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/converged-systems-advisor/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/converged-systems-advisor/js/jszip.min.js'></script>
+  <script src='/zh-tw/converged-systems-advisor/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/converged-systems-advisor/issues/new?body=Page%3A%20[歸檔「融合式系統顧問的新功能」](https://docs.netapp.com/zh-tw/converged-systems-advisor/reference_archive.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/converged-systems-advisor/images/discuss-sm.svg" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/converged-systems-advisor/blob/main/reference_archive.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/converged-systems-advisor/images/edit-sm.svg" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/converged-systems-advisor/images/article-sm.svg" class="github-icon" />瞭解如何作出貢獻</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此頁面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">產品與解決方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支援與訓練</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社群</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">部落格</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客戶成功案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">聯絡人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">聯絡人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-tw/converged-systems-advisor/search.html"
+          data-type="widget" 
+          data-placeholder="搜尋文件" 
+          data-no-results-found="找不到符合 {query} 的相關結果。" 
+          data-did-you-mean="搜尋 {suggestion}。" 
+          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？" 
+          data-results-found="找到 {hitCount} 筆結果"  
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">繁體中文</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/converged-systems-advisor/reference_archive.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/converged-systems-advisor/reference_archive.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/converged-systems-advisor/reference_archive.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/converged-systems-advisor/reference_archive.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-tw/converged-systems-advisor/reference_archive.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-tw/converged-systems-advisor/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/zh-tw/converged-systems-advisor/pdfs/fullsite-sidebar/融合式系統顧問.pdf" >
+          <img src="/zh-tw/converged-systems-advisor/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/converged-systems-advisor/pdfs/sidebar/版本資訊.pdf" 
+            
+          >
+            <img src="/zh-tw/converged-systems-advisor/images/pdf.png" width="16" height="16"/>
+            版本資訊
+          </a>
+          
+
+
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/zh-tw/converged-systems-advisor/pdfs/pages/reference_archive.pdf" >
+    <img src="/zh-tw/converged-systems-advisor/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/converged-systems-advisor/pdfs/sidebar/概念.pdf" 
+            
+          >
+            <img src="/zh-tw/converged-systems-advisor/images/pdf.png" width="16" height="16"/>
+            概念
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/converged-systems-advisor/pdfs/sidebar/快速入門.pdf" 
+            
+          >
+            <img src="/zh-tw/converged-systems-advisor/images/pdf.png" width="16" height="16"/>
+            快速入門
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/converged-systems-advisor/pdfs/sidebar/監控基礎架構.pdf" 
+            
+          >
+            <img src="/zh-tw/converged-systems-advisor/images/pdf.png" width="16" height="16"/>
+            監控基礎架構
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-tw/converged-systems-advisor/images/pdf-zip.png" width="16" height="16"/>
+      <pre>個別 PDF 文件的集合<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/index.html">
+        整合式系統顧問文件
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 版本資訊</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/reference_new.html">
+        新增功能
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/reference_archive.html">
+        新增功能歸檔
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/reference_issues.html">
+        已知問題
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 概念</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/concept_overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/concept_architecture.html">
+        架構
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/concept_licensing.html">
+        授權
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/concept_security.html">
+        安全性
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/reference_user_roles.html">
+        使用者角色
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 快速入門</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_quick_start.html">
+        快速入門
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_prepare_environment.html">
+        為環境做好準備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_create_accounts_flexpod_devices.html">
+        建立FlexPod 客戶帳戶以供使用
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_setup_deploy_agent.html">
+        設定及部署代理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_add_infrastructure.html">
+        在入口網站中新增基礎架構
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_configure_notifications.html">
+        設定通知
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_setting_static_ip.html">
+        在代理程式上設定靜態IP
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 監控基礎架構</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_review_infrastructure_history.html">
+        檢閱您的基礎架構歷史記錄
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_monitor_rules.html">
+        監控規則
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_generate_reports.html">
+        產生報告
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_track_contracts.html">
+        追蹤支援合約
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_deployment_validation_partners_resellers.html">
+        驗證合作夥伴與經銷商的部署
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/task_troubleshooting.html">
+        疑難排解
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/reference_additional_info.html">
+        相關連結
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/converged-systems-advisor/reference_legal_notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-tw/converged-systems-advisor/">Converged&nbsp;Systems&nbsp;Advisor</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">歸檔「融合式系統顧問的新功能」</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-05-03 10:07:00 +0000">05/03/2022</time>
+    
+  
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>NetApp會定期更新Converged Systems Advisor、為您帶來新功能、增強功能和錯誤修復。</p>
+</div>
+<div class="paragraph">
+<p>若要確認FlexPod CSA代理程式支援哪些元件、請參閱 <a href="http://mysupport.netapp.com/matrix" target="_blank" rel="noopener">"NetApp 互通性對照表工具"</a> （僅限部分）IMT 。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="內容">內容</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此歸檔包含下列版本的資訊：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#30 April 2020">[30 April 2020]</a></p>
+</li>
+<li>
+<p><a href="#3 February 2020">[3 February 2020]</a></p>
+</li>
+<li>
+<p><a href="#7 November 2019">[7 November 2019]</a></p>
+</li>
+<li>
+<p><a href="#24 July 2019">[24 July 2019]</a></p>
+</li>
+<li>
+<p><a href="#25 April 2019">[25 April 2019]</a></p>
+</li>
+<li>
+<p><a href="#28 March 2019">[28 March 2019]</a></p>
+</li>
+<li>
+<p><a href="#17 January 2019">[17 January 2019]</a></p>
+</li>
+<li>
+<p><a href="#13 September 2018">[13 September 2018]</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2020年4月30日">2020年4月30日</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此版本包含下列增強功能：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Upgrade Advisor">[Upgrade Advisor]</a></p>
+</li>
+<li>
+<p><a href="#Cluster interconnect switch">[Cluster interconnect switch]</a></p>
+</li>
+<li>
+<p><a href="#Capacity card enhancements">[Capacity card enhancements]</a></p>
+</li>
+<li>
+<p><a href="#System diagram alerts">[System diagram alerts]</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="升級顧問">升級顧問</h3>
+<div class="paragraph">
+<p>現在您可以使用ONTAP Nexus和UCS元件檢查VMware vCenter和VMware版本的相容性。若要檢查相容性、請使用儀表板中「韌體互通性」下的「升級顧問」。支援您看到的所有版本。<span class="image"><img src="./media/screenshot_upgrade_advisor_screen_no_change.png" alt="螢幕擷取畫面、寬=65%、對齊=左"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="叢集互連交換器">叢集互連交換器</h3>
+<div class="paragraph">
+<p>*叢集互連交換器*已新增至儀表板檢視的*韌體互通性*下。現在您可以監控ONTAP 下列機型的支援功能：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cisco Nexus 3132Q-V</p>
+</li>
+<li>
+<p>Cisco Nexus 3232C</p>
+</li>
+<li>
+<p>Cisco Nexus 2300YC</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_firmware_interoperability_CIS.png" alt="螢幕擷取畫面、寬=65%、對齊=左"></span></p>
+</div>
+<div class="paragraph">
+<p>在代理程式中、您現在可以在*新增裝置資訊*下拉式功能表中、將叢集互連交換器新增為裝置。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_add_device_cis.png" alt="螢幕擷取畫面、寬=35%、對齊=左"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="容量卡增強功能">容量卡增強功能</h3>
+<div class="paragraph">
+<p>我們也新增網路連接埠使用率和UCS刀鋒伺服器使用率的連結、協助您監控FlexPod 及擴充您的支援基礎架構。在儀表板檢視中、當您移至容量時、會看到兩個新連結。<span class="image"><img src="./media/screenshot_capacity_card_with_port_and_UCS_blade_utilization.png" alt="螢幕擷取畫面、寬=35%、對齊=左"></span></p>
+</div>
+<div class="paragraph">
+<p>連接埠使用率連結至網路層介面的詳細資訊。<span class="image"><img src="./media/screenshot_network_port_utilization_screen.png" alt="螢幕擷取畫面、寬=65%、對齊=左"></span></p>
+</div>
+<div class="paragraph">
+<p>UCS刀鋒伺服器使用率連結可連結至運算層中刀鋒的詳細資訊。<span class="image"><img src="./media/screenshot_compute_detailed_information_for_UCS_blade_utilization.png" alt="螢幕擷取畫面、寬=65%、對齊=左"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="系統圖表警示">系統圖表警示</h3>
+<div class="paragraph">
+<p>您現在可以在系統的圖表檢視中看到警示、以便更有效地監控基礎架構。<span class="image"><img src="./media/screenshot_diagram_with_alert_bubble.jpg" alt="螢幕擷取畫面、寬=65%、對齊=左"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="修正問題">修正問題</h3>
+<div class="paragraph">
+<p>本版本已修正下列已知問題：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 18.4615%;">
+<col style="width: 81.5385%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">錯誤ID</th>
+<th class="tableblock halign-left valign-top">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&amp;Display=1253405" target="_blank" rel="noopener">"1253405"</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">在Converged Systems Advisor中、Nexus交換器連接埠狀態可能顯示不正確。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>返回 <a href="#Contents">[Contents]</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2020年2月3日">2020年2月3日</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此版本包含下列增強功能：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Navigation enhancements">[Navigation enhancements]</a></p>
+</li>
+<li>
+<p><a href="#Aggregate details">[Aggregate details]</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="導覽增強功能">導覽增強功能</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>此版本可讓您在*檢視所有系統*中查看所有系統。</p>
+</li>
+<li>
+<p>您可以更輕鬆地查看及瀏覽元件層的結構。您可以使用下拉式功能表和箭頭來檢視您的裝置。</p>
+</li>
+<li>
+<p>使用階層連結追蹤功能、也能更輕鬆地從儀表板（首頁）檢視中導覽。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-new_storage_dropdown.gif" alt="螢幕擷取畫面、寬=35%、對齊=左"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="aggregate詳細資料">Aggregate詳細資料</h3>
+<div class="paragraph">
+<p>在儀表板檢視中、當您移至容量時、您現在可以看到* Aggregate Details *的連結。您可以使用提供的連結、查看儲存層中有關集合體的詳細資訊。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_redcloud_new-capacity-card.gif" alt="螢幕擷取畫面、寬=65%、對齊=左"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_redcloud_new-aggregate_details.gif" alt="螢幕擷取畫面、寬=65%、對齊=左"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="修正問題-2">修正問題</h3>
+<div class="paragraph">
+<p>本版本已修正下列已知問題：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 18.4615%;">
+<col style="width: 81.5385%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">錯誤ID</th>
+<th class="tableblock halign-left valign-top">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&amp;Display=1279956" target="_blank" rel="noopener">"1249956"</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">單一節點MetroCluster 的不支援在叢集詳細資料頁面的「總覽與規則」摘要中顯示IOXM擴充模組。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>返回 <a href="#Contents">[Contents]</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2019年11月7日">2019年11月7日</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/converged-systems-advisor/images/note.svg" alt="附註">
+</td>
+<td class="content">
+在您將FlexPod 自己的功能加入Converged Systems Advisor之後、此版本中的所有新功能和增強功能都會自動納入其中。依照中的指示操作 <a href="task_getting_started.html">"快速入門"</a> 將FlexPod 您的不只是融合式基礎架構的功能加入融合式系統顧問。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>此版本包含下列新功能與增強功能：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#MetroCluster awareness">[MetroCluster awareness]</a></p>
+</li>
+<li>
+<p><a href="#NVMe awareness">[NVMe awareness]</a></p>
+</li>
+<li>
+<p><a href="#Improved interoperability functionality">[Improved interoperability functionality]</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="感知metrocluster">感知MetroCluster</h3>
+<div class="paragraph">
+<p>融合式系統顧問現在支援將MetroCluster FlexPod 單一站台的一個站台當成融合式基礎架構。分析現在可以判斷MetroCluster 出雙方的健全狀況。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="nvme認知">NVMe認知</h3>
+<div class="paragraph">
+<p>現在、融合式系統顧問將執行分析、檢查ONTAP 支援於《支援的NVMe 9.4及更新版本》的NVMe傳輸協定組態。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="改善互通性功能">改善互通性功能</h3>
+<div class="paragraph">
+<p>「融合式系統顧問」提供更新的互通性卡、可連結至快顯視窗、顯示每個元件所支援的目前、最近及最新版本。快顯視窗中新增了一份報告、顯示每個元件層的個別互通性報告。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>返回 <a href="#Contents">[Contents]</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2019年7月24日">2019年7月24日</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此版本包含下列新功能與增強功能：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Support for Cisco ACI in FlexPod">[Support for Cisco ACI in FlexPod]</a></p>
+</li>
+<li>
+<p><a href="#Support for multiple clusters in a single FlexPod">[Support for multiple clusters in a single FlexPod]</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="支援cisco-aci-flexpod">支援Cisco ACI FlexPod</h3>
+<div class="paragraph">
+<p>融合式系統顧問現在支援FlexPod Cisco ACI Networking的各種功能。我們將評估您的所有設備的支援與組態、FlexPod 即使是連接至其他FlexPod 支援功能的兩個動態決定的葉片開關也會進行評估。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="單flexpod-一支援多個叢集">單FlexPod 一支援多個叢集</h3>
+<div class="paragraph">
+<p>融合式系統顧問現在可在單FlexPod 一的基礎架構中支援多個叢集。所有ONTAP 叢集都會處理儲存區需求規則、所有叢集都會反映在系統圖表上。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>返回 <a href="#Contents">[Contents]</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2019年4月25日">2019年4月25日</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此版本包含下列新功能與增強功能：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Automatically resolving failed rules">[Automatically resolving failed rules]</a></p>
+</li>
+<li>
+<p><a href="#Displaying suppressed rules">[Displaying suppressed rules]</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="自動解析失敗的規則">自動解析失敗的規則</h3>
+<div class="paragraph">
+<p>融合式系統顧問現在可以自動解決導致某些規則失敗的問題。重新啟動代理程式即可自動啟用此功能。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="顯示抑制的規則">顯示抑制的規則</h3>
+<div class="paragraph">
+<p>您現在可以在Converged Systems Advisor中顯示受抑制規則的全域清單、並從清單中重新啟用受抑制規則的警示。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="修正問題-3">修正問題</h3>
+<div class="paragraph">
+<p>本版本已修正下列已知問題：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 18.4615%;">
+<col style="width: 81.5385%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">錯誤ID</th>
+<th class="tableblock halign-left valign-top">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&amp;Display=1211321" target="_blank" rel="noopener">"1211321"</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">融合式基礎架構可能無法顯示系統圖表影像</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&amp;Display=1211987" target="_blank" rel="noopener">"1211987年"</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">儲存叢集效率值顯示不正確</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&amp;Display=1211995" target="_blank" rel="noopener">"1211995年"</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nexus交換器連接埠狀態可能顯示不正確</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&amp;Display=1211999" target="_blank" rel="noopener">"1211999年"</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">空間保留狀態顯示不正確</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>返回 <a href="#Contents">[Contents]</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2019年3月28日">2019年3月28日</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>本版本已修正下列已知問題：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 13.7931%;">
+<col style="width: 86.2069%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">錯誤ID</th>
+<th class="tableblock halign-left valign-top">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&amp;Display=1211993">"1211993年"</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CSA中的精簡配置狀態顯示不正確</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&amp;Display=1211998">"1211998年"</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CSA中的磁碟空間使用率百分比顯示不正確</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&amp;Display=1211990">"1211990年"</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">在Nexus交換器中對應至VLAN的介面可能與CSA中的實際裝置輸出不符</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://mysupport.netapp.com/NOW/cgi-bin/bol?Type=Detail&amp;Display=1212001">"1212001年"</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CSA可能會錯誤顯示機架安裝伺服器的電源供應器資訊</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>返回 <a href="#Contents">[Contents]</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2019年1月17日">2019年1月17日</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此版本包含下列新功能與增強功能：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Support for new FlexPod devices">[Support for new FlexPod devices]</a></p>
+</li>
+<li>
+<p><a href="#Detailed information about hosts and virtual machines">[Detailed information about hosts and virtual machines]</a></p>
+</li>
+<li>
+<p><a href="#Simplified experience when adding an infrastructure">[Simplified experience when adding an infrastructure]</a></p>
+</li>
+<li>
+<p><a href="#Device import using a file">[Device import using a file]</a></p>
+</li>
+<li>
+<p><a href="#Integration with NetApp Active IQ">[Integration with NetApp Active IQ]</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="支援全新flexpod-的支援功能">支援全新FlexPod 的支援功能</h3>
+<div class="paragraph">
+<p>融合式系統顧問現在支援下列FlexPod 各項功能：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cisco UCS C系列機架伺服器</p>
+</li>
+<li>
+<p>Nexus 3000系列交換器</p>
+</li>
+<li>
+<p>直接連接至NetApp控制器的Cisco UCS交換器</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>如需支援裝置的完整清單、請參閱 <a href="http://mysupport.netapp.com/matrix" target="_blank" rel="noopener">"NetApp 互通性對照表工具"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="主機與虛擬機器的詳細資訊">主機與虛擬機器的詳細資訊</h3>
+<div class="paragraph">
+<p>融合式系統顧問現在提供更多有關虛擬化環境的資訊。您可以向下切入以檢視個別主機和虛擬機器的相關資訊、包括圖表、詳細目錄清單和規則摘要。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_virtualization.gif" alt="螢幕擷取畫面、寬=65%、對齊=左"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="簡化新增基礎架構的使用體驗">簡化新增基礎架構的使用體驗</h3>
+<div class="paragraph">
+<p>現在更容易將基礎架構新增至融合式系統顧問。入口網站可讓您逐步輸入資訊：</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_add_infrastructure_overview.gif" alt="螢幕擷取畫面、寬=65%、對齊=左"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="task_getting_started.html#adding-an-infrastructure-to-the-portal">"瞭解如何將基礎架構新增至融合式系統顧問"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="使用檔案匯入裝置">使用檔案匯入裝置</h3>
+<div class="paragraph">
+<p>您現在FlexPod 可以匯入包含每個裝置相關資訊的檔案、將Converged Systems Advisor代理程式設定為探索您的靜態基礎架構。匯入裝置是手動新增每個裝置的替代方法、逐一新增。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_import_devices.gif" alt="螢幕擷取畫面、寬=65%、對齊=左"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="task_getting_started.html#configuring-the-agent-to-discover-your-flexpod-infrastructure">"瞭解如何設定代理程式以探索FlexPod 您的不知所知的基礎架構"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="與netapp-active-iq-產品整合">與NetApp Active IQ 產品整合</h3>
+<div class="paragraph">
+<p>您現在可以Active IQ 從Converged Systems Advisor啟動《產品資訊》。下列範例顯示Active IQ 儲存頁面上的「資訊」連結：</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_active_iq.gif" alt="螢幕擷取畫面、寬=65%、對齊=左"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="修正問題-4">修正問題</h3>
+<div class="paragraph">
+<p>本版本已修正下列已知問題：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 13.7931%;">
+<col style="width: 86.2069%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">錯誤ID</th>
+<th class="tableblock halign-left valign-top">說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4671.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">瀏覽Converged Systems Advisor入口網站時、Firefox可能會停止回應。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4500</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">整合式系統顧問入口網站不會在逾時時間間隔過後登出。您仍保持登入狀態、但看不到FlexPod 您的不景系統。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2794年</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">即使虛擬機器上未安裝VMware工具、「融合式系統顧問」仍會顯示「通過」的「VMware工具檢查」規則。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>返回 <a href="#Contents">[Contents]</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2018年9月13日">2018年9月13日</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>本次發表的融合式系統顧問包括下列新功能：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>全新的使用者介面和使用者體驗、可簡化客戶FlexPod 的不正常運作</p>
+</li>
+<li>
+<p>VMware虛擬化的健全狀況和最佳實務做法驗證</p>
+</li>
+<li>
+<p>支援Cisco MDS交換器、並支援更多光纖通道</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">cookie-settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">對我們的網站有任何意見或要求？</span>
+              <a target="_self" href="javascript:netapp_mailto()">請與我們聯絡</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/zh-tw/announcements/">公告</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/converged-systems-advisor/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/converged-systems-advisor/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/converged-systems-advisor/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/converged-systems-advisor/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/converged-systems-advisor/js/www-ntap.js'></script>
+    <script src='/zh-tw/converged-systems-advisor/js/tabbed-blocks.js'></script>
+  </body></html>
