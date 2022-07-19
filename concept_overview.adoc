@@ -18,5 +18,5 @@ summary: 融合式系統顧問會驗證FlexPod 您的支援基礎架構部署、
 
 觀看下列影片、瞭解整合式系統顧問的總覽：
 
-video::CZHu0Xp33BY[youtube, width=848,height=480]
+video::CZHu0Xp33BY[youtube,width=848,height=480]
 如需更多有關融合式系統顧問所提供價值的詳細資訊、 https://www.netapp.com/us/media/ds-3896.pdf["閱讀資料表"^]。
