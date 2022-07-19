@@ -17,10 +17,10 @@ summary: 在VMware ESXi伺服器上部署融合式系統顧問代理程式。
 您必須在VMware ESXi伺服器上部署整合式系統顧問代理程式。代理程式會收集FlexPod 有關您的融合式基礎架構中每個裝置的組態資料、並將這些資料傳送至Converged Systems Advisor入口網站。
 
 .步驟
-. <<Download and install the agent>>
-. <<Set up networking for the agent>>
-. <<Install an SSL certificate on the agent>>
-. <<Configure the agent to discover your FlexPod infrastructure>>
+.  and install the agent
+.  up networking for the agent
+.  an SSL certificate on the agent
+.  the agent to discover your FlexPod infrastructure
 
 
 

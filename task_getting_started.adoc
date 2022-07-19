@@ -46,7 +46,7 @@ summary: 若要開始使用融合式系統顧問、您必須準備好環境、�
 
 
 
-. <<Creating accounts on FlexPod devices,在每FlexPod 個元件上建立帳戶>>。
+.  accounts on FlexPod devices,在每FlexPod 個元件上建立帳戶。
 +
 代理程式需要認證資料才能收集組態資料。設定代理程式時、您必須提供認證資料。
 
@@ -95,7 +95,7 @@ TIP: 所有新使用者預設為唯讀。
 
 
 
-如果您使用的是TACACACSA+伺服器、而且需要授予CSA使用者權限、請前往 <<Granting CSA user privileges using a TACACS+ server>>。
+如果您使用的是TACACACSA+伺服器、而且需要授予CSA使用者權限、請前往  CSA user privileges using a TACACS+ server。
 
 
 
@@ -159,10 +159,10 @@ image:screenshot_system_manager_add_user.gif["顯示System Manager中的「Add U
 您必須在VMware ESXi伺服器上部署整合式系統顧問代理程式。代理程式會收集FlexPod 有關您的融合式基礎架構中每個裝置的組態資料、並將這些資料傳送至Converged Systems Advisor入口網站。
 
 .步驟
-. <<Downloading and installing the agent,下載並安裝代理程式>>
-. <<Setting up networking for the agent,為代理程式設定網路>>
-. <<Installing an SSL certificate on the agent,如有需要、請在代理程式上安裝SSL憑證>>
-. <<Configuring the agent to discover your FlexPod infrastructure,設定代理程式以探索FlexPod 您的資訊基礎架構>>
+.  and installing the agent,下載並安裝代理程式
+.  up networking for the agent,為代理程式設定網路
+.  an SSL certificate on the agent,如有需要、請在代理程式上安裝SSL憑證
+.  the agent to discover your FlexPod infrastructure,設定代理程式以探索FlexPod 您的資訊基礎架構
 
 
 

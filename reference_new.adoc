@@ -24,9 +24,9 @@ NetApp會定期更新Converged Systems Advisor、為您帶來新功能、增強�
 
 此版本包含下列增強功能：
 
-* <<New functionality for storage change detection (diffs)>>
-* <<Expanded configuration assurance for cluster interconnect switches>>
-* <<Initial coverage of NVMe designs>>
+*  functionality for storage change detection (diffs)
+*  configuration assurance for cluster interconnect switches
+*  coverage of NVMe designs
 
 
 

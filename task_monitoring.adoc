@@ -37,7 +37,7 @@ image:screenshot_rules_information.gif["顯示規則的詳細資料、包括說�
 
 . 請依照解決方法中的指示來修正問題。
 +
-如有需要、 <<Reviewing the history for an infrastructure,檢閱組態歷程記錄>> 協助您解決問題的基礎架構。
+如有需要、  the history for an infrastructure,檢閱組態歷程記錄 協助您解決問題的基礎架構。
 
 
 
