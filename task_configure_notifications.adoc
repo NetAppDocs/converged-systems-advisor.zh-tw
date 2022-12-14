@@ -31,4 +31,5 @@ summary: 如果您擁有Premium授權、Converged Systems Advisor可以FlexPod �
 . 按一下「 * 儲存 * 」。
 
 
+.結果
 現在、融合式系統顧問會將電子郵件通知傳送給與融合式基礎架構相關的使用者。

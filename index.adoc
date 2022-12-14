@@ -18,7 +18,7 @@ NetApp融合式系統顧問可驗證、監控FlexPod 及最佳化您的融合式
 
 
 
-== 瞭解新功能
+== 瞭解最新資訊
 
 link:reference_new.html["融合式系統顧問的新功能"]
 

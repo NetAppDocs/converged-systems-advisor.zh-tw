@@ -45,7 +45,6 @@
   <block id="7297f536b887e2351b3f1d8d075f4043" category="paragraph">比較兩個收集期間之間的資料、有助於識別變更內容。</block>
   <block id="7a49965d9cfff28dae6c97f9b420a932" category="summary">NetApp融合式系統顧問可驗證、監控FlexPod 及最佳化您的融合式基礎架構部署、確保為您的商業應用程式提供最佳效能與可用度。</block>
   <block id="04fbad68af42342b74d64c44c053aeb6" category="doc">融合式系統顧問</block>
-  <block id="1fde0727b387439572ade83eecff4f68" category="section-title">瞭解新功能</block>
   <block id="9019b4a8afd649f588dde381d9d2c1cb" category="inline-link-macro">融合式系統顧問的新功能</block>
   <block id="cfaf20a40a53abf04e998d745a541106" category="paragraph"><block ref="cfaf20a40a53abf04e998d745a541106" category="inline-link-macro-rx"></block></block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="section-title">開始使用</block>
@@ -99,19 +98,16 @@
   <block id="bb4e793023539d2e73eea517a0009f8f" category="paragraph">融合式系統顧問代理程式與FlexPod 適用於功能的入口網站入門指南包括幾個步驟。</block>
   <block id="ebd4d70d369b168865892524fb385472" category="section-title">為環境做好準備</block>
   <block id="861d7392cf2a3c7ca2ed1442f6237101" category="paragraph">確認您的組態支援。 <block ref="5db18581d3c751db9049195c8f5e0955" category="inline-link-macro-rx"></block>。</block>
-  <block id="005c54fa8a7e7bd788a9d809d1387a85" category="section-title">在FlexPod 不相連的裝置上建立帳戶</block>
   <block id="2f166ccfcdb92d24539f300510b6c06a" category="inline-link-macro">在FlexPod 不相連的裝置上建立帳戶</block>
   <block id="ef53b42f68445a3ad4051becb0f15d0a" category="paragraph">在Cisco UCS Manager、Cisco Nexus交換器、ONTAP 您的支援系統、VMware及APIC上設定帳戶。代理程式會使用這些帳戶來收集組態資料。<block ref="3431097fc9e072fa942c7d7d18ec5a22" category="inline-link-macro-rx"></block>。</block>
   <block id="92a02a450197db41e0b230ea53ef8ff3" category="section-title">使用TACACS +伺服器授予CSA使用者權限</block>
   <block id="2c1c5cb63f66b3d5b5f4eeb79a858979" category="paragraph">對於使用TACACS +伺服器的使用者、您必須為交換器授予CSA使用者權限、建立使用者權限群組、並授予群組存取CSA所需的特定設定命令的權限。<block ref="4c9d56d5e4670c50abdba1f72cb4866c" category="inline-link-macro-rx"></block></block>
   <block id="c0fb3c98adaf760968c2a76d78a5b482" category="inline-link-macro">部署代理程式</block>
   <block id="0550cf7fd37a5b054ce87062df5f3254" category="paragraph">在VMware ESXi伺服器上部署融合式系統顧問代理程式。代理程式會收集FlexPod 有關您的融合式基礎架構中每個裝置的組態資料、並將這些資料傳送至Converged Systems Advisor入口網站。<block ref="96f9770b130e3bbf775f182c9ade7098" category="inline-link-macro-rx"></block>。</block>
-  <block id="0d68d2879e160e76749e7cf93c2fa146" category="section-title">在入口網站中新增/共用基礎架構</block>
   <block id="19262993c294a1c73c8ae843e52a78f8" category="inline-link-macro">在入口網站中新增及共用基礎架構</block>
   <block id="98e6f4726c519b5915a8c7eda3e7406d" category="paragraph">將每FlexPod 個功能區新增至整合式系統顧問入口網站、以建立可監控的整個基礎架構。您也可以共用融合式基礎架構、讓其他人登入入口網站、以便檢視及監控組態。<block ref="8650b55bc84e39256db0ba998f0a5b40" category="inline-link-macro-rx"></block>。</block>
   <block id="19a5158f1235c29843008925adb7baf8" category="section-title">設定通知</block>
   <block id="68b25f35698ade6b2d3fe83dec7cf861" category="paragraph">有了Premium授權、您可以設定通知、透過FlexPod 電子郵件通知提醒您有關變更的資訊。<block ref="ebe1a4d3225f5bb69764eba03129edce" category="inline-link-macro-rx"></block></block>
-  <block id="b44a488d2f5dc6040330205f250e7850" category="section-title">設定靜態IP位址</block>
   <block id="bb970f20a14446757048e71ed32f976f" category="inline-link-macro">在代理程式上設定靜態IP位址</block>
   <block id="db15846e3abf8485dbf81a496e64d90a" category="paragraph">如果您的環境沒有DHCP伺服器、您可以在Converged Systems Advisor代理程式上設定靜態IP位址。<block ref="708dd38422a6a2d257990b66f3dbd251" category="inline-link-macro-rx"></block></block>
   <block id="a2344a362f5275955ff01f4c0302c7e7" category="summary">您可以修正失敗的規則、抑制規則、檢視已被抑制的規則清單、並視需要選取以結束抑制。</block>
@@ -777,4 +773,21 @@
   <block id="b7b722eea69a1d2e85256ecaa18b4620" category="sidebar">監控規則</block>
   <block id="231cf4c70d866b616c21baddaeed0696" category="sidebar">疑難排解</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="sidebar">相關連結</block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成後</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="6e5bc02812454d72aa1b3361bc2f6c73" category="inline-image-macro">第1名</block>
+  <block id="559f8475e1ff74d0a5b077794558916f" category="section-title"><block ref="dc5de6e35d5028cc4c0b89b89e621258" category="inline-image-macro-rx" type="image"></block> 為環境做好準備</block>
+  <block id="3db14b7ee6183c9d58f1e9d5e8e63efd" category="inline-image-macro">第2名</block>
+  <block id="bc83ea51badfd0910cc8d7bae37d8acd" category="section-title"><block ref="8a21168e601d45e544969f8d2c358917" category="inline-image-macro-rx" type="image"></block> 在FlexPod 不相連的裝置上建立帳戶</block>
+  <block id="9f3ebc84fe13f3200262a9c4b7c9807d" category="inline-image-macro">第3名</block>
+  <block id="3e12ab5fae17206c542331228866ed0d" category="section-title"><block ref="436aa95806ef0877809848921c187b08" category="inline-image-macro-rx" type="image"></block> 使用TACACS +伺服器授予CSA使用者權限</block>
+  <block id="86f188df3015051c771264e12c69d0e4" category="inline-image-macro">第4名</block>
+  <block id="511da2848c80f269eb677e5a5710cbcd" category="section-title"><block ref="b0069e021ff5287a729b22bfea26bbe1" category="inline-image-macro-rx" type="image"></block> 設定及部署代理程式</block>
+  <block id="5870ed875d2bc967928d9a48d0bcac54" category="inline-image-macro">第5名</block>
+  <block id="3a9f59ee192096314f07968a153e54b2" category="section-title"><block ref="c76f59d4b1b742813df5111ab3a44f58" category="inline-image-macro-rx" type="image"></block> 在入口網站中新增/共用基礎架構</block>
+  <block id="efd2db6ed66cb68b1ef85f7fc95f01ef" category="inline-image-macro">編號6.</block>
+  <block id="000de680812539d81f6b9eb895793c90" category="section-title"><block ref="434171cc767ea1c526904692eaabbd08" category="inline-image-macro-rx" type="image"></block> 設定通知</block>
+  <block id="71bb2e8e85702bc6dc8fe49bc2ca2664" category="inline-image-macro">編號7.</block>
+  <block id="ec82488760b9c067f6a1effc164db7f9" category="section-title"><block ref="a30b4945ccf5eb8b859e8a3c07b0e494" category="inline-image-macro-rx" type="image"></block> 設定靜態IP位址</block>
+  <block id="492e5546e60705134bff8d7f80511a8d" category="section-title">瞭解最新資訊</block>
 </blocks>

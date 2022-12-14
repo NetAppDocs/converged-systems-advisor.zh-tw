@@ -17,10 +17,10 @@ summary: 在VMware ESXi伺服器上部署融合式系統顧問代理程式。
 您必須在VMware ESXi伺服器上部署整合式系統顧問代理程式。代理程式會收集FlexPod 有關您的融合式基礎架構中每個裝置的組態資料、並將這些資料傳送至Converged Systems Advisor入口網站。
 
 .步驟
-.  and install the agent
-.  up networking for the agent
-.  an SSL certificate on the agent
-.  the agent to discover your FlexPod infrastructure
+. <<下載並安裝代理程式>>
+. <<為代理程式設定網路>>
+. <<在代理程式上安裝SSL憑證>>
+. <<設定代理程式以探索FlexPod 您的資訊基礎架構>>
 
 
 
@@ -29,6 +29,7 @@ summary: 在VMware ESXi伺服器上部署融合式系統顧問代理程式。
 
 您必須在VMware ESXi伺服器上部署整合式系統顧問代理程式。
 
+.關於這項工作
 若要將頻寬使用量降至最低、您應將代理程式安裝在與FlexPod 此VMware ESXi組態位於相同資料中心的VMware ESXi伺服器上。代理程式必須連線至FlexPod 每個支援元件和網際網路、才能使用HTTPS連接埠443將組態資料傳送至Converged Systems Advisor入口網站。
 
 代理程式是以開放式虛擬化格式（OVF）範本部署為VMware vSphere虛擬機器。此範本是以Debian為基礎、具有1個vCPU和2 GB的RAM（多FlexPod 個或更大的版本可能需要更多的RAM）。
@@ -116,6 +117,7 @@ Debian虛擬機器的網路組態預設為DHCP。安裝了Network Manager、並�
 
 當虛擬機器初次開機時、代理程式會建立自我簽署的憑證。必要時、您可以刪除該憑證並使用自己的SSL憑證。
 
+.關於這項工作
 整合式系統顧問支援下列功能：*任何與OpenSSL 1.0.1版或更新版本* TLS 1.1及TLS 1.2相容的加密器
 
 .步驟
@@ -153,4 +155,5 @@ NOTE: 對於代表客戶部署CSA授權版本的任何合作夥伴而言、在�
 
 
 
+.結果
 表格中的FlexPod 每個裝置都應顯示勾選標記。image:screenshot_agent_configuration.gif["在「Status（狀態）」欄中以綠色勾號顯示每個所需的裝置。"]

@@ -15,12 +15,12 @@ summary: 若要開始使用、請設定FlexPod 適用於各種不適用設備的
 
 若要開始使用、請設定FlexPod 適用於各種不適用設備的帳戶：
 
-*  a read-only account for Cisco UCS Manager
-*  a read-only account for Nexus switches
-*  an admin account for ONTAP
-*  a read-only account for VMware
-*  a read-only account on the APIC
-*  CSA user privileges using a TACACS+ server
+* <<為Cisco UCS Manager建立唯讀帳戶>>
+* <<為Nexus交換器建立唯讀帳戶>>
+* <<建立ONTAP 管理員帳戶以供使用>>
+* <<為VMware建立唯讀帳戶>>
+* <<在APIC上建立唯讀帳戶>>
+* <<使用TACACS +伺服器授予CSA使用者權限>>
 
 
 代理程式會使用這些帳戶從每個裝置收集組態資訊。
