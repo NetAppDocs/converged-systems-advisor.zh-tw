@@ -16,11 +16,11 @@ summary: 您可以透過各種資源取得有關融合式系統顧問的說明�
 [role="lead"]
 您可以透過各種資源取得有關融合式系統顧問的說明及更多資訊。
 
-* https://www.netapp.com/us/media/ds-3896.pdf["融合式系統顧問產品型錄"^]
+* https://www.netapp.com/data-storage/flexpod/cooperative-support/["融合式系統顧問產品型錄"^]
 +
 如需更多有關融合式系統顧問所提供價值的詳細資訊、
 
-* https://www.netapp.com/us/media/tr-4036.pdf["NetApp技術報告4036：FlexPod 《資料中心技術規格》"^]
+* https://docs.netapp.com/us-en/flexpod/fp-def/dc-tech-spec_solution_overview.html["NetApp技術報告4036：FlexPod 《資料中心技術規格》"^]
 +
 檢閱整合式系統顧問針對您的組態進行比較的最佳實務做法和韌體需求。
 
